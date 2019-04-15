@@ -7,5 +7,5 @@ class PaginaPrincipal(View):
     template = 'principal.html'
 
     def get(self, request):
-
-        return render(request, self.template)
+        if request:
+            return render(request, self.template)
