@@ -1,3 +1,2 @@
-from patologiaveterinaria.form.patologista_form import PatologistaForm
-from patologiaveterinaria.form.animal_form import AnimalForm
-from patologiaveterinaria.form.proprietario_form import ProprietarioForm
+
+from patologiaveterinaria.form.usuario_form import UsuarioForm
