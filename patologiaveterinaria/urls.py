@@ -19,7 +19,7 @@ from patologiaveterinaria import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view.IndexView.as_view(), name="index"),
+    path('', view.LoginUserView.as_view(), name="login_user"),
     path('login', view.LoginView.as_view(), name='login'),
     path('logout', view.LogoutView.as_view(), name='logout'),
     path('usuario/cadastro/', view.CadastroUsuarioView.as_view(), name='cadastro_usuario'),

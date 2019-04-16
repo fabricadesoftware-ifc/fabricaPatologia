@@ -1446,7 +1446,7 @@ $.fn.dropdown = function(parameters) {
                     ? $selectedItem.prevAll(selector.item + ':not(' + selector.unselectable + ')').eq(0)
                     : $item.eq(0)
                   ;
-                  if($visibleItems.index( $nextItem ) < 0) {
+                  if($visibleItems.login( $nextItem ) < 0) {
                     module.verbose('Up key pressed but reached top of current menu');
                     event.preventDefault();
                     return;

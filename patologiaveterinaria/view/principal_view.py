@@ -7,5 +7,6 @@ class PaginaPrincipal(View):
     template = 'principal.html'
 
     def get(self, request):
-        if request:
-            return render(request, self.template)
+        if not request.user.is_authenticated:
+            return HttpResponseRedirect('/')
+        return render(request, self.template)

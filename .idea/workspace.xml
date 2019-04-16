@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7c7233-5656-4f70-aed8-fab7fed05ed1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/form/laudo_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patologiaveterinaria/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patologiaveterinaria/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_laudo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/view/index_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/components/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/components/dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/components/dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/components/dropdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/components/rating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/components/rating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/components/search.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/components/search.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/components/shape.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/components/shape.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/semantic.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/semantic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/semantic/semantic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/semantic/semantic.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,20 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="180">
+              <caret line="12" column="45" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -64,12 +58,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="315">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="e#644#676#0" expanded="true" />
               </folding>
@@ -151,10 +199,8 @@
         <option value="$PROJECT_DIR$/static/semantic/semantic.min.js" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/settings.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastro_usuario.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" />
         <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/templates/index.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_laudo_view.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/model/sexo_model.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" />
@@ -163,13 +209,17 @@
         <option value="$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/urls.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/base.html" />
         <option value="$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/urls.py" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/base.html" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html" />
+        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" />
       </list>
     </option>
   </component>
@@ -220,18 +270,7 @@
               <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
               <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
               <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,12 +346,12 @@
       <workItem from="1555098713239" duration="271000" />
       <workItem from="1555341586309" duration="8906000" />
       <workItem from="1555428025314" duration="2709000" />
-      <workItem from="1555431754849" duration="5652000" />
+      <workItem from="1555431754849" duration="9155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43247000" />
+    <option name="totallyTimeSpent" value="46750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1504" y="-4" width="1377" height="905" extended-state="6" />
@@ -435,33 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/index_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/usuario_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -495,16 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -525,34 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#644#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -565,8 +543,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        <state relative-caret-position="180">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="67" selection-start-column="67" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#644#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -575,11 +580,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
