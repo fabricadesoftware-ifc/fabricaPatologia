@@ -1,6 +1,6 @@
 from django.db import models
 
-class LaudoModel(models.Model):
+class AnimalModel(models.Model):
     nome = models.CharField(max_length=130)
     idade = models.CharField(max_length=2)
     especie = (('0','--- Selecione a espécie ---',),('1','Mamífero',), ('2','Ave',),('3','Répil',), ('4', 'Peixe'))

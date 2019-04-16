@@ -1,19 +1,19 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.views import View
-from patologiaveterinaria.form.laudo_form import LaudoForm
+from patologiaveterinaria.form.cadastrar_animal_form import AnimalForm
 
-class CadastrarLaudo(View):
-    template = 'cadastrar_laudo.html'
+class CadastrarAnimal(View):
+    template = 'cadastrar_animal.html'
 
     def get(self, request):
-        form = LaudoForm
+        form = AnimalForm
         if not request.user.is_authenticated:
             return HttpResponseRedirect('/')
         return render(request, self.template, {'form': form})
 
     def post(self, request):
-        form = LaudoForm(request.POST)
+        form = AnimalForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('principal')

@@ -1,15 +1,15 @@
 from django.forms import ModelForm
 from django import forms
 
-from patologiaveterinaria.model import LaudoModel
+from patologiaveterinaria.model import AnimalModel
 
 
-class LaudoForm(ModelForm):
+class AnimalForm(ModelForm):
     nome = forms.CharField(max_length=130)
     idade = forms.CharField(max_length=2)
-    especie = forms.ChoiceField(widget=forms.Select, choices=LaudoModel.especie)
+    especie = forms.ChoiceField(widget=forms.Select, choices=AnimalModel.especie)
     pelagem = forms.CharField(max_length=130)
-    sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=LaudoModel.sexo)
+    sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=AnimalModel.sexo)
     proprietario = forms.CharField(max_length=130)
     telefone = forms.CharField(max_length=11)
     veterinario_responsavel = forms.CharField(max_length=130)
@@ -22,5 +22,5 @@ class LaudoForm(ModelForm):
             laudo.save()
 
     class Meta:
-        model = LaudoModel
+        model = AnimalModel
         exclude = ()
