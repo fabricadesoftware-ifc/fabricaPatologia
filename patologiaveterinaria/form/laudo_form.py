@@ -7,13 +7,19 @@ from patologiaveterinaria.model import LaudoModel
 class LaudoForm(ModelForm):
     nome = forms.CharField(max_length=130)
     idade = forms.CharField(max_length=2)
-    especie = forms.CharField(max_length=100)
+    especie = forms.ChoiceField(widget=forms.Select, choices=LaudoModel.especie)
+    pelagem = forms.CharField(max_length=130)
+    sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=LaudoModel.sexo)
+    proprietario = forms.CharField(max_length=130)
+    telefone = forms.CharField(max_length=11)
+    veterinario_responsavel = forms.CharField(max_length=130)
+    telefone_vet = forms.CharField(max_length=11)
+    endereco = forms.CharField(max_length=300)
 
     def save(self, commit=True):
-        produto = super(self).save(commit=False)
+        laudo = super(self).save(commit=False)
         if commit:
-            produto.save()
-
+            laudo.save()
 
     class Meta:
         model = LaudoModel

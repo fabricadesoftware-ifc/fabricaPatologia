@@ -7,10 +7,13 @@ class CadastrarLaudo(View):
     template = 'cadastrar_laudo.html'
 
     def get(self, request):
-        return render(request, self.template)
+        form = LaudoForm
+        if not request.user.is_authenticated:
+            return HttpResponseRedirect('/')
+        return render(request, self.template, {'form': form})
 
     def post(self, request):
-        form = LaudoForm
+        form = LaudoForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('principal')

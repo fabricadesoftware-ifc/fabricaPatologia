@@ -1,6 +1,64 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1>TODO</h1>
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+
+    <form class="ui form segment" method="post" action="{% url 'cadastrar_laudo' %}">
+        <fieldset>
+        <legend>Identificação</legend>
+        {% csrf_token %}
+        <div class="field">
+            <label class="color-label-brown">Nome</label>
+            {{ form.nome }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Idade</label>
+            {{ form.idade }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Espécie</label>
+            {{ form.especie }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Pelagem</label>
+            {{ form.pelagem }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Sexo</label>
+            {{ form.sexo }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Proprietário</label>
+            {{ form.proprietario }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Telefone</label>
+            {{ form.telefone }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Veterinário Responsável</label>
+            {{ form.veterinario_responsavel }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Telefone</label>
+            {{ form.telefone_vet }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Endereço</label>
+            {{ form.endereco }}
+        </div>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <button type="submit" class="ui green button color-button right floated">Salvar</button>
+            </div>
+        </div>
+
+        </fieldset>
+
+    </form>
+
+    </div>
+
 
 {% endblock %}

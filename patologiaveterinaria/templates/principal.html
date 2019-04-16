@@ -1,18 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
 
-<div>
-
-
-<div>
-    <a class="ui submit green button fluid labeled icon color-button"
-    href="{% url 'cadastrar_laudo' %}">
-                <i class="plus icon"></i>
-                    Laudo
-            </a>
+        <div>
+            <a class="ui submit green button fluid labeled icon color-button"
+            href="{% url 'cadastrar_laudo' %}">
+                        <i class="plus icon"></i>
+                            Cadastrar novo laudo
+                    </a>
+        </div>
 </div>
-
 </div>
-
 {% endblock %}
