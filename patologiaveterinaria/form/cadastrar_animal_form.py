@@ -8,6 +8,7 @@ class AnimalForm(ModelForm):
     nome = forms.CharField(max_length=130)
     idade = forms.CharField(max_length=2)
     especie = forms.ChoiceField(widget=forms.Select, choices=AnimalModel.especie)
+    raca = forms.CharField(max_length=100)
     pelagem = forms.CharField(max_length=130)
     sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=AnimalModel.sexo)
     proprietario = forms.CharField(max_length=130)

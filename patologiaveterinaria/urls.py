@@ -22,8 +22,9 @@ urlpatterns = [
     path('', view.LoginUserView.as_view(), name="login_user"),
     path('login', view.LoginView.as_view(), name='login'),
     path('logout', view.LogoutView.as_view(), name='logout'),
-    path('usuario/cadastro/', view.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
+    path('cadastro/usuario/', view.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
     path('principal/', view.PaginaPrincipal.as_view(), name='principal'),
-    path('cadastrar/', view.CadastrarAnimal.as_view(), name='cadastrar_animal'),
+    path('cadastro/animal/', view.CadastrarAnimal.as_view(), name='cadastrar_animal'),
+    path('cadastro/laudo/', view.CadastrarLaudo.as_view(), name='cadastrar_laudo')
 
 ]

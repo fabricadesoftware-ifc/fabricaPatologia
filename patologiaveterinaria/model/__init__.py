@@ -1,3 +1,4 @@
 
 from patologiaveterinaria.model.usuario_model import UsuarioModel
 from patologiaveterinaria.model.cadastrar_animal_model import AnimalModel
+from patologiaveterinaria.model.laudo_model import LaudoModel
