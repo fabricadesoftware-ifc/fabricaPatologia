@@ -11,4 +11,7 @@ class AnimalModel(models.Model):
     telefone = models.CharField(max_length=11)
     veterinario_responsavel = models.CharField(max_length=130)
     telefone_vet = models.CharField(max_length=11)
-    endereco = models.CharField(max_length=300)
+    endereco = models.CharField(max_length=128, blank=True)
+    numero_endereco = models.CharField(max_length=10, blank=True)
+    bairro = models.CharField(max_length=128, blank=True)
+    cep = models.CharField(max_length=9, blank=True)

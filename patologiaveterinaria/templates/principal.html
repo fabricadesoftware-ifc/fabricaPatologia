@@ -5,6 +5,10 @@
     <div class="two wide column"></div>
     <div class="twelve wide column">
 
+    <h3 class="ui header centered color-h-green">
+            olá, {{ user.get_short_nome|default:user.get_username }}!
+        </h3>
+
         <div>
             <a class="ui submit green button fluid labeled icon color-button"
             href="{% url 'cadastrar_animal' %}">
@@ -12,6 +16,15 @@
                             Cadastrar animal
                     </a>
         </div>
-</div>
+    <div>
+            <a class="ui submit green button fluid labeled icon color-button"
+            href="{% url 'cadastrar_laudo' %}">
+                        <i class="plus icon"></i>
+                            Cadastrar laudo
+                    </a>
+        </div>
+    <div>
+
+    </div>
 </div>
 {% endblock %}

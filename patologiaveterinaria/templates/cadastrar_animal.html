@@ -56,17 +56,37 @@
             {{ form.telefone_vet }}
         </div>
         </div>
+        <div class="two fields">
         <div class="field">
             <label class="color-label-brown">Endereço</label>
             {{ form.endereco }}
         </div>
+        <div class="field">
+            <label class="color-label-brown">Bairro</label>
+            {{ form.bairro }}
+        </div>
+        </div>
+        <div class="two fields">
+        <div class="field">
+            <label class="color-label-brown">Selecione a cidade</label>
+            {{ form.cidade }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Selecione o estado</label>
+            {{ form.estado }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">CEP</label>
+            {{ form.cep }}
+        </div>
+
+
+        </fieldset>
         <div class="ui grid">
             <div class="sixteen wide column">
                 <button type="submit" class="ui green button color-button right floated">Salvar</button>
             </div>
         </div>
-
-        </fieldset>
 
     </form>
 

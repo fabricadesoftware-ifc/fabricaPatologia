@@ -21,7 +21,7 @@ class CadastroUsuarioView(View):
             usuario = UsuarioModel.objects.latest('id')
             usuario.groups.add(Group.objects.get(pk=1))
             usuario.save()
-            return redirect('index')
+            return redirect('login_user')
         return render(request, self.template, {'form': form})
 
 class LoginView(View):
@@ -30,7 +30,7 @@ class LoginView(View):
         password = request.POST['password']
         user = authenticate(username=username, password=password)
         if user is None or not user.is_active:
-            return redirect('index')
+            return redirect('login_user')
         login(request, user)
         return redirect('principal')
 

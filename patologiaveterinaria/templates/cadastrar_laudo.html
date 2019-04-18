@@ -9,6 +9,10 @@
         <legend><h3>Laudo</h3></legend>
         {% csrf_token %}
         <div class="field">
+            <label class="color-label-brown">Tipo de Laudo</label>
+            {{ form.tipo }}
+        </div>
+        <div class="field">
             <label class="color-label-brown">Histórico Clínico</label>
             {{ form.historico_clinico }}
         </div>

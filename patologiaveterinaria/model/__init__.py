@@ -2,3 +2,6 @@
 from patologiaveterinaria.model.usuario_model import UsuarioModel
 from patologiaveterinaria.model.cadastrar_animal_model import AnimalModel
 from patologiaveterinaria.model.laudo_model import LaudoModel
+from patologiaveterinaria.model.tipo_laudo_model import TipoLaudoModel
+from patologiaveterinaria.model.cidade_model import CidadeModel
+from patologiaveterinaria.model.estado_model import EstadoModel
