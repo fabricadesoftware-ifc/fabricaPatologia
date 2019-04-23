@@ -4,7 +4,7 @@
     <div class="two wide column"></div>
     <div class="twelve wide column">
 
-    <form class="ui form segment" method="post" action="{% url 'cadastrar_animal' %}">
+    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
         <fieldset>
         <legend><h3>Identificação do animal</h3></legend>
         {% csrf_token %}
@@ -68,16 +68,17 @@
         </div>
         <div class="two fields">
         <div class="field">
-            <label class="color-label-brown">Selecione a cidade</label>
-            {{ form.cidade }}
-        </div>
-        <div class="field">
             <label class="color-label-brown">Selecione o estado</label>
             {{ form.estado }}
         </div>
         <div class="field">
+            <label class="color-label-brown">Selecione a cidade</label>
+            {{ form.cidade }}
+        </div>
+        <div class="field">
             <label class="color-label-brown">CEP</label>
             {{ form.cep }}
+        </div>
         </div>
 
 
@@ -89,6 +90,22 @@
         </div>
 
     </form>
+
+    <div class="field">
+
+            {% if mostra_laudos %}
+            {% for laudo in mostra_laudos %}
+
+            <div class="item">
+                <i class="box icon"></i>
+                <div class="content">
+
+                {{ laudo.tipo }}
+                {{ laudo.comentarios }}
+
+            {% endfor %}
+        {% endif %}
+        <div>
 
     </div>
 

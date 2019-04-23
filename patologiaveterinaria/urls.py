@@ -26,6 +26,7 @@ urlpatterns = [
     path('principal/', view.PaginaPrincipal.as_view(), name='principal'),
     path('cadastro/animal/', view.CadastrarAnimal.as_view(), name='cadastrar_animal'),
     path('cadastro/laudo/', view.CadastrarLaudo.as_view(), name='cadastrar_laudo'),
-    path('mostra_animal', view.MostraAnimal.as_view(), name='mostra_animal')
+    path('mostra_animal', view.MostraAnimal.as_view(), name='mostra_animal'),
+    path('lista_laudos', view.MostraLaudos.as_view(), name='mostra_laudos'),
 
 ]

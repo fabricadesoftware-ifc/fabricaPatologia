@@ -2,7 +2,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.views import View
 
-from patologiaveterinaria.form.laudo_form import LaudoForm
+from patologiaveterinaria.form import LaudoForm
+from patologiaveterinaria.model import LaudoModel
 
 class CadastrarLaudo(View):
     template = 'cadastrar_laudo.html'

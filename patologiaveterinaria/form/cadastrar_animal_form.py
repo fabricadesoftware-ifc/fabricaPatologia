@@ -2,19 +2,19 @@
 from django.forms import ModelForm
 from django import forms
 
-from patologiaveterinaria.model import AnimalModel
-from patologiaveterinaria.model import CidadeModel
-from patologiaveterinaria.model import EstadoModel
+from patologiaveterinaria.model import EspecieModel, AnimalModel, CidadeModel, EstadoModel, SexoModel
+
 
 class AnimalForm(ModelForm):
     cidades = CidadeModel.objects.all()
     estados = EstadoModel.objects.all()
+
     nome = forms.CharField(max_length=130)
     idade = forms.CharField(max_length=2)
-    especie = forms.ChoiceField(widget=forms.Select, choices=AnimalModel.especie)
+    especie = forms.ChoiceField(widget=forms.Select, choices=EspecieModel.especie)
     raca = forms.CharField(max_length=100)
     pelagem = forms.CharField(max_length=130)
-    sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=AnimalModel.sexo)
+    sexo = forms.ChoiceField(widget=forms.RadioSelect, choices=SexoModel.sexo)
     proprietario = forms.CharField(max_length=130)
     telefone = forms.CharField(max_length=11)
     veterinario_responsavel = forms.CharField(max_length=130)
@@ -28,9 +28,8 @@ class AnimalForm(ModelForm):
     estado = forms.ModelChoiceField(required=False,
                                     empty_label="Selecione um estado",
                                     queryset=estados,
-                                    widget=forms.Select(attrs={"onchange": "get_cidade_natural()",
-                                                               "class": "ui fluid search selection dropdown"})
-                                    )
+                                    widget=forms.Select(attrs={"class": "ui fluid search selection dropdown"})
+                                  )
     bairro = forms.CharField(max_length=128)
     cep = forms.CharField(max_length=9)
 

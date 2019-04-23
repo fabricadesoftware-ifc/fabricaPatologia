@@ -4,3 +4,4 @@ from patologiaveterinaria.view.principal_view import PaginaPrincipal
 from patologiaveterinaria.view.cadastrar_animal_view import CadastrarAnimal
 from patologiaveterinaria.view.laudo_view import CadastrarLaudo
 from patologiaveterinaria.view.principal_view import MostraAnimal
+from patologiaveterinaria.view.cadastrar_animal_view import MostraLaudos
