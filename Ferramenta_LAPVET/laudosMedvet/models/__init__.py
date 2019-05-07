@@ -1,0 +1,6 @@
+from laudosMedvet.models.usuario_model import UsuarioModel
+from laudosMedvet.models.cadastrar_animal_model import CadastrarAnimalModel
+from laudosMedvet.models.especie_model import EspecieModel
+from laudosMedvet.models.laudo_model import LaudoModel
+from laudosMedvet.models.tipo_laudo_model import TipoLaudoModel
+from laudosMedvet.models.imagem_model import ImagensModel

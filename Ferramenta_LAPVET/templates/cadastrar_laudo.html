@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+
+    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
+        <fieldset>
+        <legend><h3>Laboratório de Anatomia e Patologia Veterinária</h3></legend>
+        {% csrf_token %}
+        <div class="field">
+            <label class="color-label-brown">Tipo de laudo</label>
+            {{ form.tipo }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Imagens</label>
+            {{ form.imagens }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Histórico clínico</label>
+            {{ form.historico_clinico }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Descrição macroscópica</label>
+            {{ form.descricao_macroscopica }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Descrição microscópica</label>
+            {{ form.descricao_microscopica }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Diagnóstico morfológico</label>
+            {{ form.diagnostico_morfologico }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Comentários</label>
+            {{ form.comentarios }}
+        </div>
+
+        </fieldset>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <button type="submit" class="ui green button color-button right floated">Salvar</button>
+            </div>
+        </div>
+
+    </form>
+
+    </div>
+
+
+{% endblock %}

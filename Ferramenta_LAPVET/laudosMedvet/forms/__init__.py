@@ -1,0 +1,3 @@
+from laudosMedvet.forms.usuario_form import UsuarioForm
+from laudosMedvet.forms.cadastrar_animal_form import CadastrarAnimalForm
+from laudosMedvet.forms.laudo_form import LaudoForm

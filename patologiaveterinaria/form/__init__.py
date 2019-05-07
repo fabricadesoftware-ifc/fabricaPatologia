@@ -1,3 +1,0 @@
-from patologiaveterinaria.form.usuario_form import UsuarioForm
-from patologiaveterinaria.form.cadastrar_animal_form import AnimalForm
-from patologiaveterinaria.form.laudo_form import LaudoForm

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+
+    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
+        <fieldset>
+        <legend><h3>Identificação do animal</h3></legend>
+        {% csrf_token %}
+            <div class="field">
+            <label class="color-label-brown">Nome</label>
+            {{ form.nome }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Especie</label>
+            {{ form.especie }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Raça</label>
+            {{ form.raca }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Sexo</label>
+            {{ form.sexo }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Nome do proprietário</label>
+            {{ form.proprietario }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Telefone do Proprietario</label>
+            {{ form.telefone_proprietario }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Veterinario responsável</label>
+            {{ form.veterinario_responsavel }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Telefone do veterinario responsável</label>
+            {{ form.telefone_veterinario_responsavel }}
+        </div>
+
+        </fieldset>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <button type="submit" class="ui green button color-button right floated">Salvar</button>
+            </div>
+        </div>
+
+    </form>
+
+    </div>
+
+
+{% endblock %}
