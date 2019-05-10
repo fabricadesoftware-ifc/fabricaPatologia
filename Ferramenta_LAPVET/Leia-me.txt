@@ -1,0 +1,18 @@
+
+PATOLOGIA VETERINÁRIA: FERRAMENTA PARA A TOMADA DE DECISÃO NO CONTROLE E PROFILAXIA EM ANIMAIS DOMÉSTICOS E SELVAGENS
+
+
+
+OBJETIVO: Gerir ações para o controle e prevenção de doenças em
+animais domésticos e silvestres através do desenvolvimento de uma ferramenta para o
+gerenciamento de procedimentos patológicos que auxilie na análise de histórico dos
+resultados de exames anatomopatológicos especializados.
+
+
+
+ETAPAS:
+* Realizar levantamento da tecnologia necessária para o desenvolvimento
+* Modelagem atravéz da linguagem UML
+* Desenvolvimento dos formulários necessários para armazenar os dados
+* Correção de erros
+* Reuniões periódicas para troca de conhecimentos interdisciplinares

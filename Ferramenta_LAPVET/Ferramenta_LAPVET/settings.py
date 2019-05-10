@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Ferramenta_LAPVET.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'LAPVET',
+        'NAME': 'LAPVETmodels',
         'USER': 'postgres',
         'PASSWORD': 'ana123',
         'HOST': '127.0.0.1',

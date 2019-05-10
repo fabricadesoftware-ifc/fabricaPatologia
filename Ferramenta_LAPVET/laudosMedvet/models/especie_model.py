@@ -1,7 +1,11 @@
 from django.db import models
 
 class EspecieModel(models.Model):
-    especie = models.CharField(max_length=100)
+    nome_especie = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name = "Espécie"
+        verbose_name_plural = "Espécies"
 
     def __str__(self):
-        return self.especie
+        return self.nome_especie

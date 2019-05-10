@@ -7,15 +7,10 @@
 
     <h3 class="ui header centered color-h-green">
             olá, {{ user.get_short_nome|default:user.get_username }}!
-        </h3>
+    </h3>
 
-        <div>
-            <a class="ui submit green button fluid labeled icon color-button"
-            href="{% url 'cadastrar_animal' %}">
-                        <i class="plus icon"></i>
-                            Cadastrar animal
-                    </a>
-        </div>
+    <h1>Colocar logo</h1>
+
 
 </div>
 {% endblock %}

@@ -1,13 +1,23 @@
 from django.contrib import admin
 
-from .models import EspecieModel, TipoLaudoModel, LaudoModel, ImagensModel
-
+from .models import EspecieModel, AnimalModel, ProprietarioModel, VeterinarioresponsavelModel, CidadeModel, RegiaoEstadoModel, EstadoModel, RegiaoFederalModel, BairroModel, RuaModel
 
 admin.site.register(EspecieModel)
 
+admin.site.register(ProprietarioModel)
 
-admin.site.register(TipoLaudoModel)
+admin.site.register(AnimalModel)
 
-admin.site.register(LaudoModel)
+admin.site.register(VeterinarioresponsavelModel)
 
-admin.site.register(ImagensModel)
+admin.site.register(CidadeModel)
+
+admin.site.register(RegiaoEstadoModel)
+
+admin.site.register(EstadoModel)
+
+admin.site.register(RegiaoFederalModel)
+
+admin.site.register(RuaModel)
+
+admin.site.register(BairroModel)

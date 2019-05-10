@@ -1,49 +1,78 @@
+{% load staticfiles %}
 <html>
-
-<head>
-    {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Patologia Veterinaria</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <title>{% block title %} {% endblock %}</title>
+    </head>
 <body>
-<header class="ui menu color-menu">
-    <a class="active item menu-a-color" href="{% url 'login_user' %}">
-        <span>
-            <i class="ui home icon"></i>Principal
-        </span>
-    </a>
-    <a class="active item menu-a-color" href="{% url 'logout' %}">
-        <span>
-            <i class="sign out alternate ui icon"></i>Logout
-        </span>
-    </a>
-</header>
-<article class="ui stackable grid">
+    <header>
+        <div class="ui fixed inverted menu">
+            <a class="active item menu-a-color" href="{% url 'login_user' %}">
+                <span>
+                    <i class="ui home icon"></i>Principal
+                </span>
+            </a>
+            <div class="ui simple dropdown item">
+                Cadastros
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">
+                        <i class="dropdown icon"></i>
+                        Animais
+                        <div class="ui inverted menu">
+                            <a class="green item" href="{% url 'index_especie' %}">Espécie</a>
+                            <a class="item" href="{% url 'cadastrar_animal' %}">Animal</a>
+                        </div>
+                    </div>
+                    <a class="item" href="#">Link Item</a>
+                    <div class="divider"></div>
+                    <div class="header">Header Item</div>
+                    <div class="item">
+                        <i class="dropdown icon"></i>
+                        Sub Menu
+                        <div class="menu">
+                            <a class="item" href="#">Link Item</a>
+                            <a class="item" href="#">Link Item</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <div class="right menu">
+            <a class="active item menu-a-color" href="{% url 'logout' %}">
+                <span>
+                    <i class="sign out alternate ui icon"></i>Logout
+                </span>
+            </a>
+            </div>
+    </header>
 
-    {% block content %}
+    <div class=" ui main container">
 
-    {% endblock %}
+        {% block content %}
 
-    </article>
-<footer class="ui centered middle aligned stackable grid">
-    <div class="one wide column">
-        <a href='http://ifc.edu.br'>
-            <img class="ui image centered tiny" src="{% static "" %}" alt="Logo Instituto Federal Catarinense">
-        </a>
+        {% endblock %}
     </div>
-    <div class="eight wide column">
-        <p class="ui center aligned basic segment">
-            <span>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Araquari</span><br>
-            <span>Rodovia BR 280 - km 27 - Cx. Postal 21 - CEP 89245-000 - Fone (47) 3803-7200 - Fax (47) 3803-7201</span>
-        </p>
+    <footer>
+    <div class="ui centered middle aligned stackable grid">
+        <div class="one wide column">
+            <a href='http://ifc.edu.br'>
+                <img class="ui image centered tiny" src="{% static "" %}" alt="Logo Instituto Federal Catarinense">
+            </a>
+        </div>
+        <div class="eight wide column">
+            <p class="ui center aligned basic segment">
+                <span>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Araquari</span><br>
+                <span>Rodovia BR 280 - km 27 - Cx. Postal 21 - CEP 89245-000 - Fone (47) 3803-7200 - Fax (47) 3803-7201</span>
+            </p>
+        </div>
+        <div class="one wide column">
+            <a href='http://fabricadesoftware.ifc.edu.br'>
+                <img class="ui image centered tiny" src="{% static "" %}"
+                     alt="Logo Fábrica de Software">
+            </a>
+        </div>
     </div>
-    <div class="one wide column">
-        <a href='http://fabricadesoftware.ifc.edu.br'>
-            <img class="ui image centered tiny" src="{% static "" %}"
-                 alt="Logo Fábrica de Software">
-        </a>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

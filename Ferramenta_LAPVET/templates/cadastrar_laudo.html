@@ -4,17 +4,17 @@
     <div class="two wide column"></div>
     <div class="twelve wide column">
 
-    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
+    <form class="ui form segment" method="POST" action="{% url 'cadastrar_laudo' %}">
         <fieldset>
         <legend><h3>Laboratório de Anatomia e Patologia Veterinária</h3></legend>
         {% csrf_token %}
         <div class="field">
             <label class="color-label-brown">Tipo de laudo</label>
-            {{ form.tipo }}
+            {{ form.tipo_laudo }}
         </div>
         <div class="field">
             <label class="color-label-brown">Imagens</label>
-            {{ form.imagens }}
+            {{ form.imagem }}
         </div>
         <div class="field">
             <label class="color-label-brown">Histórico clínico</label>

@@ -3,8 +3,226 @@
   <component name="ChangeListManager">
     <list default="true" id="ec7c7233-5656-4f70-aed8-fab7fed05ed1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/Ferramenta_LAPVET.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources/e135402e-4cae-4870-9da6-4fc8c49ab84f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/cadastrar_animal_form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/laudo_form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/usuario_form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/cadastrar_animal_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/especie_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/imagem_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/laudo_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/tipo_laudo_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/usuario_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/cadastrar_animal_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/laudo_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/login_user_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/principal_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/usuario_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/.versions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/ad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/ad.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/api.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/breadcrumb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/breadcrumb.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/button.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/card.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/card.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/colorize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/colorize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/comment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/comment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/container.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/divider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/divider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/feed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/feed.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/flag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/flag.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/header.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/icon.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/image.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/input.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/item.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/item.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/label.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/label.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/list.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/loader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/loader.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/menu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/message.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/placeholder.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/placeholder.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rail.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reset.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reveal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reveal.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/segment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/segment.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/state.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/statistic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/statistic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/step.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/step.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/table.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visibility.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/package.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/images/flags.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastrar_animal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastrar_laudo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastro_usuario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/login_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/principal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,62 +253,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -181,41 +344,6 @@
               <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
               <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -305,17 +433,19 @@
       <workItem from="1556033308753" duration="12191000" />
       <workItem from="1556046945147" duration="904000" />
       <workItem from="1556535301438" duration="1083000" />
+      <workItem from="1557253934004" duration="533000" />
+      <workItem from="1557254495196" duration="30000" />
+      <workItem from="1557254626082" duration="144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96488000" />
+    <option name="totallyTimeSpent" value="97195000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1505" y="-4" width="1375" height="904" extended-state="6" />
-    <editor active="true" />
+    <frame x="1504" y="-4" width="1377" height="905" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34311512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36042136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,7 +459,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22846442" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20848939" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -365,54 +495,18 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tipoLaudo_model.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/orgaos_model.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tecnico_model.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/animal_model.py" />
-    <entry file="file://$PROJECT_DIR$/static/semantic/semantic.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="181175" selection-start-line="10" selection-start-column="181175" selection-end-line="10" selection-end-column="181175" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/semantic/semantic.min.js" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/template/loader.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/manage.py" />
+    <entry file="file://$PROJECT_DIR$/static/style.css" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/__init__.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0002_auto_20190417_1651.py" />
     <entry file="das://02e7a2ca-e4dc-4be2-986e-473ce1cf1df3/collation/BINARY">
       <provider selected="true" editor-type-id="text-editor" />
@@ -423,254 +517,43 @@
     <entry file="das://02e7a2ca-e4dc-4be2-986e-473ce1cf1df3/collation/NOCASE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/usuario_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/settings.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/usuario_model.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/tipo_laudo_form.py" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0003_tipolaudomodel.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_laudo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_laudo.html" />
     <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/mostra_animal.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastro_usuario.html">
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastro_usuario.html" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/laudo_view.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/usuario_form.py" />
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/laudo_form.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tipo_laudo_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/sexo_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/estado_model.py" />
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/models/fields/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/forms/fields.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/admin.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0001_initial.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0002_auto_20190423_1544.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/especie_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cidade_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" />
+    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding>
-            <element signature="e#644#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/laudo_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/usuario_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="382" selection-start-line="382" selection-end-line="382" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/laudo_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tipo_laudo_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="67" lean-forward="true" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/sexo_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/estado_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1036" selection-start-line="1036" selection-end-line="1036" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="783" selection-start-line="783" selection-end-line="783" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0002_auto_20190423_1544.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="e#1#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/especie_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cidade_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/principal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
+        <state relative-caret-position="-1097" />
       </provider>
     </entry>
   </component>
