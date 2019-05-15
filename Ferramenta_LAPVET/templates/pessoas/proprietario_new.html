@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+
+    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
+        <fieldset>
+        <legend><h3>cadastro do proprietario</h3></legend>
+        {% csrf_token %}
+            <div class="field">
+            <label class="color-label-brown">Nome</label>
+            {{ form.nome_proprietario }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Data de nascimento</label>
+            {{ form.data_nasc }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">CPF</label>
+            {{ form.cpf }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">RG</label>
+            {{ form.rg }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Telefone fixo</label>
+            {{ form.telefone }}
+        </div>
+
+        <div class="field">
+            <label class="color-label-brown">Telefone celular</label>
+            {{ form.celular }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Email</label>
+            {{ form.email }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Rua</label>
+            {{ form.rua }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Número</label>
+            {{ form.numero }}
+        </div>
+        <div class="field">
+            <label class="color-label-brown">Complemento</label>
+            {{ form.complemento }}
+        </div>
+
+        </fieldset>
+        <div class="ui grid">
+            <div class="sixteen wide column">
+                <button type="submit" class="ui green button color-button right floated">Salvar</button>
+            </div>
+        </div>
+
+    </form>
+
+    </div>
+
+
+{% endblock %}

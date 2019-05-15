@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+
+        <div class="ui fluid segment">
+            <h1>Tem certeza que deseja deletar {{ proprietario.nome_proprietario }} </h1>
+            <form method="POST" enctype=multipart/form-data">
+                {% csrf_token %}
+
+            <button class="negative ui button" type="submit">Delete</button>
+            </form>
+        </di>
+    </div>
+
+{% endblock %}

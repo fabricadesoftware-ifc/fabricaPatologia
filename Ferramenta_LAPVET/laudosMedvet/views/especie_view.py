@@ -8,7 +8,7 @@ from laudosMedvet.forms import EspecieForm
 @login_required
 def index_especie(request):
     especies = EspecieModel.objects.all()
-    return render(request, 'especie/especie_list.html', {'especies':especies})
+    return render(request, 'animal/especie_list.html', {'especies':especies})
 
 @login_required
 def new_especie(request):
@@ -16,7 +16,7 @@ def new_especie(request):
     if form.is_valid():
         form.save()
         return redirect('index_especie')
-    return render(request, 'especie/especie_save.html', {'form':form})
+    return render(request, 'animal/especie_save.html', {'form':form})
 
 @login_required
 def update_especie(request, id):
@@ -26,7 +26,7 @@ def update_especie(request, id):
     if form.is_valid():
         form.save()
         return redirect('index_especie')
-    return render(request, 'especie/especie_save.html', {'form':form})
+    return render(request, 'animal/especie_save.html', {'form':form})
 
 
 @login_required
@@ -35,4 +35,4 @@ def delete_especie(request, id):
     if request.method == 'POST':
         especie.delete()
         return redirect('index_especie')
-    return render(request, 'especie/especie_delete.html')
+    return render(request, 'animal/especie_delete.html')

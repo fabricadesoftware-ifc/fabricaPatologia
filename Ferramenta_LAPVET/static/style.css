@@ -1,14 +1,18 @@
-  body {
-    background-color: #FFFFFF;
-  }
-  .ui.main.container {
-    margin-top: 7em;
-  }
-  .wireframe {
-    margin-top: 2em;
-  }
-  .footer {
-    display: block;
-    bottom:0px;
-    width:100%;
-}
+      html {
+        min-height: 100%;
+        height: unset;
+      }
+
+      body {
+        padding-bottom: 14px;
+
+      }
+      .ui.stackable.grid{
+        margin-top: 10em;
+        min-height: 80%;
+      }
+      footer{
+        position: absolute;
+        width: 100%;
+      }
+

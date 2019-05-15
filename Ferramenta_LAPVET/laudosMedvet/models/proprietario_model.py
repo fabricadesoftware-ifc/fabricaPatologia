@@ -12,3 +12,6 @@ class ProprietarioModel(models.Model):
     rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT)
     numero = models.IntegerField()
     complemento = models.CharField(max_length=250, null=True)
+
+    def __str__(self):
+        return self.nome_proprietario

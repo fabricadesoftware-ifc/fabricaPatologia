@@ -3,226 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec7c7233-5656-4f70-aed8-fab7fed05ed1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/Ferramenta_LAPVET.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/dataSources/e135402e-4cae-4870-9da6-4fc8c49ab84f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/Ferramenta_LAPVET/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/cadastrar_animal_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/laudo_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/forms/usuario_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/cadastrar_animal_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/especie_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/imagem_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/laudo_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/tipo_laudo_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/models/usuario_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/cadastrar_animal_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/laudo_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/login_user_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/principal_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/laudosMedvet/views/usuario_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/.versions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/accordion.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/ad.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/ad.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/api.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/breadcrumb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/breadcrumb.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/button.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/card.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/card.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/checkbox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/colorize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/colorize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/comment.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/comment.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/container.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/container.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dimmer.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/divider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/divider.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/dropdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/embed.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/feed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/feed.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/flag.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/flag.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/form.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/header.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/icon.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/image.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/image.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/input.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/item.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/item.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/label.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/label.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/list.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/loader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/loader.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/menu.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/message.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/message.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/modal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/nag.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/placeholder.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/placeholder.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/progress.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rail.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/rating.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reset.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reveal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/reveal.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/search.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/segment.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/segment.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/shape.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sidebar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/site.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/state.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/statistic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/statistic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/step.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/step.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/sticky.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/tab.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/table.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/transition.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/video.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visibility.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visibility.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/components/visit.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/package.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/semantic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/brand-icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/fonts/outline-icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/semantic/themes/default/assets/images/flags.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/static/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastrar_animal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastrar_laudo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/cadastro_usuario.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/login_user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/templates/principal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -355,6 +135,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -436,16 +217,18 @@
       <workItem from="1557253934004" duration="533000" />
       <workItem from="1557254495196" duration="30000" />
       <workItem from="1557254626082" duration="144000" />
+      <workItem from="1557517946360" duration="272000" />
+      <workItem from="1557760973022" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97195000" />
+    <option name="totallyTimeSpent" value="97512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1504" y="-4" width="1377" height="905" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36042136" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37246048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -459,7 +242,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20848939" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19600499" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

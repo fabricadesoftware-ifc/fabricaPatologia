@@ -12,10 +12,10 @@ class AnimalModel(models.Model):
     sexo = models.CharField(max_length=1)
     raca = models.CharField(max_length=100)
     cor_pelagem = models.CharField(max_length=50)
-    especie = models.ForeignKey(EspecieModel, on_delete=models.CASCADE) # Chave estrangeira para especie_model
+    especie = models.ForeignKey(EspecieModel, on_delete=models.PROTECT) # Chave estrangeira para especie_model
     dt_cadastro = models.DateTimeField(auto_now_add=True)
-    proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.CASCADE)
-    veterinario_responsavel = models.ForeignKey(VeterinarioresponsavelModel, on_delete=models.CASCADE)
+    proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.PROTECT)
+    veterinario_responsavel = models.ForeignKey(VeterinarioresponsavelModel, on_delete=models.PROTECT)
     rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT)
     numero = models.IntegerField()
 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="ui fluid segment">
+            <h3>Cadastrar região federal</h3>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="collor-label-green">Nome da região federal</label>
+                    {{ form.nome_regiao }}
+                </div>
+                <button class="positive ui button" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

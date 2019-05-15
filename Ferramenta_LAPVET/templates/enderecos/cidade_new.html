@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="ui fluid segment">
+            <h3>Cadastrar Cidade</h3>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="collor-label-green">Nome da cidade</label>
+                    {{ form.nome_cidade }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Região estadual</label>
+                    {{ form.id_regiao_estado }}
+                </div>
+                <button class="positive ui button" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

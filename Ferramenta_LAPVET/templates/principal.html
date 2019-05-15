@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
 {% block content %}
 
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
 
-    <h3 class="ui header centered color-h-green">
-            olá, {{ user.get_short_nome|default:user.get_username }}!
-    </h3>
+        <div>
+            <img class="ui centered huge image" src="{% static "image/logoLAPVET.jpg" %}">
+        </div>
 
-    <h1>Colocar logo</h1>
+    </div>
 
-
-</div>
 {% endblock %}

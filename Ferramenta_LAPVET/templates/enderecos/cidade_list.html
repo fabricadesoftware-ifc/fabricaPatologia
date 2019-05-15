@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="ui fluid segment">
+
+        <h3>Lista de Cidades</h3>
+
+    <a href="{% url 'new_cidade' %}" class="btn btn-primary">Cadastrar Cidade</a>
+      <br>
+    <div class="ui middle aligned divided list">
+        {% for cidade in cidades %}
+
+            <div class="item">
+                <div class="right floated content">
+                <a href="{% url 'delete_cidade' cidade.id %}">
+                    <i class="trash alternate icon"></i>
+                </a>
+                </div>
+                <div>
+                    <a href="{% url 'update_cidade' cidade.id %}">{{ cidade.nome_cidade }}</a>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="ui fluid segment">
+
+        <h3>Lista de Proprietarios</h3>
+
+    <a href="{% url 'new_proprietario' %}" class="btn btn-primary">Cadastrar Proprietario</a>
+      <br>
+    <div class="ui middle aligned divided list">
+        {% for proprietario in proprietarios %}
+
+            <div class="item">
+                <div class="right floated content">
+                <a href="{% url 'delete_proprietario' proprietario.id %}">
+                    <i class="trash alternate icon"></i>
+                </a>
+                </div>
+                <div>
+                    <a href="{% url 'update_proprietario' proprietario.id %}">{{ proprietario.nome_proprietario }}</a>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+    </div>
+
+{% endblock %}
