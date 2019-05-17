@@ -3,26 +3,41 @@
 
 <div class="two wide column"></div>
     <div class="twelve wide column">
-    <div class="ui fluid segment">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
 
-        <h3>Lista de Bairros</h3>
+       <h2 class="ui center aligned header">Bairros cadastrados</h2>
 
-    <a href="{% url 'new_bairro' %}" class="btn btn-primary">Cadastrar Bairro</a>
-      <br>
-    <div class="ui middle aligned divided list">
-        {% for bairro in bairros %}
+        <a href="{% url 'new_bairro' %}" class="ui right floated button">
+            Cadastrar novo bairro
+        </a>
+        <br>
+        <br>
+    <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Bairro</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for bairro in bairros %}
+                <tr>
+                    <td class="center aligned">{{ bairro.nome_bairro }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_bairro' bairro.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_bairro' bairro.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
 
-            <div class="item">
-                <div class="right floated content">
-                <a href="{% url 'delete_bairro' bairro.id %}">
-                    <i class="trash alternate icon"></i>
-                </a>
-                </div>
-                <div>
-                    <a href="{% url 'update_bairro' bairro.id %}">{{ bairro.nome_bairro }}</a>
-                </div>
-            </div>
-    {% endfor %}
+            {% endfor %}
+    </table>
     </div>
     </div>
 

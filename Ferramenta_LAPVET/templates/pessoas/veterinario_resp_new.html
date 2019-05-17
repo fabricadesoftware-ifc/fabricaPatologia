@@ -3,11 +3,11 @@
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
-        <div class="two wide column"></div>
+    <div class="two wide column"></div>
         <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Cadastrar bairro</h2>
+            <h2 class="ui center aligned header">Cadastrar veterinário</h2>
 
-            <a href="{% url 'index_bairro' %}" class="ui left floated button">
+            <a href="{% url 'index_vet_resp' %}" class="ui left floated button">
             Voltar
             </a>
             <br>
@@ -15,12 +15,16 @@
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
-                    <label class="collor-label-green">Nome do bairro</label>
-                    {{ form.nome_bairro }}
+                    <label class="collor-label-green">Nome</label>
+                    {{ form.nome_veterinario }}
                 </div>
                 <div class="field">
-                    <label class="collor-label-green">Cidade</label>
-                    {{ form.id_cidade }}
+                    <label class="collor-label-green">Telefone</label>
+                    {{ form.telefone }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">CRMV</label>
+                    {{ form.crmv }}
                 </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>

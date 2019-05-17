@@ -1,18 +1,2 @@
-      html {
-        min-height: 100%;
-        height: unset;
-      }
 
-      body {
-        padding-bottom: 14px;
-
-      }
-      .ui.stackable.grid{
-        margin-top: 10em;
-        min-height: 80%;
-      }
-      footer{
-        position: absolute;
-        width: 100%;
-      }
 

@@ -3,63 +3,61 @@
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
+    <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar proprietário</h2>
 
-    <form class="ui form segment" method="POST" action="{% url 'cadastrar_animal' %}">
-        <fieldset>
-        <legend><h3>cadastro do proprietario</h3></legend>
-        {% csrf_token %}
-            <div class="field">
-            <label class="color-label-brown">Nome</label>
-            {{ form.nome_proprietario }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">Data de nascimento</label>
-            {{ form.data_nasc }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">CPF</label>
-            {{ form.cpf }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">RG</label>
-            {{ form.rg }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">Telefone fixo</label>
-            {{ form.telefone }}
-        </div>
+            <a href="{% url 'index_proprietario' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="color-label-brown">Nome</label>
+                    {{ form.nome_proprietario }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Data de nascimento</label>
+                    {{ form.data_nasc }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">CPF</label>
+                    {{ form.cpf }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">RG</label>
+                    {{ form.rg }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Telefone fixo</label>
+                    {{ form.telefone }}
+                </div>
 
-        <div class="field">
-            <label class="color-label-brown">Telefone celular</label>
-            {{ form.celular }}
+                <div class="field">
+                    <label class="color-label-brown">Telefone celular</label>
+                    {{ form.celular }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Email</label>
+                    {{ form.email }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Rua</label>
+                    {{ form.rua }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Número</label>
+                    {{ form.numero }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Complemento</label>
+                    {{ form.complemento }}
+                </div>
+                <button class="positive ui fluid button" type="submit">Salvar</button>
+            </form>
         </div>
-        <div class="field">
-            <label class="color-label-brown">Email</label>
-            {{ form.email }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">Rua</label>
-            {{ form.rua }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">Número</label>
-            {{ form.numero }}
-        </div>
-        <div class="field">
-            <label class="color-label-brown">Complemento</label>
-            {{ form.complemento }}
-        </div>
-
-        </fieldset>
-        <div class="ui grid">
-            <div class="sixteen wide column">
-                <button type="submit" class="ui green button color-button right floated">Salvar</button>
-            </div>
-        </div>
-
-    </form>
-
     </div>
-
 
 {% endblock %}

@@ -3,8 +3,15 @@
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
-        <div class="ui fluid segment">
-            <h3>Cadastrar Cidade</h3>
+        <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar cidade</h2>
+
+            <a href="{% url 'index_cidade' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
@@ -15,7 +22,7 @@
                     <label class="collor-label-green">Região estadual</label>
                     {{ form.id_regiao_estado }}
                 </div>
-                <button class="positive ui button" type="submit">Salvar</button>
+                <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>
         </div>
     </div>

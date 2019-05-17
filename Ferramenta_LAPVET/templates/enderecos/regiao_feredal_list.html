@@ -3,26 +3,42 @@
 
 <div class="two wide column"></div>
     <div class="twelve wide column">
-    <div class="ui fluid segment">
+        <div class="two wide column"></div>
+        <div class="ui green fluid segment">
 
-        <h3>Lista de Regiões Federais</h3>
+            <h2 class="ui center aligned header">Regiões federais cadastradas</h2>
 
-    <a href="{% url 'new_regiao_fed' %}" class="btn btn-primary">Cadastrar Região Federal</a>
-      <br>
-    <div class="ui middle aligned divided list">
-        {% for regiao in regioes %}
+        <a href="{% url 'new_regiao_fed' %}" class="ui right floated button">
+            Cadastrar nova região federal
+        </a>
+        <br>
+        <br>
+            <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Região Federal</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for regiao in regioes %}
+                <tr>
+                    <td class="center aligned">{{ regiao.nome_regiao }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_regiao_fed' regiao.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_regiao_fed' regiao.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
 
-            <div class="item">
-                <div class="right floated content">
-                <a href="{% url 'delete_regiao_fed' regiao.id %}">
-                    <i class="trash alternate icon"></i>
-                </a>
-                </div>
-                <div>
-                    <a href="{% url 'update_regiao_fed' regiao.id %}">{{ regiao.nome_regiao }}</a>
-                </div>
-            </div>
-    {% endfor %}
+            {% endfor %}
+    </table>
+
     </div>
     </div>
 

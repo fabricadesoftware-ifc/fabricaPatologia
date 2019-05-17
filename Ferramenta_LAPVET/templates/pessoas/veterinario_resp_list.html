@@ -2,32 +2,36 @@
 {% block content %}
     <div class="two wide column"></div>
     <div class="twelve wide column">
-        <div class="two wide column"></div>
+    <div class="two wide column"></div>
     <div class="ui green fluid segment">
-        <h2 class="ui center aligned header">Lista de espécies</h2>
+       <h2 class="ui center aligned header">Veterinários cadastrados</h2>
 
-        <a href="{% url 'new_especie' %}" class="ui right floated button">
-            Cadastrar nova espécie
+        <a href="{% url 'new_vet_resp' %}" class="ui right floated button">
+            Cadastrar novo veterinário
         </a>
         <br>
         <br>
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
-                    <th>Espécie</th>
+                    <th>Nome</th>
+                    <th>CRMV</th>
+                    <th>Telefone</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
                 <tbody>
-                {% for especie in especies %}
+                {% for veterinario in veterinarios %}
                 <tr>
-                    <td class="center aligned">{{ especie.nome_especie }}</td>
+                    <td class="center aligned">{{ veterinario.nome_veterinario }}</td>
+                    <td class="center aligned">{{ veterinario.crmv }}</td>
+                    <td class="center aligned">{{ veterinario.telefone }}</td>
                     <td class="center aligned">
-                        <a href="{% url 'update_especie' especie.id %}">
+                        <a href="{% url 'update_vet_resp' veterinario.id %}">
                         <i class="green edit icon"></i>
                     </a>
                     </td>
                     <td class="center aligned">
-                        <a href="{% url 'delete_especie' especie.id %}">
+                        <a href="{% url 'delete_vet_resp' veterinario.id %}">
                             <i class="red trash alternate icon"></i>
                         </a>
                     </td>

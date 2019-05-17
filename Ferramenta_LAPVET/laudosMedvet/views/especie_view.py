@@ -16,7 +16,7 @@ def new_especie(request):
     if form.is_valid():
         form.save()
         return redirect('index_especie')
-    return render(request, 'animal/especie_save.html', {'form':form})
+    return render(request, 'animal/especie_new.html', {'form':form})
 
 @login_required
 def update_especie(request, id):
@@ -26,7 +26,7 @@ def update_especie(request, id):
     if form.is_valid():
         form.save()
         return redirect('index_especie')
-    return render(request, 'animal/especie_save.html', {'form':form})
+    return render(request, 'animal/especie_new.html', {'form':form})
 
 
 @login_required

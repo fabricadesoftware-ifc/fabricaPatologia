@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar animal</h2>
+
+            <a href="{% url 'index_animal' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="color-label-brown">Nome do animal</label>
+                    {{ form.nome }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Data do nascimento</label>
+                    {{ form.data_nasc }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Especie</label>
+                    {{ form.especie }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Cor da pelagem</label>
+                    {{ form.cor_pelagem }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Sexo</label>
+                    {{ form.sexo }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Raça</label>
+                    {{ form.raca }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Endereço</label>
+                    {{ form.rua }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Proprietário do animal</label>
+                    {{ form.proprietario }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Veterinario responsável</label>
+                    {{ form.veterinario_responsavel }}
+                </div>
+
+                <button class="positive fluid ui button" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

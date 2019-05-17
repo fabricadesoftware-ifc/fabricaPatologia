@@ -9,7 +9,7 @@ from laudosMedvet.models.rua_model import RuaModel
 class AnimalModel(models.Model):
     nome = models.CharField(max_length=100)
     data_nasc = models.DateField('Data de nascimento')
-    sexo = models.CharField(max_length=1)
+    sexo = models.CharField(max_length=1, default=None)
     raca = models.CharField(max_length=100)
     cor_pelagem = models.CharField(max_length=50)
     especie = models.ForeignKey(EspecieModel, on_delete=models.PROTECT) # Chave estrangeira para especie_model
@@ -17,7 +17,6 @@ class AnimalModel(models.Model):
     proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.PROTECT)
     veterinario_responsavel = models.ForeignKey(VeterinarioresponsavelModel, on_delete=models.PROTECT)
     rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT)
-    numero = models.IntegerField()
 
 
     def __unicode__(self):

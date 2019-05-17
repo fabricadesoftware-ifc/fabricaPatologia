@@ -4,23 +4,24 @@
     <div class="two wide column"></div>
     <div class="twelve wide column">
         <div class="two wide column"></div>
-        <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Cadastrar região federal</h2>
 
-            <a href="{% url 'index_regiao_fed' %}" class="ui left floated button">
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar espécie</h2>
+            <a href="{% url 'index_especie' %}" class="ui left floated button">
             Voltar
             </a>
             <br>
             <br>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                <div class="field">
-                    <label class="collor-label-green">Nome da região federal</label>
-                    {{ form.nome_regiao }}
-                </div>
+            {% csrf_token %}
+            <div class="field">
+                <label class="collor-label-green">Espécie</label>
+                {{ form.nome_especie }}
+            </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>
         </div>
+
     </div>
 
 {% endblock %}

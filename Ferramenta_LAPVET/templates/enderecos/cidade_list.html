@@ -3,26 +3,41 @@
 
 <div class="two wide column"></div>
     <div class="twelve wide column">
-    <div class="ui fluid segment">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
 
-        <h3>Lista de Cidades</h3>
+        <h2 class="ui center aligned header">Cidades Cadastradas</h2>
 
-    <a href="{% url 'new_cidade' %}" class="btn btn-primary">Cadastrar Cidade</a>
-      <br>
-    <div class="ui middle aligned divided list">
-        {% for cidade in cidades %}
+        <a href="{% url 'new_cidade' %}" class="ui right floated button">
+            Cadastrar nova cidade
+        </a>
+        <br>
+        <br>
+    <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Cidade</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for cidade in cidades %}
+                <tr>
+                    <td class="center aligned">{{ cidade.nome_cidade }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_cidade' cidade.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_cidade' cidade.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
 
-            <div class="item">
-                <div class="right floated content">
-                <a href="{% url 'delete_cidade' cidade.id %}">
-                    <i class="trash alternate icon"></i>
-                </a>
-                </div>
-                <div>
-                    <a href="{% url 'update_cidade' cidade.id %}">{{ cidade.nome_cidade }}</a>
-                </div>
-            </div>
-    {% endfor %}
+            {% endfor %}
+    </table>
     </div>
     </div>
 

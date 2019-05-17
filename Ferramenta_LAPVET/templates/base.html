@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
@@ -6,7 +6,7 @@
         <title>{% block title %} {% endblock %}</title>
     </head>
 <body>
-    <header>
+    <div class="ui inverted segment">
         <div class="ui fixed inverted menu">
             <a class="active item menu-a-color" href="{% url 'login_user' %}">
                 <span>
@@ -20,8 +20,8 @@
                     <div class="item">
                         <i class="dropdown icon"></i>
                         Endereços
-                        <div class="ui inverted menu">
-                            <a class="green item" href="{% url 'index_regiao_fed' %}">Região do país</a>
+                        <div class="ui menu">
+                            <a class="item" href="{% url 'index_regiao_fed' %}">Região do país</a>
                             <a class="item" href="{% url 'index_estado' %}">Estado</a>
                             <a class="item" href="{% url 'index_regiao_est' %}">Região do estado</a>
                             <a class="item" href="{% url 'index_cidade' %}">Cidade</a>
@@ -34,7 +34,7 @@
                         Pessoas
                         <div class="ui inverted menu">
                             <a class="green item" href="{% url 'index_proprietario' %}">Proprietário</a>
-                            <a class="item" href="#">Veterinário Responsável</a>
+                            <a class="item" href="{% url 'index_vet_resp' %}">Veterinário Responsável</a>
                             <a class="item" href="{% url 'cadastro_usuario' %}">Usuário</a>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         Animais
                         <div class="ui inverted menu">
                             <a class="green item" href="{% url 'index_especie' %}">Espécie</a>
-                            <a class="item" href="{% url 'cadastrar_animal' %}">Animal</a>
+                            <a class="item" href="{% url 'index_animal' %}">Animal</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,8 @@
                     </span>
                 </a>
             </div>
-    </header>
+        </div>
+    </div>
 
     <article class="ui stackable grid">
 
@@ -64,24 +65,25 @@
         {% endblock %}
     </article>
 
-    <footer class="ui centered middle aligned grid">
-    <div class="one wide column">
-        <a href='http://ifc.edu.br'>
-            <img class="ui image centered tiny" src="{% static "image/ifc.png" %}" alt="Logo Instituto Federal Catarinense">
-        </a>
+    <div class="ui vertical footer segment">
+        <div class="ui centered middle aligned grid">
+            <div class="one wide column">
+                <a href='http://ifc.edu.br'>
+                    <img class="ui image centered tiny" src="{% static "image/ifc.png" %}" alt="Logo Instituto Federal Catarinense">
+                </a>
+            </div>
+            <div class="eight wide column">
+                <p class="ui center aligned basic segment">
+                    <span>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Araquari</span><br>
+                    <span>Rodovia BR 280 - km 27 - Cx. Postal 21 - CEP 89245-000 - Fone (47) 3803-7200 - Fax (47) 3803-7201</span>
+                </p>
+            </div>
+            <div class="one wide column">
+                <a href='http://fabricadesoftware.ifc.edu.br'>
+                    <img class="ui image centered tiny" src="{% static "image/fabrica.jpg" %}" alt="Logo Fábrica de Software">
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="eight wide column">
-        <p class="ui center aligned basic segment">
-            <span>Instituto Federal de Educação, Ciência e Tecnologia Catarinense - Campus Araquari</span><br>
-            <span>Rodovia BR 280 - km 27 - Cx. Postal 21 - CEP 89245-000 - Fone (47) 3803-7200 - Fax (47) 3803-7201</span>
-        </p>
-    </div>
-    <div class="one wide column">
-        <a href='http://fabricadesoftware.ifc.edu.br'>
-            <img class="ui image centered tiny" src="{% static "image/fabrica.jpg" %}"
-                 alt="Logo Fábrica de Software">
-        </a>
-    </div>
-</footer>
 </body>
 </html>

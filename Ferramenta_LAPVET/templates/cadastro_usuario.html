@@ -3,7 +3,10 @@
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
-        <h1 class="color-h-green">Cadastro de usuário</h1>
+        <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar usuário</h2>
+
         <form class="ui form segment" method="post" action="{% url 'cadastro_usuario' %}">
             {% csrf_token %}
             <h4 class="ui dividing header">Informações pessoais</h4>
@@ -52,10 +55,11 @@
             </div>
             <div class="ui grid">
                 <div class="sixteen wide column">
-                    <button type="submit" class="ui green button color-button right floated">Cadastrar</button>
+                    <button type="submit" class="ui fluid green button">Cadastrar</button>
                 </div>
             </div>
         </form>
+        </div>
     </div>
 
 {% endblock %}

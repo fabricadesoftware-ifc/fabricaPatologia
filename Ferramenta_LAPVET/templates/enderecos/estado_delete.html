@@ -4,9 +4,9 @@
 
     <div class="two wide column"></div>
     <div class="twelve wide column">
-
-    <div class="ui fluid segment">
-        <h1>Tem certeza que deseja deletar {{ estado.nome_estado }} </h1>
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2>Tem certeza que deseja deletar {{ estado.nome_estado }} </h2>
 
         <form class="ui form segment"method="POST" enctype=multipart/form-data">
             {% csrf_token %}

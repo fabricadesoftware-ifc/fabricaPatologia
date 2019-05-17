@@ -1,9 +1,17 @@
 from django.forms import ModelForm
-from django.forms import forms
+from django import forms
 from laudosMedvet.models import AnimalModel
 
 
 class AnimalForm(ModelForm):
+    DATA_SEXO = (('F', 'Fêmea'), ('M', 'Macho'))
+    sexo = forms.ChoiceField(
+        choices=DATA_SEXO,
+        widget=forms.RadioSelect(attrs={
+            'class': 'radio',
+            'id': 'sexo'
+        })
+    )
 
     class Meta():
         model = AnimalModel

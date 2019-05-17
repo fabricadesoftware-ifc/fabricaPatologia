@@ -22,12 +22,14 @@ from django.conf.urls.static import static
 
 import laudosMedvet.views.especie_view
 import laudosMedvet.views.proprietario_view
+import laudosMedvet.views.veterinario_responsavel_view
 import laudosMedvet.views.rua_view
 import laudosMedvet.views.bairro_view
 import laudosMedvet.views.cidade_view
 import laudosMedvet.views.regiao_estado_view
 import laudosMedvet.views.regiao_federal_view
 import laudosMedvet.views.estado_view
+import laudosMedvet.views.animal_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,21 +38,30 @@ urlpatterns = [
     path('cadastro/usuario/', views.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
     path('', views.LoginUserView.as_view(), name="login_user"),
     path('principal/', views.PaginaPrincipal.as_view(), name='principal'),
-    path('cadastro/animal/', views.AnimalView.as_view(), name='cadastrar_animal'),
     path('cadastro/laudo/', views.LaudoView.as_view(), name='cadastrar_laudo'),
 
+    #animal
+    path('animal/', views.animal_view.index_animal, name='index_animal'),
+    path('animal/save/', views.animal_view.new_animal, name='new_animal'),
+    path('animal/update/<int:id>', views.animal_view.update_animal, name='update_animal'),
+    path('animal/delete/<int:id>', views.animal_view.delete_animal, name='delete_animal'),
 
     #Especie
-    path('animal/', views.especie_view.index_especie, name='index_especie'),
-    path('animal/save/', views.especie_view.new_especie, name='new_especie'),
-    path('animal/update/<int:id>', views.especie_view.update_especie, name='update_especie'),
-    path('animal/delete/<int:id>', views.especie_view.delete_especie, name='delete_especie'),
+    path('especie/', views.especie_view.index_especie, name='index_especie'),
+    path('especie/save/', views.especie_view.new_especie, name='new_especie'),
+    path('especie/update/<int:id>', views.especie_view.update_especie, name='update_especie'),
+    path('especie/delete/<int:id>', views.especie_view.delete_especie, name='delete_especie'),
 
     #Pessoas
     path('pessoa/proprietario/', views.proprietario_view.index_proprietario, name='index_proprietario'),
     path('pessoa/proprietario/new/', views.proprietario_view.new_proprietario, name='new_proprietario'),
     path('pessoa/proprietario/update/<int:id>', views.proprietario_view.update_proprietario, name='update_proprietario'),
     path('pessoa/proprietario/delete/<int:id>', views.proprietario_view.delete_proprietario, name='delete_proprietario'),
+
+    path('pessoa/veterinario/', views.veterinario_responsavel_view.index_vet_resp, name='index_vet_resp'),
+    path('pessoa/veterinario/new/', views.veterinario_responsavel_view.new_vet_resp, name='new_vet_resp'),
+    path('pessoa/veterinario/update/<int:id>', views.veterinario_responsavel_view.update_vet_resp, name='update_vet_resp'),
+    path('pessoa/veterinario/delete/<int:id>', views.veterinario_responsavel_view.delete_vet_resp, name='delete_vet_resp'),
 
     #enderecos
     path('endereco/federal/', views.regiao_federal_view.index_regiao_fed, name='index_regiao_fed'),
