@@ -34,4 +34,4 @@ def delete_regiao_fed(request, id):
     if request.method == 'POST':
         regiao.delete()
         return redirect('index_regiao_fed')
-    return render(request, 'enderecos/regiao_federal_delete.html')
+    return render(request, 'enderecos/regiao_federal_delete.html', {'form':regiao})

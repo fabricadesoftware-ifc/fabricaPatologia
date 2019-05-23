@@ -20,8 +20,8 @@ def new_proprietario(request):
 
 @login_required
 def update_proprietario(request, id):
-    especie = get_object_or_404(ProprietarioModel, pk=id)
-    form = ProprietarioForm(request.POST or None, request.FILES or None, instance=especie)
+    proprietario = get_object_or_404(ProprietarioModel, pk=id)
+    form = ProprietarioForm(request.POST or None, request.FILES or None, instance=proprietario)
 
     if form.is_valid():
         form.save()
@@ -30,8 +30,8 @@ def update_proprietario(request, id):
 
 @login_required
 def delete_proprietario(request, id):
-    especie = get_object_or_404(ProprietarioModel, pk=id)
+    proprietario = get_object_or_404(ProprietarioModel, pk=id)
     if request.method == 'POST':
-        especie.delete()
+        proprietario.delete()
         return redirect('index_proprietario')
-    return render(request, 'pessoas/proprietario_delete.html')
+    return render(request, 'pessoas/proprietario_delete.html', {'form':proprietario})

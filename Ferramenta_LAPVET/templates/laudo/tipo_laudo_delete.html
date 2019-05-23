@@ -6,15 +6,9 @@
         <div class="two wide column"></div>
 
     <div class="ui green fluid segment">
-
-        <a href="{% url 'index_animal' %}" class="ui left floated button">
-            Voltar
-        </a>
-        <br>
-        <br>
-        <h2>Tem certeza que deseja deletar o animal {{ form.nome }}?</h2>
-        <form method="POST" enctype=multipart/form-data">
-            {% csrf_token %}
+    <h2>Tem certeza que deseja deletar o tipo {{ form.tipo_laudo }}?</h2>
+    <form method="POST" enctype=multipart/form-data">
+        {% csrf_token %}
 
     <button class="negative fluid ui button" type="submit">Delete</button>
     </form>

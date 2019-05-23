@@ -7,12 +7,12 @@
         <div class="two wide column"></div>
 
     <div class="ui green fluid segment">
-        <h2>Tem certeza que deseja deletar {{ bairro.nome_bairro }}?</h2>
+        <h2>Tem certeza que deseja deletar o bairro {{ form.nome_bairro }}?</h2>
 
         <form class="ui form segment"method="POST" enctype=multipart/form-data">
             {% csrf_token %}
 
-        <button class="negative ui button" type="submit">Delete</button>
+        <button class="negative fluid ui button" type="submit">Delete</button>
         </form>
     </div>
 

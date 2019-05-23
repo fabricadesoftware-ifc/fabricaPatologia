@@ -34,4 +34,4 @@ def delete_bairro(request, id):
     if request.method == 'POST':
         bairro.delete()
         return redirect('index_bairro')
-    return render(request, 'enderecos/bairro_delete.html')
+    return render(request, 'enderecos/bairro_delete.html', {'form':bairro})

@@ -35,4 +35,4 @@ def delete_especie(request, id):
     if request.method == 'POST':
         especie.delete()
         return redirect('index_especie')
-    return render(request, 'animal/especie_delete.html')
+    return render(request, 'animal/especie_delete.html', {'form':especie})

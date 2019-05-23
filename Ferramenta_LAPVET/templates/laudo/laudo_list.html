@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Lista de laudos</h2>
+
+        <a href="{% url 'new_laudo' %}" class="ui right floated button">
+            Cadastrar novo laudo
+        </a>
+        <br>
+        <br>
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Número do laudo</th>
+                    <th>Número, data e tipo de requisição</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for laudo in laudos %}
+                <tr>
+                    <td class="center aligned">{{ laudo.id }}</td>
+                    <td class="center aligned">{{ laudo.id_requisicao }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_laudo' laudo.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_laudo' laudo.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}

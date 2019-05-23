@@ -34,4 +34,4 @@ def delete_estado(request, id):
     if request.method == 'POST':
         estado.delete()
         return redirect('index_estado')
-    return render(request, 'enderecos/estado_delete.html')
+    return render(request, 'enderecos/estado_delete.html', {'form':estado})

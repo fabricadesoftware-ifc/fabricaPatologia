@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar laudo</h2>
+            <a href="{% url 'index_laudo' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="field">
+                <label class="collor-label-green">Número da requisição</label>
+                {{ form.id_requisicao }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Descrição microscópica</label>
+                {{ form.descricao_microscopica }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Diagnóstico morfológico</label>
+                {{ form.diagnostico_morfologico }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Diagnóstico</label>
+                {{ form.diagnostico_final }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Comentários</label>
+                {{ form.comentarios }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Data</label>
+                {{ form.dt_laudo }}
+            </div>
+                <button class="positive ui fluid button" type="submit">Salvar</button>
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}

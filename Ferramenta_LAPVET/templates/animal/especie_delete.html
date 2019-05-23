@@ -6,11 +6,11 @@
         <div class="two wide column"></div>
 
     <div class="ui green fluid segment">
-    <h2>Tem certeza que deseja deletar {{ especie.nome_especie }} </h2>
+    <h2>Tem certeza que deseja deletar a espécie {{ form.nome_especie }}?</h2>
     <form method="POST" enctype=multipart/form-data">
         {% csrf_token %}
 
-    <button class="negative ui button" type="submit">Delete</button>
+    <button class="negative fluid ui button" type="submit">Delete</button>
     </form>
 
     </div>

@@ -1,49 +1,48 @@
+{% load staticfiles %}
 <html>
+    <head>
+        <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <title>LAPVET-Cadastro de laudos</title>
 
-<head>
-    {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>LAPVET-Cadastro de laudos</title>
+    </head>
+    <body style="background-color: #DADADA;">
+    <article class="ui middle aligned center aligned grid">
 
-</head>
-<body style="background-color: #DADADA;">
-<article class="ui middle aligned center aligned grid">
-
-    <div class="row">
-        <div class="five wide column"></div>
-        <div class="ui six wide column segment">
-            <div class="row">
-                <h2 class="ui center aligned icon header color-h-green">
-                    <i class="address card icon"></i>
-                    LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA
-                </h2>
-            </div>
-            <div class="row">
-                    <form class='ui form' method="POST" action="{% url 'login' %}">
-                        {% csrf_token %}
-                        <div class="field">
-                            <div class="ui left icon input">
-                            <i class="user icon"></i>
-                            <input type="text" name="username" placeholder="Digite o seu usuário" required/>
+        <div class="row">
+            <div class="five wide column"></div>
+            <div class="ui six wide column segment">
+                <div class="row">
+                    <h2 class="ui center aligned icon header color-h-green">
+                        <i class="address card icon"></i>
+                        LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA
+                    </h2>
+                </div>
+                <div class="row">
+                        <form class='ui form' method="POST" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            <div class="field">
+                                <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="username" placeholder="Digite o seu usuário" required/>
+                                </div>
                             </div>
-                        </div>
-                        <div class="field">
-                            <div class="ui left icon input">
-                            <i class="lock icon"></i>
-                            <input type="password" name="password" placeholder="Digite sua senha" required/>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Digite sua senha" required/>
+                                </div>
                             </div>
-                        </div>
-                        <button type='submit' class="ui submit green button fluid color-button" value='Entrar'>Entrar</button>
-                    </form>
-            </div>
-            <div class="ui basic segment">
+                            <button type='submit' class="ui submit green button fluid color-button" value='Entrar'>Entrar</button>
+                        </form>
+                </div>
+                <div class="ui basic segment">
 
 
+                </div>
             </div>
+            <div class="five wide column"></div>
         </div>
-        <div class="five wide column"></div>
-    </div>
-        </article>
-</body>
+            </article>
+    </body>
 </html>

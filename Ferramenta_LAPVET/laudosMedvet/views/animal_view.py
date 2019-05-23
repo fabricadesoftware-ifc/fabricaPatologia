@@ -7,7 +7,11 @@ from laudosMedvet.forms import AnimalForm
 
 @login_required
 def index_animal(request):
-    animais = AnimalModel.objects.all()
+    nome = request.GET.get('nome', None)
+    if nome is not None:
+        animais = AnimalModel.objects.filter(nome__icontains=nome)
+    else:
+        animais = AnimalModel.objects.order_by('nome')
     return render(request, 'animal/animal_list.html', {'animais':animais})
 
 @login_required
@@ -34,4 +38,4 @@ def delete_animal(request, id):
     if request.method == 'POST':
         animal.delete()
         return redirect('index_animal')
-    return render(request, 'animal/animal_delete.html')
+    return render(request, 'animal/animal_delete.html', {'form':animal})

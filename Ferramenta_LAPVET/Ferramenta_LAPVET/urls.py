@@ -31,6 +31,11 @@ import laudosMedvet.views.regiao_federal_view
 import laudosMedvet.views.estado_view
 import laudosMedvet.views.animal_view
 
+import laudosMedvet.views.tipo_laudo_view
+import laudosMedvet.views.imagem_view
+import laudosMedvet.views.requisicao_laudo_view
+import laudosMedvet.views.laudo_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.LoginView.as_view(), name='login'),
@@ -38,7 +43,6 @@ urlpatterns = [
     path('cadastro/usuario/', views.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
     path('', views.LoginUserView.as_view(), name="login_user"),
     path('principal/', views.PaginaPrincipal.as_view(), name='principal'),
-    path('cadastro/laudo/', views.LaudoView.as_view(), name='cadastrar_laudo'),
 
     #animal
     path('animal/', views.animal_view.index_animal, name='index_animal'),
@@ -93,5 +97,29 @@ urlpatterns = [
     path('endereco/rua/new/', views.rua_view.new_rua, name='new_rua'),
     path('endereco/rua/update/<int:id>', views.rua_view.update_rua, name='update_rua'),
     path('endereco/rua/delete/<int:id>', views.rua_view.delete_rua, name='delete_rua'),
+
+    #tipo de laudo
+    path('laudo/tipo/', views.tipo_laudo_view.index_tipo_laudo, name='index_tipo_laudo'),
+    path('laudo/tipo/new/', views.tipo_laudo_view.new_tipo_laudo, name='new_tipo_laudo'),
+    path('laudo/tipo/update/<int:id>', views.tipo_laudo_view.update_tipo_laudo, name='update_tipo_laudo'),
+    path('laudo/tipo/delete/<int:id>', views.tipo_laudo_view.delete_tipo_laudo, name='delete_tipo_laudo'),
+
+    #imagem
+    path('laudo/imagem/', views.imagem_view.index_imagem, name='index_imagem'),
+    path('laudo/imagem/new/', views.imagem_view.new_imagem, name='new_imagem'),
+    path('laudo/imagem/update/<int:id>', views.imagem_view.update_imagem, name='update_imagem'),
+    path('laudo/imagem/delete/<int:id>', views.imagem_view.delete_imagem, name='delete_imagem'),
+
+    #requisição
+    path('laudo/requisicao/', views.requisicao_laudo_view.index_requisicao, name='index_requisicao'),
+    path('laudo/requisicao/new/', views.requisicao_laudo_view.new_requisicao, name='new_requisicao'),
+    path('laudo/requisicao/update/<int:id>', views.requisicao_laudo_view.update_requisicao, name='update_requisicao'),
+    path('laudo/requisicao/delete/<int:id>', views.requisicao_laudo_view.delete_requisicao, name='delete_requisicao'),
+
+    #requisição
+    path('laudo/', views.laudo_view.index_laudo, name='index_laudo'),
+    path('laudo/new/', views.laudo_view.new_laudo, name='new_laudo'),
+    path('laudo/update/<int:id>', views.laudo_view.update_laudo, name='update_laudo'),
+    path('laudo/delete/<int:id>', views.laudo_view.delete_laudo, name='delete_laudo'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

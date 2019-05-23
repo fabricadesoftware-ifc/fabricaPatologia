@@ -34,4 +34,4 @@ def delete_cidade(request, id):
     if request.method == 'POST':
         cidade.delete()
         return redirect('index_cidade')
-    return render(request, 'enderecos/cidade_delete.html')
+    return render(request, 'enderecos/cidade_delete.html', {'form':cidade})

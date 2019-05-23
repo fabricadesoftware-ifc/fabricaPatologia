@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar requisição</h2>
+
+            <a href="{% url 'index_requisicao' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="collor-label-green">Tipo de requisição</label>
+                    {{ form.tipo_de_laudo }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Data da coleta</label>
+                    {{ form.dt_coleta }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Material enviado para exame</label>
+                    {{ form.material_enviado }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Histórico clínico</label>
+                    {{ form.historico_clinico }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Descrição macroscópica</label>
+                    {{ form.descricao_macroscopica }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Data de recebimento</label>
+                    {{ form.dt_recebimento }}
+                </div>
+                <button class="positive ui fluid button" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

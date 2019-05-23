@@ -1,15 +1,38 @@
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, redirect
-from django.views import View
+# coding:utf-8
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect, get_object_or_404
+from laudosMedvet.models import LaudoModel
+from laudosMedvet.forms import LaudoForm
 
 
-class LaudoView(View):
+@login_required
+def index_laudo(request):
+    laudos = LaudoModel.objects.all()
+    return render(request, 'laudo/laudo_list.html', {'laudos':laudos})
 
-    template = 'cadastrar_laudo.html'
+@login_required
+def new_laudo(request):
+    form = LaudoForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        form.save()
+        return redirect('index_laudo')
+    return render(request, 'laudo/laudo_new.html', {'form':form})
 
-    def get(self, request):
+@login_required
+def update_laudo(request, id):
+    laudo = get_object_or_404(LaudoModel, pk=id)
+    form = LaudoForm(request.POST or None, request.FILES or None, instance=laudo)
 
-        if not request.user.is_authenticated:
-            return HttpResponseRedirect('login_user')
-        return render(request, self.template)
+    if form.is_valid():
+        form.save()
+        return redirect('index_laudo')
+    return render(request, 'laudo/laudo_new.html', {'form':form})
 
+
+@login_required
+def delete_laudo(request, id):
+    laudo = get_object_or_404(LaudoModel, pk=id)
+    if request.method == 'POST':
+        laudo.delete()
+        return redirect('index_laudo')
+    return render(request, 'laudo/laudo_delete.html', {'form':laudo})

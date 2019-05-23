@@ -34,4 +34,4 @@ def delete_vet_resp(request, id):
     if request.method == 'POST':
         veterinario.delete()
         return redirect('index_vet_resp')
-    return render(request, 'pessoas/veterinario_resp_delete.html')
+    return render(request, 'pessoas/veterinario_resp_delete.html', {'form':veterinario})

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Lista de requisições de laudos</h2>
+
+        <a href="{% url 'new_requisicao' %}" class="ui right floated button">
+            Cadastrar nova requisiçao
+        </a>
+        <br>
+        <br>
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>cod. requisição</th>
+                    <th>Tipo de requisição</th>
+                    <th>Data do registro</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for requisicao in requisicoes %}
+                <tr>
+                    <td class="center aligned">{{ requisicao.id }}</td>
+                    <td class="center aligned">{{ requisicao.tipo_de_laudo }}</td>
+                    <td class="center aligned">{{ requisicao.dt_recebimento }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_requisicao' requisicao.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_requisicao' requisicao.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}

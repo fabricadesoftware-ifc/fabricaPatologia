@@ -34,4 +34,4 @@ def delete_rua(request, id):
     if request.method == 'POST':
         rua.delete()
         return redirect('index_rua')
-    return render(request, 'enderecos/rua_delete.html')
+    return render(request, 'enderecos/rua_delete.html', {'form':rua})
