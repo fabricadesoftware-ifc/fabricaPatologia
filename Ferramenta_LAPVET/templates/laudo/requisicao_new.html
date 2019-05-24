@@ -19,8 +19,8 @@
                     {{ form.tipo_de_laudo }}
                 </div>
                 <div class="field">
-                    <label class="collor-label-green">Data da coleta</label>
-                    {{ form.dt_coleta }}
+                    <label class="color-label-brown">Data da coleta</label>
+                    <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_coleta}}
                 </div>
                 <div class="field">
                     <label class="collor-label-green">Material enviado para exame</label>
@@ -35,8 +35,8 @@
                     {{ form.descricao_macroscopica }}
                 </div>
                 <div class="field">
-                    <label class="collor-label-green">Data de recebimento</label>
-                    {{ form.dt_recebimento }}
+                    <label class="color-label-brown">Data do recebimento</label>
+                    <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_recebimento}}
                 </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>

@@ -8,7 +8,7 @@ from laudosMedvet.models.rua_model import RuaModel
 
 class AnimalModel(models.Model):
     nome = models.CharField(max_length=100)
-    data_nasc = models.DateField('Data de nascimento')
+    data_nasc = models.DateField()
     sexo = models.CharField(max_length=1, default=None)
     raca = models.CharField(max_length=100)
     cor_pelagem = models.CharField(max_length=50)
@@ -18,9 +18,9 @@ class AnimalModel(models.Model):
     veterinario_responsavel = models.ForeignKey(VeterinarioresponsavelModel, on_delete=models.PROTECT)
     rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT)
 
-
-    def __unicode__(self):
-        return self.nome
+    class Meta:
+        verbose_name = "Animal"
+        verbose_name_plural = "Animais"
 
     def __str__(self):
-        return self.raca
+        return self.nome

@@ -12,14 +12,6 @@ class AnimalForm(ModelForm):
             'id': 'sexo'
         }),
     )
-    data_nasc = forms.DateField(
-        widget=forms.DateInput(attrs={
-            'data-format': 'dd/MM/yyyy',
-            'id': 'data_nasc',
-            'placeholder': 'Data de Nascimento...',
-            'class': 'span4',
-        }),
-    )
 
     class Meta():
         model = AnimalModel

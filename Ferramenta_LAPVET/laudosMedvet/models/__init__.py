@@ -2,10 +2,10 @@ from laudosMedvet.models.usuario_model import UsuarioModel
 from laudosMedvet.models.laudo_model import LaudoModel
 from laudosMedvet.models.tipo_laudo_model import TipoLaudoModel
 
+from laudosMedvet.models.especie_model import EspecieModel
 from laudosMedvet.models.proprietario_model import ProprietarioModel
 from laudosMedvet.models.veterinario_responsavel_model import VeterinarioresponsavelModel
 from laudosMedvet.models.animal_model import AnimalModel
-from laudosMedvet.models.especie_model import EspecieModel
 
 
 from laudosMedvet.models.regiao_federal_model import RegiaoFederalModel
