@@ -12,4 +12,4 @@ class RequisicaoLaudoModel(models.Model):
     dt_recebimento = models.DateField()
 
     def __str__(self):
-        return str(self.id) + str(self.tipo_de_laudo)
+        return str(self.id)

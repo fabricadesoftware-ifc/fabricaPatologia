@@ -7,7 +7,17 @@ from laudosMedvet.forms import LaudoForm
 
 @login_required
 def index_laudo(request):
-    laudos = LaudoModel.objects.all()
+    requisicao = request.GET.get('requisicao', None)
+    tipo = request.GET.get('tipo', None)
+    animal = request.GET.get('animal', None)
+    if requisicao is not None:
+        laudos = LaudoModel.objects.filter(id_requisicao__id__icontains=requisicao)
+    elif tipo is not None:
+        laudos = LaudoModel.objects.filter(id_requisicao__tipo_de_laudo__tipo_laudo__icontains=tipo)
+    elif animal is not None:
+        laudos = LaudoModel.objects.filter(id_requisicao__cod_animail__id__icontains=animal)
+    else:
+        laudos = LaudoModel.objects.all()
     return render(request, 'laudo/laudo_list.html', {'laudos':laudos})
 
 @login_required

@@ -5,29 +5,46 @@
         <div class="two wide column"></div>
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Lista de requisições de laudos</h2>
-
-    <form class="ui category search">
-            <div class="ui icon input">
-                <input class="prompt" name="tipo" id="tipo" type="text" placeholder="Tipo de requisição">
-                <button type="submit" class="circular ui icon button">
-                    <i class="search icon"></i></button>
+        <div class="ui form">
+            <div class="three fields">
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="tipo" id="tipo" type="text" placeholder="Tipo de requisicão...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="animal" id="animal" type="text" placeholder="Nome do animal...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="cod_animal" id="cod_animal" type="text" placeholder="Código do animal...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
             </div>
-            <div class="results"></div>
-        </form>
-    <form class="ui category search">
-            <div class="ui icon input">
-                <input class="prompt" name="animal" id="animal" type="text" placeholder="Nome do animal">
-                <button type="submit" class="circular ui icon button">
-                    <i class="search icon"></i></button>
-            </div>
-            <div class="results"></div>
-        </form>
+        </div>
+            <a href="{% url 'new_requisicao' %}" class="ui right floated button">
+                        Cadastrar nova requisiçao
+            </a>
+        <br>
+    <br>
 
-        <a href="{% url 'new_requisicao' %}" class="ui right floated button">
-            Cadastrar nova requisiçao
-        </a>
-        <br>
-        <br>
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Cod. requisição</th>

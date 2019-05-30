@@ -5,6 +5,40 @@
         <div class="two wide column"></div>
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Lista de laudos</h2>
+    <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="requisicao" id="requisicao" type="text" placeholder="Número da requisição...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="tipo" id="tipo" type="text" placeholder="Tipo do laudo...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="animal" id="animal" type="text" placeholder="Código do animal...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
         <a href="{% url 'new_laudo' %}" class="ui right floated button">
             Cadastrar novo laudo
@@ -14,7 +48,7 @@
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Número do laudo</th>
-                    <th>Número e tipo de requisição</th>
+                    <th>Número da requisição</th>
                     <th>Data do laudo</th>
                     <th>Editar</th>
                     <th>Deletar</th>

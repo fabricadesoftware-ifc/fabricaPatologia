@@ -5,14 +5,40 @@
     <div class="two wide column"></div>
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Animais Cadastrados</h2>
-        <form class="ui category search">
-            <div class="ui icon input">
-                <input class="prompt" name="especie" id="especie" type="text" placeholder="Procurar animal...">
-                <button type="submit" class="circular ui icon button">
-                    <i class="search icon"></i></button>
+          <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="especie" id="especie" type="text" placeholder="Especie...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="nome" id="nome" type="text" placeholder="Nome do animal...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="proprietario" id="proprietario" type="text" placeholder="Nome do proprietario...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="results"></div>
-        </form>
         <a href="{% url 'new_animal' %}" class="ui right floated button">
             Cadastrar novo animal
         </a>
