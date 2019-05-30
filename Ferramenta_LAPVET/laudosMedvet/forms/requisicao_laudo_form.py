@@ -5,5 +5,5 @@ from laudosMedvet.models import RequisicaoLaudoModel
 class RequisicaoLaudoForm(ModelForm):
     class Meta():
         model = RequisicaoLaudoModel
-        fields = ['tipo_de_laudo', 'dt_coleta', 'material_enviado', 'historico_clinico',
+        fields = ['cod_animail', 'tipo_de_laudo', 'dt_coleta', 'material_enviado', 'historico_clinico',
                   'descricao_macroscopica', 'dt_recebimento']

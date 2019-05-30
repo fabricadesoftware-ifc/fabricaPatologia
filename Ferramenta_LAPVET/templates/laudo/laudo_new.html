@@ -18,10 +18,6 @@
                 <label class="collor-label-green">Número da requisição</label>
                 {{ form.id_requisicao }}
             </div>
-                <div class="field">
-                    <label class="color-label-brown">Data do laudo</label>
-                    <input type="date" placeholder="dd/mm/yyyy" value={{form.data}}>
-                </div>
             <div class="field">
                 <label class="collor-label-green">Descrição microscópica</label>
                 {{ form.descricao_microscopica }}
@@ -38,6 +34,10 @@
                 <label class="collor-label-green">Comentários</label>
                 {{ form.comentarios }}
             </div>
+                <div class="field">
+                    <label class="color-label-brown">Data do laudo</label>
+                    <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_laudo}}>
+                </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>
         </div>

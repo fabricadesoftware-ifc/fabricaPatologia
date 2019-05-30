@@ -5,7 +5,7 @@
     <div class="twelve wide column">
     <div class="two wide column"></div>
         <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Cadastrar requisição</h2>
+            <h2 class="ui center aligned header">Nova requisição</h2>
 
             <a href="{% url 'index_requisicao' %}" class="ui left floated button">
             Voltar
@@ -14,6 +14,10 @@
             <br>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
+                <div class="field">
+                    <label class="collor-label-green">Código do animal</label>
+                    {{ form.cod_animail }}
+                </div>
                 <div class="field">
                     <label class="collor-label-green">Tipo de requisição</label>
                     {{ form.tipo_de_laudo }}

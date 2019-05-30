@@ -7,7 +7,14 @@ from laudosMedvet.forms import RequisicaoLaudoForm
 
 @login_required
 def index_requisicao(request):
-    requisicoes = RequisicaoLaudoModel.objects.all()
+    tipo = request.GET.get('tipo', None)
+    animal = request.GET.get('animal', None)
+    if tipo is not None:
+        requisicoes = RequisicaoLaudoModel.objects.filter(tipo_de_laudo__tipo_laudo__icontains=tipo)
+    elif animal is not None:
+        requisicoes = RequisicaoLaudoModel.objects.filter(cod_animail__nome__icontains=animal)
+    else:
+        requisicoes = RequisicaoLaudoModel.objects.all()
     return render(request, 'laudo/requisicao_list.html', {'requisicoes':requisicoes})
 
 @login_required

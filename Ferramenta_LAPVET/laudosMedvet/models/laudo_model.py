@@ -9,5 +9,5 @@ class LaudoModel(models.Model):
     comentarios = models.TextField()
     dt_laudo = models.DateField()
 
-    def __str__(self):
-        return 'Laudo nº: ' + str(self.id) + ' Data: ' + str(self.dt_laudo)
+    def __unicode__(self):
+        return self.id_requisicao

@@ -23,4 +23,5 @@ class AnimalModel(models.Model):
         verbose_name_plural = "Animais"
 
     def __str__(self):
-        return self.nome
+        return str(self.id)
+

@@ -14,7 +14,8 @@
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Número do laudo</th>
-                    <th>Número, data e tipo de requisição</th>
+                    <th>Número e tipo de requisição</th>
+                    <th>Data do laudo</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
@@ -23,6 +24,7 @@
                 <tr>
                     <td class="center aligned">{{ laudo.id }}</td>
                     <td class="center aligned">{{ laudo.id_requisicao }}</td>
+                    <td class="center aligned">{{ laudo.dt_laudo }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_laudo' laudo.id %}">
                         <i class="green edit icon"></i>

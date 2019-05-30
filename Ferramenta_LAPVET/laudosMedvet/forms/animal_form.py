@@ -1,6 +1,9 @@
+
+
 from django.forms import ModelForm
 from django import forms
 from laudosMedvet.models import AnimalModel
+from laudosMedvet.models import ProprietarioModel
 
 
 class AnimalForm(ModelForm):

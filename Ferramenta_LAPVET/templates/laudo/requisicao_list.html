@@ -6,6 +6,23 @@
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Lista de requisições de laudos</h2>
 
+    <form class="ui category search">
+            <div class="ui icon input">
+                <input class="prompt" name="tipo" id="tipo" type="text" placeholder="Tipo de requisição">
+                <button type="submit" class="circular ui icon button">
+                    <i class="search icon"></i></button>
+            </div>
+            <div class="results"></div>
+        </form>
+    <form class="ui category search">
+            <div class="ui icon input">
+                <input class="prompt" name="animal" id="animal" type="text" placeholder="Nome do animal">
+                <button type="submit" class="circular ui icon button">
+                    <i class="search icon"></i></button>
+            </div>
+            <div class="results"></div>
+        </form>
+
         <a href="{% url 'new_requisicao' %}" class="ui right floated button">
             Cadastrar nova requisiçao
         </a>
@@ -13,7 +30,8 @@
         <br>
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
-                    <th>cod. requisição</th>
+                    <th>Cod. requisição</th>
+                    <th>Cod. animal</th>
                     <th>Tipo de requisição</th>
                     <th>Data do registro</th>
                     <th>Editar</th>
@@ -23,6 +41,7 @@
                 {% for requisicao in requisicoes %}
                 <tr>
                     <td class="center aligned">{{ requisicao.id }}</td>
+                    <td class="center aligned">{{ requisicao.cod_animail }}</td>
                     <td class="center aligned">{{ requisicao.tipo_de_laudo }}</td>
                     <td class="center aligned">{{ requisicao.dt_recebimento }}</td>
                     <td class="center aligned">
