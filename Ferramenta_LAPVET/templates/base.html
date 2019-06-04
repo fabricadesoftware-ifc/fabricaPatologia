@@ -58,6 +58,14 @@
                     </div>
                 </div>
             </div>
+            <div class="ui simple dropdown item">
+                Consultas
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="{% url 'consulta_requisicao' %}">Requisição</a>
+                    <a class="item" href="{% url 'consulta_laudo' %}">Laudos</a>
+                </div>
+            </div>
             <div class="right menu">
                 <a class="active item menu-a-color" href="{% url 'logout' %}">
                     <span>

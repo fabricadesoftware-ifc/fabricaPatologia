@@ -9,13 +9,13 @@ from laudosMedvet.forms import RequisicaoLaudoForm
 def index_requisicao(request):
     tipo = request.GET.get('tipo', None)
     animal = request.GET.get('animal', None)
-    cod_animal = request.GET.get('cod_animal', None)
+    nome = request.GET.get('cod_animal', None)
     if tipo is not None:
         requisicoes = RequisicaoLaudoModel.objects.filter(tipo_de_laudo__tipo_laudo__icontains=tipo)
     elif animal is not None:
         requisicoes = RequisicaoLaudoModel.objects.filter(cod_animail__nome__icontains=animal)
-    elif cod_animal is not None:
-        requisicoes = RequisicaoLaudoModel.objects.filter(cod_animail__id__icontains=cod_animal)
+    elif nome is not None:
+        requisicoes = RequisicaoLaudoModel.objects.filter(cod_animail__proprietario__nome_proprietario__icontains=nome)
     else:
         requisicoes = RequisicaoLaudoModel.objects.all()
     return render(request, 'laudo/requisicao_list.html', {'requisicoes':requisicoes})

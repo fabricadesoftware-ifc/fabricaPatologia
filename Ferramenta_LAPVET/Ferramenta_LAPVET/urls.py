@@ -36,6 +36,8 @@ import laudosMedvet.views.imagem_view
 import laudosMedvet.views.requisicao_laudo_view
 import laudosMedvet.views.laudo_view
 
+import laudosMedvet.views.consulta_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.LoginView.as_view(), name='login'),
@@ -121,5 +123,9 @@ urlpatterns = [
     path('laudo/new/', views.laudo_view.new_laudo, name='new_laudo'),
     path('laudo/update/<int:id>', views.laudo_view.update_laudo, name='update_laudo'),
     path('laudo/delete/<int:id>', views.laudo_view.delete_laudo, name='delete_laudo'),
+
+    #consultas
+    path('consulta/requisicao/', views.consulta_view.consulta_requisicao, name='consulta_requisicao'),
+    path('consulta/laudo/', views.consulta_view.consulta_laudo, name='consulta_laudo'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
