@@ -126,6 +126,9 @@ urlpatterns = [
 
     #consultas
     path('consulta/requisicao/', views.consulta_view.consulta_requisicao, name='consulta_requisicao'),
+    path('consulta/requisicao/<int:id>', views.consulta_view.visualizar_requisicao, name='visualizar_requisicao'),
     path('consulta/laudo/', views.consulta_view.consulta_laudo, name='consulta_laudo'),
+    path('consulta/laudo/<int:id>', views.consulta_view.visualizar_laudo, name='visualizar_laudo'),
+    path('consulta/laudo/imagens/<int:id>', views.consulta_view.visualizar_imagens, name='visualizar_imagens'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

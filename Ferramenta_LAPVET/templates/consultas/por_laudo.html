@@ -57,7 +57,11 @@
                     <td class="center aligned">{{ consulta.id_requisicao.id }}</td>
                     <td class="center aligned">{{ consulta.id_requisicao.tipo_de_laudo }}</td>
                     <td class="center aligned">{{ consulta.dt_laudo }}</td>
-                    <td class="center aligned"><i class="file alternate icon"></i></td>
+                    <td class="center aligned">
+                        <a href="{% url 'visualizar_laudo' consulta.id %}">
+                            <i class="file alternate icon"></i>
+                        </a>
+                    </td>
 
                 </tr>
                 </tbody>

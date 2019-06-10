@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <div class="ui vertical header segment">
+        <div class="ui centered middle aligned grid">
+            <div class="three wide column">
+                <img class="ui image centered tiny" src="{% static "image/ifc.png" %}" alt="Logo Instituto Federal Catarinense">
+            </div>
+            <div class="eight wide column">
+                <p class="ui center aligned basic segment">
+                    <span>
+                        INSTITUTO FEDERAL CATARINENSE<br>
+                        CAMPUS ARAQUARI<br>
+                        LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA
+                    </span>
+                </p>
+            </div>
+            <div class="three wide column">
+               <div class="card">
+                   <div class="content">
+                       <div class="ui attached segment">
+                           <div class="center aligned header">
+                               RG HV n°
+                           </div>
+                           <div class="center aligned content">
+                               {{ requisicao.cod_animail.especie.nome_especie }}
+                               {{ requisicao.cod_animail }}
+                               {{ requisicao.id }}
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+        <h3 class="ui center aligned header">
+            REQUISIÇÃO DE {{ requisicao.tipo_de_laudo.tipo_laudo.upper }}
+        </h3>
+
+        <h4 class="ui top attached header">IDENTIFICAÇÃO</h4>
+        <div class="ui attached segment">
+            <p>
+                Nome do animal: {{ requisicao.cod_animail.nome }}
+                Espécie: {{ requisicao.cod_animail.especie.nome_especie }}
+                Raça: {{ requisicao.cod_animail.raca }}<br>
+                Sexo: {{ requisicao.cod_animail.sexo }}
+                Data de nascimento: {{ requisicao.cod_animail.data_nasc }}
+                Pelagem: {{ requisicao.cod_animail.cor_pelagem }}
+            </p>
+            <p>
+                Proprietário: {{ requisicao.cod_animail.proprietario.nome_proprietario }}
+                Telefone fixo: {{ requisicao.cod_animail.proprietario.telefone }}
+                Celular: {{ requisicao.cod_animail.proprietario.celular }}<br>
+                Endereço: Rua {{ requisicao.cod_animail.proprietario.rua }} Bairro
+                {{ requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro }}, Cidade
+                {{ requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}, Estado
+                {{ requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_regiao_estado.id_estado.nome_estado }}
+            </p>
+            <p>
+                Veterinário Responsável: {{ requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
+                Telefone: {{ requisicao.cod_animail.veterinario_responsavel.telefone }}
+                CRMV: {{ requisicao.cod_animail.veterinario_responsavel.crmv }}
+            </p>
+            <p>
+                Data da coleta: {{ requisicao.dt_coleta }}
+            </p>
+        </div>
+        <h4 class="ui attached header">MATERIAL ENVIADO PARA EXAME</h4>
+        <div class="ui attached segment">
+            <p>
+                {{ requisicao.material_enviado }}
+            </p>
+        </div>
+        <h4 class="ui attached header">HISTÓRICO CLÍNICO</h4>
+        <div class="ui attached segment">
+            <p>
+                {{ requisicao.historico_clinico }}
+            </p>
+        </div>
+        <h4 class="ui attached header">DESCRIÇÃO MACROSCÓPICA</h4>
+        <div class="ui attached segment">
+            <p>
+                {{ requisicao.descricao_macroscopica }}
+            </p>
+        </div>
+        <h4 class="ui attached header">PARA USO DO LAPVET</h4>
+        <div class="ui attached segment">
+            <p>
+                Número do registro: {{ requisicao.id }}<br>
+                Data do recebimento: {{ requisicao.dt_recebimento }}<br>
+                Responsável pelo recebimento:
+            </p>
+        </div>
+
+    </div>
+    </div>
+
+{% endblock %}

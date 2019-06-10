@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <div class="ui vertical header segment">
+        <div class="ui centered middle aligned grid">
+            <div class="three wide column">
+                <img class="ui image centered tiny" src="{% static "image/ifc.png" %}" alt="Logo Instituto Federal Catarinense">
+            </div>
+            <div class="eight wide column">
+                <p class="ui center aligned basic segment">
+                    <span>
+                        INSTITUTO FEDERAL CATARINENSE<br>
+                        CAMPUS ARAQUARI<br>
+                        LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA
+                    </span>
+                </p>
+            </div>
+            <div class="three wide column">
+               <div class="card">
+                   <div class="content">
+                       <div class="ui attached segment">
+                           <div class="center aligned header">
+                               RG HV n°
+                           </div>
+                           <div class="center aligned content">
+                               {{ imagens.id_laudo.id_requisicao.cod_animail.especie.nome_especie }}
+                               {{ imagens.id_laudo.id_requisicao.cod_animail }}
+                               {{ imagens.id_laudo.id }}
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+        <div class="ui tabular menu">
+            <a class="item" href="{% url 'visualizar_laudo' imagens.id_laudo %}">Laudo</a>
+            <a class="item active">Imagens</a>
+        </div>
+        <h3 class="ui center aligned header">
+            LAUDO DE {{ imagens.id_laudo.id_requisicao.tipo_de_laudo.tipo_laudo.upper }}
+        </h3>
+
+        <h4 class="ui top attached header">BANCO DE IMAGENS</h4>
+        <div class="ui attached segment">
+            {% for img in imagens %}
+            <p>
+                {{ imagens.nome_imagem }}
+                <img src="{{ MEDIA_URL }}{{ imagens.imagem.url }}">
+
+
+            </p>
+            {% endfor %}
+
+        </div>
+
+
+    </div>
+    </div>
+
+{% endblock %}
