@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/laudosMedvet/views/consulta_view.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
-              <caret line="61" column="52" lean-forward="true" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
               <folding>
                 <element signature="e#15#72#0" expanded="true" />
               </folding>
@@ -206,11 +206,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="205" />
-    <option name="y" value="112" />
-    <option name="width" value="764" />
-    <option name="height" value="818" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1377" />
+    <option name="height" value="905" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -389,12 +389,12 @@
       <workItem from="1559837229633" duration="12770000" />
       <workItem from="1559850897380" duration="376000" />
       <workItem from="1559932792524" duration="2715000" />
-      <workItem from="1560184851846" duration="2509000" />
+      <workItem from="1560184851846" duration="2890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296586000" />
+    <option name="totallyTimeSpent" value="296967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,7 +406,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1377" height="905" extended-state="7" />
+    <frame x="64" y="-4" width="1377" height="905" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1918736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -810,7 +810,7 @@
     <entry file="file://$PROJECT_DIR$/laudosMedvet/views/consulta_view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="61" column="52" lean-forward="true" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
           <folding>
             <element signature="e#15#72#0" expanded="true" />
           </folding>
