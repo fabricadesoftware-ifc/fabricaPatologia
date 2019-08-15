@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Busca por laudos</h2>
+        <div class="ui form">
+                <div class="field">
+                    <form>
+                        <select name="por_sistema">
+                            <option>
+                                --Selecione o sistema--
+                            </option>
+                            {% for sistema in lista_sistemas %}
+                                <option value="{{ sistema }}">
+                                    {{ sistema }}
+                                </option>
+                            {% endfor %}
+                            </select>
+                        <button type="submit" class="ui green fluid icon button">
+                            <i class="search icon"></i>
+                            Buscar</button>
+                        <div class="results"></div>
+                    </form>
+                    <div class="field">
+                        <form>
+                            <select name="por_especie">
+                                <option>
+                                    --Selecione a espécie--
+                                </option>
+                                {% for especie in especies %}
+                                    <option value="{{ especie.nome_especie }}">
+                                        {{ especie.nome_especie }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit" class="ui green fluid icon button">
+                                <i class="search icon"></i>
+                            Buscar</button>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form>
+                            <select name="por_raca">
+                                <option>
+                                    --Selecione a raça--
+                                </option>
+                                {% for raca in lista_raca %}
+                                    <option value="{{ raca.nome_raca }}">
+                                        {{ raca.nome_raca }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit" class="ui green fluid icon button">
+                                <i class="search icon"></i>
+                            Buscar</button>
+                            <div class="results"></div>
+                        </form>
+                    <form>
+                    <button type="submit" class="ui fluid icon button">
+                        <i class="search icon"></i>
+                        Mostrar todos
+                    </button>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Resultados</h2>
+        <div class="ui list">
+            {% for consulta in laudos %}
+            <div class="item">
+            <div class="content">
+                    <a><font style="vertical-align: inherit;">
+                        <i class="plus icon"></i>
+                        <font style="vertical-align: inherit;">
+                            {{ consulta.id_requisicao.cod_animail.nome }},
+                             {{ consulta.id_requisicao.tipo_de_laudo.tipo_laudo }},
+                            RGHV: {{ consulta.id_requisicao.rghv }},
+                            Etiologia: {{ consulta.etiologia }},
+                             Sistemas: {{ consulta.sistemas }},
+                             {{ consulta.id_requisicao.cod_animail.raca.id_especie.nome_especie }},
+                             {{ consulta.id_requisicao.cod_animail.raca.nome_raca }}
+                        </font>
+                    </font>
+                        </a>
+                </div>
+                </div>
+             {% endfor %}
+        </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

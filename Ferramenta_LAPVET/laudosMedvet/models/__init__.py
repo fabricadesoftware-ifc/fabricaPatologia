@@ -17,3 +17,4 @@ from laudosMedvet.models.rua_model import RuaModel
 
 from laudosMedvet.models.imagem_model import ImagensModel
 from laudosMedvet.models.requisicao_laudo_model import RequisicaoLaudoModel
+from laudosMedvet.models.raca_model import RacaModel

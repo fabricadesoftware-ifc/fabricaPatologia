@@ -21,6 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 import laudosMedvet.views.especie_view
+import laudosMedvet.views.raca_view
 import laudosMedvet.views.proprietario_view
 import laudosMedvet.views.veterinario_responsavel_view
 import laudosMedvet.views.rua_view
@@ -37,6 +38,11 @@ import laudosMedvet.views.requisicao_laudo_view
 import laudosMedvet.views.laudo_view
 
 import laudosMedvet.views.consulta_view
+
+import laudosMedvet.views.gera_pdf_requisicao_view
+import laudosMedvet.views.gera_pdf_laudo_view
+
+import laudosMedvet.views.filtro_laudos_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -57,6 +63,12 @@ urlpatterns = [
     path('especie/save/', views.especie_view.new_especie, name='new_especie'),
     path('especie/update/<int:id>', views.especie_view.update_especie, name='update_especie'),
     path('especie/delete/<int:id>', views.especie_view.delete_especie, name='delete_especie'),
+
+    #Raça
+    path('raca/', views.raca_view.index_raca, name='index_raca'),
+    path('raca/save/', views.raca_view.new_raca, name='new_raca'),
+    path('raca/update/<int:id>', views.raca_view.update_raca, name='update_raca'),
+    path('raca/delete/<int:id>', views.raca_view.delete_raca, name='delete_raca'),
 
     #Pessoas
     path('pessoa/proprietario/', views.proprietario_view.index_proprietario, name='index_proprietario'),
@@ -129,6 +141,13 @@ urlpatterns = [
     path('consulta/requisicao/<int:id>', views.consulta_view.visualizar_requisicao, name='visualizar_requisicao'),
     path('consulta/laudo/', views.consulta_view.consulta_laudo, name='consulta_laudo'),
     path('consulta/laudo/<int:id>', views.consulta_view.visualizar_laudo, name='visualizar_laudo'),
-    path('consulta/laudo/imagens/<int:id>', views.consulta_view.visualizar_imagens, name='visualizar_imagens'),
+    path('consulta/laudo/imag/<int:id>', views.consulta_view.visualizar_imagens_por_laudo, name='visualizar_imagens_por_laudo'),
+
+    #pdf
+    path('gera-pdf-requisicao/<int:id>', views.gera_pdf_requisicao_view.gera_requisicao_pdf, name='gera_requisicao_pdf'),
+    path('gera-pdf-laudo/<int:id>', views.gera_pdf_laudo_view.gera_laudo_pdf, name='gera_laudo_pdf'),
+
+    #pesquisa
+    path('procura/', views.filtro_laudos_view.lista_laudos, name="procura_laudos"),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

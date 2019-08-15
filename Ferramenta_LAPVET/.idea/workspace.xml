@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="add7e6dc-d159-45ca-a64f-0ba653010259" name="Default Changelist" comment="" />
+    <list default="true" id="add7e6dc-d159-45ca-a64f-0ba653010259" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Ferramenta_LAPVET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ferramenta_LAPVET.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leia-me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Leia-me.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0002_requisicaolaudomodel_rghv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0003_auto_20190704_1417.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0004_auto_20190704_1427.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0005_auto_20190704_1432.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0006_auto_20190704_1455.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/animal_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/animal_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/consulta_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/consulta_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_requisicao_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_requisicao_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/principal_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/principal_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas/laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/laudo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas/por_laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/por_laudo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/laudo/imagem_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/imagem_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/laudo/laudo_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/laudo_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login_user.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,95 +82,14 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laudosMedvet/views/animal_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-              <folding>
-                <element signature="e#15#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="129" column="87" selection-start-line="129" selection-start-column="87" selection-end-line="129" selection-end-column="87" />
-              <folding>
-                <element signature="e#641#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laudosMedvet/views/consulta_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-              <folding>
-                <element signature="e#15#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laudosMedvet/models/imagem_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/consultas/imagens.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/consultas/laudo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -149,145 +98,20 @@
       <find>footer</find>
     </findStrings>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/laudosMedvet/views/regiao_federal_view.py" />
-        <option value="$PROJECT_DIR$/templates/enderecos/regiao_federal_delete.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/veterinario_responsavel_model.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/imagem_delete.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/imagem_model.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/imagem_form.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/imagem_list.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/imagem_view.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/imagem_new.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/requisicao_laudo_model.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/requisicao_delete.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/tipo_laudo_form.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/tipo_laudo_delete.html" />
-        <option value="$PROJECT_DIR$/templates/laudo/tipo_laudo_new.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/tipo_laudo_view.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/laudo_delete.html" />
-        <option value="$PROJECT_DIR$/templates/animal/especie_delete.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/regiao_federal_model.py" />
-        <option value="$PROJECT_DIR$/templates/login_user.html" />
-        <option value="$PROJECT_DIR$/templates/animal/animal_delete.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/tipo_laudo_list.html" />
-        <option value="$PROJECT_DIR$/templates/pessoas/proprietario_new.html" />
-        <option value="$PROJECT_DIR$/templates/laudo/laudo_new.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/requisicao_laudo_form.py" />
-        <option value="$PROJECT_DIR$/templates/animal/animal_new.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/forms/animal_form.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/animal_model.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/requisicao_new.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/animal_view.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/laudo_view.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/laudo_list.html" />
-        <option value="$PROJECT_DIR$/admin.py" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/requisicao_laudo_view.py" />
-        <option value="$PROJECT_DIR$/templates/laudo/requisicao_list.html" />
-        <option value="$PROJECT_DIR$/templates/consultas/por_animal.html" />
-        <option value="$PROJECT_DIR$/templates/animal/animal_list.html" />
-        <option value="$PROJECT_DIR$/templates/consultas/por_requisição.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/consultas/por_laudo.html" />
-        <option value="$PROJECT_DIR$/templates/consultas/requisicao.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" />
-        <option value="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" />
-        <option value="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" />
-        <option value="$PROJECT_DIR$/templates/consultas/laudo.html" />
-        <option value="$PROJECT_DIR$/laudosMedvet/views/consulta_view.py" />
-        <option value="$PROJECT_DIR$/templates/consultas/imagens.html" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1377" />
-    <option name="height" value="905" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="laudosMedvet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="laudosMedvet" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="laudosMedvet" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="animal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="consultas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ferramenta_LAPVET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="laudo" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1P9G1IUvPSGZmrbh2N10Z3WqGFl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PycharmProjects/patologiaveterinaria" />
+    <property name="last_opened_file_path" value="$USER_HOME$/SEGUNDO_SEMESTRE/Dev_web2_1/projeto_django" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -311,7 +135,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.Ferramenta_LAPVET">
+    <configuration name="matplotlib_2grau" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Ferramenta_LAPVET" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../untitled1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../untitled1/matplotlib_2grau.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Ferramenta_LAPVET" type="Python.DjangoServer" factoryName="Django server">
       <module name="Ferramenta_LAPVET" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,6 +182,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.matplotlib_2grau" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -389,14 +240,54 @@
       <workItem from="1559837229633" duration="12770000" />
       <workItem from="1559850897380" duration="376000" />
       <workItem from="1559932792524" duration="2715000" />
-      <workItem from="1560184851846" duration="2890000" />
+      <workItem from="1560184851846" duration="5057000" />
+      <workItem from="1560190994673" duration="4521000" />
+      <workItem from="1560270046241" duration="10763000" />
+      <workItem from="1560354537452" duration="987000" />
+      <workItem from="1560362081497" duration="479000" />
+      <workItem from="1560363198354" duration="3038000" />
+      <workItem from="1560425408951" duration="584000" />
+      <workItem from="1560443165593" duration="4118000" />
+      <workItem from="1560521583359" duration="135000" />
+      <workItem from="1560530485676" duration="9361000" />
+      <workItem from="1560788560718" duration="12928000" />
+      <workItem from="1560872911830" duration="12892000" />
+      <workItem from="1561397031057" duration="8227000" />
+      <workItem from="1561478550019" duration="3762000" />
+      <workItem from="1561485171368" duration="4905000" />
+      <workItem from="1561547086783" duration="10000" />
+      <workItem from="1561564866728" duration="4854000" />
+      <workItem from="1561576600585" duration="804000" />
+      <workItem from="1561632506638" duration="15000" />
+      <workItem from="1561653412116" duration="10503000" />
+      <workItem from="1561664442116" duration="1530000" />
+      <workItem from="1561737286758" duration="4807000" />
+      <workItem from="1561742605108" duration="1576000" />
+      <workItem from="1561744457100" duration="7263000" />
+      <workItem from="1561999955992" duration="10567000" />
+      <workItem from="1562162570989" duration="107000" />
+      <workItem from="1562168602860" duration="2516000" />
+      <workItem from="1562176015240" duration="2696000" />
+      <workItem from="1562179154212" duration="4650000" />
+      <workItem from="1562257221071" duration="11375000" />
+      <workItem from="1562341892032" duration="1260000" />
+      <workItem from="1562345690458" duration="59000" />
+      <workItem from="1562352935691" duration="1064000" />
+      <workItem from="1564675305267" duration="9237000" />
+      <workItem from="1564761286355" duration="886000" />
+      <workItem from="1564762361672" duration="3216000" />
+      <workItem from="1565192551782" duration="12249000" />
+      <workItem from="1565278686457" duration="3497000" />
+      <workItem from="1565365234977" duration="6031000" />
+      <workItem from="1565627620035" duration="11646000" />
+      <workItem from="1565712320204" duration="8550000" />
+      <workItem from="1565780965840" duration="641000" />
+      <workItem from="1565800098989" duration="10600000" />
+      <workItem from="1565888029946" duration="5449000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296967000" />
-  </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -405,424 +296,23 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1377" height="905" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1918736" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49962378" weight="0.39975095" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003762" side_tool="true" weight="0.39975095" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22665006" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32876712" />
-      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32876712" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3295711" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3115124" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2864259" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32876712" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3295711" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/animal/especie_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animal/especie_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/laudo_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/forms/regiao_federal_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/regiao_federal_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pessoas/proprietario_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/usuario_model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/especie_view.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/bairro_view.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/tipo_laudo_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="73" lean-forward="true" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/laudo_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="78" lean-forward="true" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/forms/requisicao_laudo_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animal/animal_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/forms/animal_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#2#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/especie_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/tipo_laudo_model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/laudo_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/admin.py" />
-    <entry file="file://$PROJECT_DIR$/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/requisicao_laudo_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#15#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/requisicao_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="114" selection-start-line="32" selection-start-column="114" selection-end-line="32" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/por_animal.html" />
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/proprietario_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/animal_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cadastrar_laudo.html" />
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/laudo_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
-          <folding>
-            <element signature="e#15#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animal/animal_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cadastro_usuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/principal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/animal/animal_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/por_requisição.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="60" column="28" selection-start-line="58" selection-start-column="23" selection-end-line="60" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/requisicao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/laudo_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/por_laudo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/imagem_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/imagem_new.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/animal_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-          <folding>
-            <element signature="e#15#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="129" column="87" selection-start-line="129" selection-start-column="87" selection-end-line="129" selection-end-column="87" />
-          <folding>
-            <element signature="e#641#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ferramenta_LAPVET/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/laudo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/laudo/requisicao_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/models/imagem_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laudosMedvet/views/consulta_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding>
-            <element signature="e#15#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consultas/imagens.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Ferramenta_LAPVET$matplotlib_2grau.coverage" NAME="matplotlib_2grau Coverage Results" MODIFIED="1560425722539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../untitled1" />
   </component>
 </project>

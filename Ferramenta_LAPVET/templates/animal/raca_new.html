@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastrar raça</h2>
+            <a href="{% url 'index_raca' %}" class="ui left floated button">
+            Voltar
+            </a>
+            <br>
+            <br>
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="field">
+                <label class="collor-label-green">Espécie</label>
+                {{ form.id_especie }}
+            </div>
+            <div class="field">
+                <label class="collor-label-green">Raça</label>
+                {{ form.nome_raca }}
+            </div>
+                <button class="positive ui fluid button" type="submit">Salvar</button>
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -11,7 +11,7 @@ def index_animal(request):
     nome = request.GET.get('nome', None)
     proprietario = request.GET.get('proprietario', None)
     if especie is not None:
-        animais = AnimalModel.objects.filter(especie__nome_especie__icontains=especie)
+        animais = AnimalModel.objects.filter(raca__id_especie__nome_especie__icontains=especie)
     elif nome is not None:
         animais = AnimalModel.objects.filter(nome__icontains=nome)
     elif proprietario is not None:

@@ -16,3 +16,56 @@ ETAPAS:
 * Desenvolvimento dos formulários necessários para armazenar os dados
 * Correção de erros
 * Reuniões periódicas para troca de conhecimentos interdisciplinares
+
+
+lembretes:
+
+** chamar scaner para guardar imagem FICHA CLÍNICA
+
+
+** cadastar sistemas no model para pesquisa.
+
+ sistemas = (('Cardiovascular', 'Cardiovascular'),
+                     ('Pulmonar', 'Pulmonar'),
+                     ('Digestivo', 'Digestivo'),
+                     ('Endócrino', 'Endócrino'),
+                     ('Nervoso', 'Nervoso'),
+                     ('Reprodutivo', 'Reprodutivo'),
+                     ('Muscular', 'Muscular'),
+                     ('Esquelético', 'Esquelético'),
+                     ('Tegumentar', 'Tegumentar'),
+                     ('Excretor', 'Excretor'),
+                     )
+
+** FAZER PÁGINA DE PESQUIZA SEMELHANTE AO SITE VSPO
+
+
+--------------FERRAMENTAS------------------------------------
+
+ entry.objects.filter(body_text__search='exemplo')
+ **BUSCA DENTRO DO CORPO DO TEXTO
+FONTE: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
+
+exemplo:
+
+<form>
+        <input type="checkbox" name="busca">
+        <label>
+            {{ laudo.id_requisicao.cod_animail.raca.id_especie.nome_especie }}
+        </label>
+    </form>
+
+    exemplo uso select para uso de consulta no banco de dados:
+<div class="field">
+    <form>
+        <select name="cars">                <--- name é o parametro usado pela view
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+            <button type="submit" class="circular ui icon button">
+                <i class="search icon"></i></button>
+        <div class="results"></div>
+    </form>
+</div>

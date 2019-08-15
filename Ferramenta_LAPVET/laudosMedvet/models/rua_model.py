@@ -7,5 +7,6 @@ class RuaModel(models.Model):
     cep = models.CharField(max_length=40)
     id_bairro = models.ForeignKey(BairroModel, on_delete=models.PROTECT)
 
+
     def __str__(self):
         return self.nome_rua

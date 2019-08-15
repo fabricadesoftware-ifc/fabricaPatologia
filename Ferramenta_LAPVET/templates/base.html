@@ -43,6 +43,7 @@
                         Animais
                         <div class="ui inverted menu">
                             <a class="green item" href="{% url 'index_especie' %}">Espécie</a>
+                            <a class="green item" href="{% url 'index_raca' %}">Raça</a>
                             <a class="item" href="{% url 'index_animal' %}">Animal</a>
                         </div>
                     </div>
@@ -62,6 +63,7 @@
                 Consultas
                 <i class="dropdown icon"></i>
                 <div class="menu">
+                    <a class="item" href="{% url 'procura_laudos' %}">Procurar</a>
                     <a class="item" href="{% url 'consulta_requisicao' %}">Requisição</a>
                     <a class="item" href="{% url 'consulta_laudo' %}">Laudos</a>
                 </div>

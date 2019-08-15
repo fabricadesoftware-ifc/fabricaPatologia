@@ -17,3 +17,4 @@ from laudosMedvet.forms.imagem_form import ImagemForm
 from laudosMedvet.forms.tipo_laudo_form import TipoLaudoForm
 from laudosMedvet.forms.requisicao_laudo_form import RequisicaoLaudoForm
 from laudosMedvet.forms.laudo_form import LaudoForm
+from laudosMedvet.forms.raca_form import RacaForm

@@ -46,6 +46,7 @@
                     <th>Tipo de laudo</th>
                     <th>Data do recebimento</th>
                     <th>Visualizar requisição</th>
+                    <th>Gerar PDF</th>
 
                 </tr></thead>
                 <tbody>
@@ -57,7 +58,12 @@
                     <td class="center aligned">{{ consulta.dt_recebimento }}</td>
                     <td class="center aligned">
                         <a href="{% url 'visualizar_requisicao' consulta.id %}">
-                            <i class="file alternate icon"></i>
+                            <i class="large green file alternate icon"></i>
+                        </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'gera_requisicao_pdf' consulta.id %}">
+                            <i class="large green file pdf icon"></i>
                         </a>
                     </td>
 

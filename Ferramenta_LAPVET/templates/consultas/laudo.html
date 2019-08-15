@@ -24,7 +24,7 @@
                    <div class="content">
                        <div class="ui attached segment">
                            <div class="center aligned header">
-                               RG HV n°
+                               RG HV n°:
                            </div>
                            <div class="center aligned content">
                                {{ laudo.id_requisicao.cod_animail.especie.nome_especie }}
@@ -37,91 +37,158 @@
             </div>
         </div>
     </div>
-        <div class="ui tabular menu">
-            <a class="item active">Laudo</a>
-            <a class="item" href="{% url 'visualizar_imagens' laudo.id %}">Imagens </a>
+        <div class="ui center aligned header">
+            <a href="{% url 'visualizar_imagens_por_laudo' laudo.id %}" class="ui green fluid button">
+                Visualizar imagens
+                <i class="chevron right icon"></i>
+            </a>
         </div>
-        <h3 class="ui center aligned header">
-            LAUDO DE {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo.upper }}
-        </h3>
+        <div class="ui centered grid">
 
-        <h4 class="ui top attached header">IDENTIFICAÇÃO</h4>
+        </div>
+        <h3 class="ui center aligned top attached header">
+            LAUDO DE {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo.upper }}<br>
+            {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo }}-{{ laudo.id }} {{ laudo.dt_laudo }}
+
+        </h3>
         <div class="ui attached segment">
             <p>
-                Nome do animal: {{ laudo.id_requisicao.cod_animail.nome }}
-                Espécie: {{ laudo.id_requisicao.cod_animail.especie.nome_especie }}
-                Raça: {{ laudo.id_requisicao.cod_animail.raca }}<br>
-                Sexo: {{ laudo.id_requisicao.cod_animail.sexo }}
-                Data de nascimento: {{ laudo.id_requisicao.cod_animail.data_nasc }}
-                Pelagem: {{ laudo.id_requisicao.cod_animail.cor_pelagem }}
-            </p>
-            <p>
-                Proprietário: {{ laudo.id_requisicao.cod_animail.proprietario.nome_proprietario }}
-                Telefone fixo: {{ laudo.id_requisicao.cod_animail.proprietario.telefone }}
-                Celular: {{ laudo.id_requisicao.cod_animail.proprietario.celular }}<br>
-                Endereço: Rua {{ laudo.id_requisicao.cod_animail.proprietario.rua }} Bairro
+            <div class="ui relaxed grid">
+            <div class="eight wide column">
+                <b>Nome do animal: </b>{{ laudo.id_requisicao.cod_animail.nome }}
+            </div>
+            <div class="four wide column">
+                <b>Espécie: </b>{{ laudo.id_requisicao.cod_animail.especie.nome_especie }}
+            </div>
+            <div class="four wide column">
+                <b>Raça: </b>{{ laudo.id_requisicao.cod_animail.raca }}
+            </div>
+            <div class="eight wide column">
+                <b>Data de nascimento: </b>{{ laudo.id_requisicao.cod_animail.data_nasc }}
+            </div>
+            <div class="four wide column">
+                <b>Pelagem: </b>{{ laudo.id_requisicao.cod_animail.cor_pelagem }}
+            </div>
+            <div class="four wide column">
+                <b>Sexo: </b>{{ laudo.id_requisicao.cod_animail.sexo }}
+            </div>
+            <div class="eight wide column">
+                <b>Proprietário: </b>{{ laudo.id_requisicao.cod_animail.proprietario.nome_proprietario }}
+            </div>
+            <div class="four wide column">
+                <b>Telefone fixo: </b>{{ laudo.id_requisicao.cod_animail.proprietario.telefone }}
+            </div>
+            <div class="four wide column">
+                <b>Celular: </b>{{ laudo.id_requisicao.cod_animail.proprietario.celular }}
+            </div>
+            <div class="twelve wide column">
+                <b>Endereço: </b>Rua {{ laudo.id_requisicao.cod_animail.proprietario.rua }} Bairro
                 {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro }}, Cidade
-                {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}, Estado
+                {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}
+            </div>
+            <div class="four wide column">
+                <b>Estado</b>
                 {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_regiao_estado.id_estado.nome_estado }}
-            </p>
-            <p>
-                Veterinário Responsável: {{ laudo.id_requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
-                Telefone: {{ laudo.id_requisicao.cod_animail.veterinario_responsavel.telefone }}
-                CRMV: {{ laudo.id_requisicao.cod_animail.veterinario_responsavel.crmv }}
-            </p>
-            <p>
-                Data da coleta: {{ laudo.id_requisicao.dt_coleta }}
-            </p>
+            </div>
+            <div class="eight wide column">
+                <b>Veterinário Responsável: </b>{{ laudo.id_requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
+            </div>
+            <div class="four wide column">
+                <b>Telefone: </b>{{ laudo.id_requisicao.cod_animail.veterinario_responsavel.telefone }}
+            </div>
+            <div class="four wide column">
+                <b>CRMV: </b>{{ laudo.id_requisicao.cod_animail.veterinario_responsavel.crmv }}
+            </div>
         </div>
-        <h4 class="ui attached header">MATERIAL ENVIADO PARA EXAME</h4>
+        </div>
+            </p>
+        <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
             <p>
-                {{ laudo.id_requisicao.material_enviado }}
+                {{ laudo.id_requisicao.material_enviado }}<br>
+                <br>
+                <b>Data da coleta: </b>{{ laudo.id_requisicao.dt_coleta }}
             </p>
         </div>
-        <h4 class="ui attached header">HISTÓRICO CLÍNICO</h4>
+        <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
             <p>
                 {{ laudo.id_requisicao.historico_clinico }}
             </p>
         </div>
-        <h4 class="ui attached header">DESCRIÇÃO MACROSCÓPICA</h4>
+        <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p>
                 {{ laudo.id_requisicao.descricao_macroscopica }}
             </p>
         </div>
-        <h4 class="ui attached header">DESCRIÇÃO MICROSCÓPICA</h4>
+        <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MICROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p>
             {{ laudo.descricao_microscopica }}
             </p>
         </div>
-        <h4 class="ui attached header">DIAGNÓSTICO MORFOLÓGICO</h4>
+    <h4 class="ui center aligned attached header"><u>SISTEMA</u></h4>
+        <div class="ui attached segment">
+            <p>
+            {{ laudo.sistemas }}
+            </p>
+        </div>
+        <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO MORFOLÓGICO</u></h4>
         <div class="ui attached segment">
             <p>
             {{ laudo.diagnostico_morfologico }}
             </p>
         </div>
-        {% if laudo.diagnostico_final is not null %}
-            <h4 class="ui attached header">DIAGNÓSTICO</h4>
+        {% if laudo.id_requisicao.tipo_de_laudo.tipo_laudo == "Necropsia" %}
+            <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO</u></h4>
             <div class="ui attached segment">
                 <p>
                     {{ laudo.diagnostico_final }}
                 </p>
             </div>
         {% endif %}
-        <h4 class="ui attached header">COMENTÁRIOS</h4>
+        <h4 class="ui center aligned attached header"><u>COMENTÁRIOS</u></h4>
         <div class="ui attached segment">
             <p>
-            {{ laudo.diagnostico_morfologico }}
+            {{ laudo.comentarios }}
             </p>
         </div>
-    <div class="ui center aligned">
+        <p>
+        <br>
+        <div class="ui centered grid">
         Araquari, {{ laudo.dt_laudo }}
-    </div>
+        </div>
+        <div class="ui right aligned grid">
+            <div class="left floated right aligned six wide column">
+                <div class="ui center aligned segment">
+                    <b>
+                        Nome + formação<br>
+                        Patologista Veterinário<br>
+                        CRMV-SC XXXXX
+                    </b>
+                </div>
+            </div>
+            <div class="right floated left aligned six wide column">
+                <div class="ui center aligned segment">
+                    <b>
+                        Nome do técnico
 
+                    </b>
+                </div>
+            </div>
+            </p>
+        </div>
     </div>
+    <a href="{% url 'consulta_laudo' %}" class="ui red left floated button">
+        <i class="chevron left icon"></i>
+            Voltar para consulta por requisições
+        </a>
+        <a href="{% url 'gera_laudo_pdf' laudo.id %}" class="ui green right floated button">
+        <i class="file pdf icon"></i>
+            Gerar documento pdf
+        <i class="chevron right icon"></i>
+        </a>
     </div>
 
 {% endblock %}

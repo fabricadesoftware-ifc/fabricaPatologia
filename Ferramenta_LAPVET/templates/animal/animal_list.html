@@ -47,7 +47,7 @@
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Nome do animal</th>
-                    <th>Data Nasc.</th>
+                    <th>Idade</th>
                     <th>Sexo</th>
                     <th>Espécie</th>
                     <th>Proprietário</th>
@@ -58,9 +58,9 @@
                 {% for animal in animais %}
                 <tr>
                     <td class="center aligned">{{ animal.nome }}</td>
-                    <td class="center aligned">{{ animal.data_nasc }}</td>
+                    <td class="center aligned">{{ animal.idade }}</td>
                     <td class="center aligned">{{ animal.sexo }}</td>
-                    <td class="center aligned">{{ animal.especie }}</td>
+                    <td class="center aligned">{{ animal.raca.id_especie.nome_especie }}</td>
                     <td class="center aligned">{{ animal.proprietario }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_animal' animal.id %}">

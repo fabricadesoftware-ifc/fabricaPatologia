@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="two wide column"></div>
+<div class="twelve wide column">
+<div class="two wide column"></div>
+<div class="ui green fluid segment">
+    <h2 class="ui center aligned header">Consulta por imagens</h2>
+    <a href="{% url 'consulta_laudo' %}" class="ui left floated button">
+        <i class="chevron left icon"></i>
+            Voltar para consulta por laudos
+    </a>
+    <div class="ui button" onclick="history.go(-1);">Voltar </div>
+            <br>
+            <br>
+
+    <h4 class="ui center aligned top attached header">
+        <div class="ui center aligned pagination">
+            <span class="step-links">
+                {% if imagem.has_previous %}
+                    <a href="?page=1"><i class="angle double left icon"></i>primeira</a>
+                    <a href="?page={{ imagem.previous_page_number }}">
+                        <i class="angle left icon"></i>
+                        anterior
+                    </a>
+                {% endif %}
+                <span class="current">
+                    Página {{ imagem.number }} de {{ imagem.paginator.num_pages }}
+                </span>
+                {% if imagem.has_next %}
+                    <a href="?page={{ imagem.next_page_number }}">
+                        próximo
+                        <i class="angle right icon"></i>
+                    </a>
+                    <a href="?page={{ imagem.paginator.num_pages }}">
+                        última
+                        <i class="angle double right icon"></i>
+                    </a>
+                {% endif %}
+            </span>
+        </div>
+    </h4>
+        <div class="ui center aligned attached segment">
+            <p>
+            {% if imagem %}
+
+                {% for image in imagem %}
+
+                    <b>Descrição da imagem: </b> {{ image.nome_imagem|upper }}<br>
+                    <img class="ui fluid image" src="{{ MEDIA_URL }}{{ image.imagem.url }}">
+
+                {% endfor %}
+
+            {% else %}
+
+                Não há imagens cadastradas
+            {% endif %}
+            </p>
+        </div>
+
+     </div>
+</div>
+
+
+{% endblock %}

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7c7233-5656-4f70-aed8-fab7fed05ed1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/requisicao.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,9 +36,6 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -47,94 +48,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/proprietario_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/proprietario_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/especie_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/.gitignore" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/animal_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/tecnico_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/regiao_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/endereco_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/orgaos.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/tipoLaudo_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/usuario_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/orgaos_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/animal_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/template/principal.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/template/base.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/template/index.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/template/cadastro_usuario.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/index_view.py" />
-        <option value="$PROJECT_DIR$/static/semantic/semantic.min.js" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/settings.py" />
-        <option value="$PROJECT_DIR$/static/style.css" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/index.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_laudo_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/base.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastro_usuario.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/usuario_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/tipo_laudo_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_laudo.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/laudo_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/mostra_animal.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/cidade_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/urls.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/laudo_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/tipo_laudo_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/sexo_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/estado_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/especie_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/admin.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" />
-        <option value="$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1504" />
-    <option name="y" value="-4" />
-    <option name="width" value="1377" />
-    <option name="height" value="905" />
-  </component>
+  <component name="ProjectId" id="1PCUQ1LXJjlft7429N61r7ZbEb1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patologiaveterinaria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patologiaveterinaria" type="462c0819:PsiDirectoryNode" />
-              <item name="Ferramenta_LAPVET" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -235,125 +150,23 @@
       <workItem from="1559246639549" duration="103000" />
       <workItem from="1559677545281" duration="238000" />
       <workItem from="1560187859349" duration="437000" />
+      <workItem from="1562353401074" duration="1878000" />
+      <workItem from="1565377552600" duration="1293000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99794000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1504" y="-4" width="1377" height="905" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3559067" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37078652" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3295711" />
-      <window_info anchor="right" id="Database" order="4" weight="0.18961625" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27012792" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28339577" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3295711" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3295711" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/orgaos_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tecnico_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/animal_model.py" />
-    <entry file="file://$PROJECT_DIR$/static/semantic/semantic.min.js" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/template/loader.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/manage.py" />
-    <entry file="file://$PROJECT_DIR$/static/style.css" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/base.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0002_auto_20190417_1651.py" />
-    <entry file="das://02e7a2ca-e4dc-4be2-986e-473ce1cf1df3/collation/BINARY">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://02e7a2ca-e4dc-4be2-986e-473ce1cf1df3/collation/RTRIM">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://02e7a2ca-e4dc-4be2-986e-473ce1cf1df3/collation/NOCASE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/usuario_view.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/settings.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/login_user_view.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/usuario_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/tipo_laudo_form.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0003_tipolaudomodel.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_laudo.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/mostra_animal.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastro_usuario.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/login_user.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/urls.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/laudo_view.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/usuario_form.py" />
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/laudo_form.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/tipo_laudo_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/sexo_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/estado_model.py" />
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/db/models/fields/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/myvenv/lib/python3.5/site-packages/django/forms/fields.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/admin.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0001_initial.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/migrations/0002_auto_20190423_1544.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/form/cadastrar_animal_form.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/especie_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cidade_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/principal.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/laudo_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/cadastrar_animal_view.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/model/cadastrar_animal_model.py" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/templates/cadastrar_animal.html" />
-    <entry file="file://$PROJECT_DIR$/patologiaveterinaria/view/principal_view.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1097" />
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

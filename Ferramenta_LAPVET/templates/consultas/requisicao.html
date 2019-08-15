@@ -24,12 +24,10 @@
                    <div class="content">
                        <div class="ui attached segment">
                            <div class="center aligned header">
-                               RG HV n°
+                               RG HV n°:
                            </div>
                            <div class="center aligned content">
-                               {{ requisicao.cod_animail.especie.nome_especie }}
-                               {{ requisicao.cod_animail }}
-                               {{ requisicao.id }}
+                               {{ requisicao.rghv }}
                            </div>
                        </div>
                    </div>
@@ -40,63 +38,103 @@
         <h3 class="ui center aligned header">
             REQUISIÇÃO DE {{ requisicao.tipo_de_laudo.tipo_laudo.upper }}
         </h3>
-
-        <h4 class="ui top attached header">IDENTIFICAÇÃO</h4>
+        <div class="ui top attached tabular menu">
+            <a class="item active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Requisição
+            </a>
+            <a class="item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Figura
+            </a>
+        </div>
+        <h4 class="ui center aligned top attached header"><u>IDENTIFICAÇÃO</u></h4>
         <div class="ui attached segment">
             <p>
-                Nome do animal: {{ requisicao.cod_animail.nome }}
-                Espécie: {{ requisicao.cod_animail.especie.nome_especie }}
-                Raça: {{ requisicao.cod_animail.raca }}<br>
-                Sexo: {{ requisicao.cod_animail.sexo }}
-                Data de nascimento: {{ requisicao.cod_animail.data_nasc }}
-                Pelagem: {{ requisicao.cod_animail.cor_pelagem }}
-            </p>
-            <p>
-                Proprietário: {{ requisicao.cod_animail.proprietario.nome_proprietario }}
-                Telefone fixo: {{ requisicao.cod_animail.proprietario.telefone }}
-                Celular: {{ requisicao.cod_animail.proprietario.celular }}<br>
-                Endereço: Rua {{ requisicao.cod_animail.proprietario.rua }} Bairro
+               <div class="ui relaxed grid">
+            <div class="eight wide column">
+                <b>Nome do animal: </b>{{ requisicao.cod_animail.nome }}
+            </div>
+            <div class="four wide column">
+                <b>Espécie: </b>{{ requisicao.cod_animail.especie.nome_especie }}
+            </div>
+            <div class="four wide column">
+                <b>Raça: </b>{{ requisicao.cod_animail.raca }}
+            </div>
+            <div class="eight wide column">
+                <b>Data de nascimento: </b>{{ requisicao.cod_animail.data_nasc }}
+            </div>
+            <div class="four wide column">
+                <b>Pelagem: </b>{{ requisicao.cod_animail.cor_pelagem }}
+            </div>
+            <div class="four wide column">
+                <b>Sexo: </b>{{ requisicao.cod_animail.sexo }}
+            </div>
+            <div class="eight wide column">
+                <b>Proprietário: </b>{{ requisicao.cod_animail.proprietario.nome_proprietario }}
+            </div>
+            <div class="four wide column">
+                <b>Telefone fixo: </b>{{ requisicao.cod_animail.proprietario.telefone }}
+            </div>
+            <div class="four wide column">
+                <b>Celular: </b>{{ requisicao.cod_animail.proprietario.celular }}
+            </div>
+            <div class="twelve wide column">
+                <b>Endereço: </b>Rua {{ requisicao.cod_animail.proprietario.rua }} Bairro
                 {{ requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro }}, Cidade
-                {{ requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}, Estado
+                {{ requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}
+            </div>
+            <div class="four wide column">
+                <b>Estado</b>
                 {{ requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_regiao_estado.id_estado.nome_estado }}
-            </p>
-            <p>
-                Veterinário Responsável: {{ requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
-                Telefone: {{ requisicao.cod_animail.veterinario_responsavel.telefone }}
-                CRMV: {{ requisicao.cod_animail.veterinario_responsavel.crmv }}
-            </p>
-            <p>
-                Data da coleta: {{ requisicao.dt_coleta }}
-            </p>
+            </div>
+            <div class="eight wide column">
+                <b>Veterinário Responsável: </b>{{ requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
+            </div>
+            <div class="four wide column">
+                <b>Telefone: </b>{{ requisicao.cod_animail.veterinario_responsavel.telefone }}
+            </div>
+            <div class="four wide column">
+                <b>CRMV: </b>{{ requisicao.cod_animail.veterinario_responsavel.crmv }}
+            </div>
         </div>
-        <h4 class="ui attached header">MATERIAL ENVIADO PARA EXAME</h4>
+        </div>
+        <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
             <p>
-                {{ requisicao.material_enviado }}
+                {{ requisicao.material_enviado }}<br>
+                <br>
+                <b>Data da coleta: </b>{{ requisicao.dt_coleta }}
             </p>
         </div>
-        <h4 class="ui attached header">HISTÓRICO CLÍNICO</h4>
+        <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
             <p>
                 {{ requisicao.historico_clinico }}
             </p>
         </div>
-        <h4 class="ui attached header">DESCRIÇÃO MACROSCÓPICA</h4>
+        <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p>
                 {{ requisicao.descricao_macroscopica }}
             </p>
         </div>
-        <h4 class="ui attached header">PARA USO DO LAPVET</h4>
-        <div class="ui attached segment">
+        <div class="ui message">
+        <h4 class="ui center aligned header"><u>PARA USO DO LAPVET</u></h4>
             <p>
                 Número do registro: {{ requisicao.id }}<br>
                 Data do recebimento: {{ requisicao.dt_recebimento }}<br>
                 Responsável pelo recebimento:
             </p>
         </div>
-
     </div>
+    <a href="{% url 'consulta_requisicao' %}" class="ui red left floated button">
+        <i class="chevron left icon"></i>
+            Voltar para consulta por requisições
+        </a>
+        <a href="{% url 'gera_requisicao_pdf' requisicao.id %}" class="ui green right floated button">
+        <i class="file pdf icon"></i>
+            Gerar documento pdf
+        <i class="chevron right icon"></i>
+        </a>
     </div>
 
 {% endblock %}

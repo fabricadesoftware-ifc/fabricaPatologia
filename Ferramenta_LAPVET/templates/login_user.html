@@ -3,20 +3,19 @@
     <head>
         <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
         <link rel="stylesheet" href="{% static 'style.css' %}">
-        <title>LAPVET-Cadastro de laudos</title>
+        <title>LAPVET-Laboratório de Anatomia e Patologia Veterinária-IFC Araquari</title>
 
     </head>
     <body style="background-color: #DADADA;">
-    <article class="ui middle aligned center aligned grid">
+    <article class="ui stackable grid">
 
-        <div class="row">
+        <div class="row" style="top: 50px">
             <div class="five wide column"></div>
             <div class="ui six wide column segment">
                 <div class="row">
-                    <h2 class="ui center aligned icon header color-h-green">
-                        <i class="address card icon"></i>
-                        LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA
-                    </h2>
+                    <image class="ui centered image" src="{% static "image/tiny_logo.lapvet.final_branco.png" %}">
+
+                    </image>
                 </div>
                 <div class="row">
                         <form class='ui form' method="POST" action="{% url 'login' %}">

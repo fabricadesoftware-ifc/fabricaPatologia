@@ -18,5 +18,5 @@ class AnimalForm(ModelForm):
 
     class Meta():
         model = AnimalModel
-        fields = ['nome', 'data_nasc', 'raca', 'sexo', 'cor_pelagem', 'especie', 'proprietario',
+        fields = ['nome', 'idade', 'raca', 'sexo', 'cor_pelagem', 'proprietario',
                   'veterinario_responsavel', 'rua']

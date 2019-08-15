@@ -15,6 +15,10 @@
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
+                    <label class="collor-label-green">Número RGHV</label>
+                    {{ form.rghv }}
+                </div>
+                <div class="field">
                     <label class="collor-label-green">Código do animal</label>
                     {{ form.cod_animail }}
                 </div>
@@ -37,6 +41,10 @@
                 <div class="field">
                     <label class="collor-label-green">Descrição macroscópica</label>
                     {{ form.descricao_macroscopica }}
+                </div>
+                <div class="field">
+                    <label class="collor-label-green">Figura da ficha clínica</label>
+                    {{ form.scan_figura_ficha_clinica }}
                 </div>
                 <div class="field">
                     <label class="color-label-brown">Data do recebimento</label>

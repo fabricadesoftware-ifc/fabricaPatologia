@@ -15,7 +15,7 @@
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
-                    <label class="collor-label-green">Nome da imagem</label>
+                    <label class="collor-label-green">Descrição da imagem</label>
                     {{ form.nome_imagem }}
                 </div>
                 <div class="field">
@@ -23,7 +23,7 @@
                     {{ form.imagem }}
                 </div>
                 <div class="field">
-                    <label class="collor-label-green">Laudo</label>
+                    <label class="collor-label-green">Número do laudo</label>
                     {{ form.id_laudo }}
                 </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
