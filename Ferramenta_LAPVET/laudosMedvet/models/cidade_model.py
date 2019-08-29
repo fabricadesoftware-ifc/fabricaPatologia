@@ -1,8 +1,9 @@
 from django.db import models
-from laudosMedvet.models.regiao_estado_model import RegiaoEstadoModel
+from laudosMedvet.models.estado_model import EstadoModel
+
 
 class CidadeModel(models.Model):
-    id_regiao_estado = models.ForeignKey(RegiaoEstadoModel, on_delete=models.PROTECT)
+    id_estado = models.ForeignKey(EstadoModel, on_delete=models.PROTECT)
     nome_cidade = models.CharField(max_length=100)
 
     def __str__(self):

@@ -7,11 +7,10 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar rua</h2>
 
-            <a href="{% url 'index_rua' %}" class="ui left floated button">
-            Voltar
-            </a>
-            <br>
-            <br>
+            <div class="ui button" onclick="history.go(-1);">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
+            </div>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
@@ -19,6 +18,10 @@
                     {{ form.nome_rua }}
                 </div>
                 <div class="field">
+                    <a href="{% url 'new_bairro' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar bairro
+                    </a>
                     <label class="collor-label-green">Bairro</label>
                     {{ form.id_bairro }}
                 </div>

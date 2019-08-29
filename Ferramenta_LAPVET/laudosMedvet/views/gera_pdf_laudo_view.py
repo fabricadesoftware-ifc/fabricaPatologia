@@ -31,9 +31,9 @@ def gera_laudo_pdf(request, id):
             "<hr><h3 style='text-align: center;'><div style='text-transform: uppercase;'>\
             LAUDO DE "+ laudo.id_requisicao.tipo_de_laudo.tipo_laudo + "</div></h3><hr>" \
             + "<p style='text-align: justified;'><div style='float: left; width: 40%'>Nome: " + laudo.id_requisicao.cod_animail.nome \
-            + "</div> Espécie: " + laudo.id_requisicao.cod_animail.especie.nome_especie + "<div style='float: right; width: 30%'> " \
-            "Raça: " + laudo.id_requisicao.cod_animail.raca + "</div>"\
-            + "<br>" + "<div style='float: left; width: 40%'>Data de nascimento: " + str(laudo.id_requisicao.cod_animail.data_nasc) + "</div>"\
+            + "</div> Espécie: " + laudo.id_requisicao.cod_animail.raca.id_especie.nome_especie + "<div style='float: right; width: 30%'> " \
+            "Raça: " + laudo.id_requisicao.cod_animail.raca.nome_raca + "</div>"\
+            + "<br>" + "<div style='float: left; width: 40%'>Data de nascimento: " + str(laudo.id_requisicao.cod_animail.idade) + "</div>"\
             + "Sexo: " + laudo.id_requisicao.cod_animail.sexo + "<div style='float: right; width: 30%'>Pelagem: " + laudo.id_requisicao.cod_animail.cor_pelagem\
             + "</div><p style='text-align: justified;'><div style='float: left; width: 40%'>Proprietário: " \
             + laudo.id_requisicao.cod_animail.proprietario.nome_proprietario\
@@ -42,7 +42,7 @@ def gera_laudo_pdf(request, id):
             + "</div> Endereço: Rua " + laudo.id_requisicao.cod_animail.proprietario.rua.nome_rua\
             + " Bairro: " + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro + " Cidade: "\
             + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade + " Estado: "\
-            + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_regiao_estado.id_estado.nome_estado\
+            + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_estado.nome_estado\
             +"<p style='text-align: justified;'><div style='float: left; width: 40%'>Veterinário Responsável: " + laudo.id_requisicao.cod_animail.veterinario_responsavel.nome_veterinario\
             + "</div><div style='float: right; width: 30%'>Telefone: " + str(laudo.id_requisicao.cod_animail.veterinario_responsavel.telefone) + "</div><br>"\
             + "<p style='text-align: center;'><u><b>MATERIAL ENVIADO PARA EXAME</b></u></p>"\
@@ -67,9 +67,9 @@ def gera_laudo_pdf(request, id):
              "<hr><h3 style='text-align: center;'><div style='text-transform: uppercase;'> \
              LAUDO DE " + laudo.id_requisicao.tipo_de_laudo.tipo_laudo + "</div></h3><hr>" \
              + "<p style='text-align: justified;'><div style='float: left; width: 40%'>Nome: " + laudo.id_requisicao.cod_animail.nome \
-             + "</div> Espécie: " + laudo.id_requisicao.cod_animail.especie.nome_especie + "<div style='float: right; width: 30%'> " \
-             "Raça: " + laudo.id_requisicao.cod_animail.raca + "</div>" \
-             + "<br>" + "<div style='float: left; width: 40%'>Data de nascimento: " + str(laudo.id_requisicao.cod_animail.data_nasc) + "</div>" \
+             + "</div> Espécie: " + laudo.id_requisicao.cod_animail.raca.id_especie.nome_especie + "<div style='float: right; width: 30%'> " \
+             "Raça: " + laudo.id_requisicao.cod_animail.raca.nome_raca + "</div>" \
+             + "<br>" + "<div style='float: left; width: 40%'>Data de nascimento: " + str(laudo.id_requisicao.cod_animail.idade) + "</div>" \
              + "Sexo: " + laudo.id_requisicao.cod_animail.sexo + "<div style='float: right; width: 30%'>Pelagem: " + laudo.id_requisicao.cod_animail.cor_pelagem \
              + "</div><p style='text-align: justified;'><div style='float: left; width: 40%'>Proprietário: " \
              + laudo.id_requisicao.cod_animail.proprietario.nome_proprietario \
@@ -78,7 +78,7 @@ def gera_laudo_pdf(request, id):
              + "</div> Endereço: Rua " + laudo.id_requisicao.cod_animail.proprietario.rua.nome_rua\
              + " Bairro: " + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro + " Cidade: "\
              + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade + " Estado: "\
-             + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_regiao_estado.id_estado.nome_estado\
+             + laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_estado.nome_estado\
              + "<p style='text-align: justified;'><div style='float: left; width: 40%'>Veterinário Responsável: " + laudo.id_requisicao.cod_animail.veterinario_responsavel.nome_veterinario \
              + "</div><div style='float: right; width: 30%'>Telefone: " + str(laudo.id_requisicao.cod_animail.veterinario_responsavel.telefone) + "</div><br>" \
              + "<p style='text-align: center;'><u><b>MATERIAL ENVIADO PARA EXAME</b></u></p>" \

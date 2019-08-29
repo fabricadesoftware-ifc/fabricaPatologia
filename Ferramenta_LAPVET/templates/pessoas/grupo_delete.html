@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+
+    <div class="ui green fluid segment">
+    <h2>Tem certeza que deseja deletar o grupo {{ form.nome_grupo }}?</h2>
+    <form method="POST" enctype=multipart/form-data">
+        {% csrf_token %}
+
+    <button class="negative fluid ui button" type="submit">Delete</button>
+    </form>
+
+    </div>
+    </div>
+
+{% endblock %}

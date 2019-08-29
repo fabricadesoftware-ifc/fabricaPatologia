@@ -8,6 +8,10 @@ from laudosMedvet.forms import UsuarioForm
 from laudosMedvet.models import UsuarioModel
 
 
+def index_user(request):
+    users = UsuarioModel.objects.all()
+    return render(request, 'pessoas/user_list.html', {'users':users})
+
 class CadastroUsuarioView(View):
     template = 'cadastro_usuario.html'
 

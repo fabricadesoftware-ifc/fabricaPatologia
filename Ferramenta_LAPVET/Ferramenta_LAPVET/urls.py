@@ -27,8 +27,6 @@ import laudosMedvet.views.veterinario_responsavel_view
 import laudosMedvet.views.rua_view
 import laudosMedvet.views.bairro_view
 import laudosMedvet.views.cidade_view
-import laudosMedvet.views.regiao_estado_view
-import laudosMedvet.views.regiao_federal_view
 import laudosMedvet.views.estado_view
 import laudosMedvet.views.animal_view
 
@@ -43,12 +41,21 @@ import laudosMedvet.views.gera_pdf_requisicao_view
 import laudosMedvet.views.gera_pdf_laudo_view
 
 import laudosMedvet.views.filtro_laudos_view
+import laudosMedvet.views.grupo_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.LoginView.as_view(), name='login'),
     path('logout', views.LogoutView.as_view(), name='logout'),
+    path('user/list', views.usuario_view.index_user, name='index_user'),
     path('cadastro/usuario/', views.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
+
+    path('grupo/', views.grupo_view.index_grupo, name='index_grupo'),
+    path('grupo/new', views.grupo_view.new_grupo, name='new_grupo'),
+    path('grupo/update/<int:id>', views.grupo_view.update_grupo, name='update_grupo'),
+    path('grupo/delete/<int:id>', views.grupo_view.delete_grupo, name='delete_grupo'),
+
     path('', views.LoginUserView.as_view(), name="login_user"),
     path('principal/', views.PaginaPrincipal.as_view(), name='principal'),
 
@@ -82,20 +89,11 @@ urlpatterns = [
     path('pessoa/veterinario/delete/<int:id>', views.veterinario_responsavel_view.delete_vet_resp, name='delete_vet_resp'),
 
     #enderecos
-    path('endereco/federal/', views.regiao_federal_view.index_regiao_fed, name='index_regiao_fed'),
-    path('endereco/federal/new/', views.regiao_federal_view.new_regiao_fed, name='new_regiao_fed'),
-    path('endereco/federal/update/<int:id>', views.regiao_federal_view.update_regiao_fed, name='update_regiao_fed'),
-    path('endereco/federal/delete/<int:id>', views.regiao_federal_view.delete_regiao_fed, name='delete_regiao_fed'),
-
     path('endereco/estado/', views.estado_view.index_estado, name='index_estado'),
     path('endereco/estado/new/', views.estado_view.new_estado, name='new_estado'),
     path('endereco/estado/update/<int:id>', views.estado_view.update_estado, name='update_estado'),
     path('endereco/estado/delete/<int:id>', views.estado_view.delete_estado, name='delete_estado'),
 
-    path('endereco/regiao/', views.regiao_estado_view.index_regiao_est, name='index_regiao_est'),
-    path('endereco/regiao/new/', views.regiao_estado_view.new_regiao_est, name='new_regiao_est'),
-    path('endereco/regiao/update/<int:id>', views.regiao_estado_view.update_regiao_est, name='update_regiao_est'),
-    path('endereco/regiao/delete/<int:id>', views.regiao_estado_view.delete_regiao_est, name='delete_regiao_est'),
 
     path('endereco/cidade/', views.cidade_view.index_cidade, name='index_cidade'),
     path('endereco/cidade/new/', views.cidade_view.new_cidade, name='new_cidade'),

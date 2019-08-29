@@ -1,48 +1,45 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<div class="two wide column"></div>
+    <div class="two wide column"></div>
     <div class="twelve wide column">
         <div class="two wide column"></div>
     <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Lista de grupos</h2>
 
-        <h2 class="ui center aligned header">Ruas cadastradas</h2>
         <div class="ui button" onclick="history.go(-1);">
             <i class="angle double left icon"></i>
             Voltar para a página anterior
         </div>
 
-        <a href="{% url 'new_rua' %}" class="ui right floated button">
-            Cadastrar nova rua
+        <a href="{% url 'new_grupo' %}" class="ui right floated button">
+            Cadastrar novo grupo
             <i class="angle double right icon"></i>
         </a>
 
-    <table class="ui large striped table">
+        <table class="ui large striped table">
                 <thead><tr class="center aligned">
-                    <th>Rua</th>
+                    <th>Grupo</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
                 <tbody>
-                {% for rua in ruas %}
+                {% for grupo in grupos %}
                 <tr>
-                    <td class="center aligned">{{ rua.nome_rua }}</td>
+                    <td class="center aligned">{{ grupo.name }}</td>
                     <td class="center aligned">
-                        <a href="{% url 'update_rua' rua.id %}">
+                        <a href="{% url 'update_grupo' grupo.id %}">
                         <i class="green edit icon"></i>
                     </a>
                     </td>
                     <td class="center aligned">
-                        <a href="{% url 'delete_rua' rua.id %}">
+                        <a href="{% url 'delete_grupo' grupo.id %}">
                             <i class="red trash alternate icon"></i>
                         </a>
                     </td>
                 </tr>
                 </tbody>
-
-            {% endfor %}
-
-    </table>
+                {% endfor %}
+        </table>
     </div>
     </div>
 

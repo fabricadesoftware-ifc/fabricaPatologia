@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'laudosMedvet',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'Ferramenta_LAPVET.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'LAP-VET',
+        'NAME': 'LAPVET',
         'USER': 'postgres',
         'PASSWORD': 'ana123',
         'HOST': '127.0.0.1',

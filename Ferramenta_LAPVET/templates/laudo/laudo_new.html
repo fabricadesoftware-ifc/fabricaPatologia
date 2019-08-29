@@ -7,14 +7,17 @@
 
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar laudo</h2>
-            <a href="{% url 'index_laudo' %}" class="ui left floated button">
-            Voltar
+            <a class="ui button" href="{% url 'index_laudo' %}">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
             </a>
-            <br>
-            <br>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="field">
+                <a href="{% url 'new_requisicao' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar requisição
+                    </a>
                 <label class="collor-label-green">Número da requisição</label>
                 {{ form.id_requisicao }}
             </div>

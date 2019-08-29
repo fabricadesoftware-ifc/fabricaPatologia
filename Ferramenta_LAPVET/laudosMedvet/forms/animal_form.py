@@ -7,7 +7,7 @@ from laudosMedvet.models import ProprietarioModel
 
 
 class AnimalForm(ModelForm):
-    DATA_SEXO = (('F', 'Fêmea'), ('M', 'Macho'))
+    DATA_SEXO = (('Fêmea', 'Fêmea'), ('Macho', 'Macho'))
     sexo = forms.ChoiceField(
         choices=DATA_SEXO,
         widget=forms.RadioSelect(attrs={

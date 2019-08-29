@@ -6,11 +6,16 @@
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Lista de tipos de laudo</h2>
 
+        <div class="ui button" onclick="history.go(-1);">
+            <i class="angle double left icon"></i>
+            Voltar para a página anterior
+        </div>
+
         <a href="{% url 'new_tipo_laudo' %}" class="ui right floated button">
             Cadastrar novo tipo de laudo
+            <i class="angle double right icon"></i>
         </a>
-        <br>
-        <br>
+
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Tipo de laudo</th>

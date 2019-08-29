@@ -1,8 +1,8 @@
 from django.forms import ModelForm
 
-from laudosMedvet.models import VeterinarioresponsavelModel
+from laudosMedvet.models import VeterinarioResponsavelModel
 
 class VeterinarioResponsavelForm(ModelForm):
     class Meta():
-        model = VeterinarioresponsavelModel
+        model = VeterinarioResponsavelModel
         fields = ['nome_veterinario', 'telefone', 'crmv']

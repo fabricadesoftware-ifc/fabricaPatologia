@@ -7,21 +7,17 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar estado</h2>
 
-            <a href="{% url 'index_estado' %}" class="ui left floated button">
-            Voltar
-            </a>
-            <br>
-            <br>
+            <div class="ui button" onclick="history.go(-1);">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
+            </div>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
                     <label class="collor-label-green">Nome do estado</label>
                     {{ form.nome_estado }}
                 </div>
-                <div class="field">
-                    <label class="collor-label-green">Região federal</label>
-                    {{ form.id_regiao_federal }}
-                </div>
+
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>
         </div>

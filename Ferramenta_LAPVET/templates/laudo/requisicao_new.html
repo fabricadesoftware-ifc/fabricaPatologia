@@ -7,11 +7,10 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Nova requisição</h2>
 
-            <a href="{% url 'index_requisicao' %}" class="ui left floated button">
-            Voltar
-            </a>
-            <br>
-            <br>
+            <div class="ui button" onclick="history.go(-1);">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
+            </div>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
@@ -19,10 +18,18 @@
                     {{ form.rghv }}
                 </div>
                 <div class="field">
+                    <a href="{% url 'new_animal' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar animal
+                    </a>
                     <label class="collor-label-green">Código do animal</label>
                     {{ form.cod_animail }}
                 </div>
                 <div class="field">
+                    <a href="{% url 'new_tipo_laudo' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar tipo de requisição
+                    </a>
                     <label class="collor-label-green">Tipo de requisição</label>
                     {{ form.tipo_de_laudo }}
                 </div>
