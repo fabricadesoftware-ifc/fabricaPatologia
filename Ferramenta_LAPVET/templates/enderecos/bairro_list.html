@@ -7,10 +7,13 @@
     <div class="ui green fluid segment">
 
        <h2 class="ui center aligned header">Bairros cadastrados</h2>
-        <div class="ui button" onclick="history.go(-1);">
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
-            Voltar para a página anterior
-        </div>
+            Voltar para a página principal
+        </a>
+        <a class="ui button" href="{% url 'index_rua' %}">
+            Ver lista de ruas cadastradas
+        </a>
 
         <a href="{% url 'new_bairro' %}" class="ui right floated button">
             Cadastrar novo bairro
@@ -20,6 +23,8 @@
     <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
@@ -27,6 +32,8 @@
                 {% for bairro in bairros %}
                 <tr>
                     <td class="center aligned">{{ bairro.nome_bairro }}</td>
+                    <td class="center aligned">{{ bairro.id_cidade.nome_cidade }}</td>
+                    <td class="center aligned">{{ bairro.id_cidade.id_estado.nome_estado }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_bairro' bairro.id %}">
                         <i class="green edit icon"></i>

@@ -35,3 +35,4 @@ def delete_estado(request, id):
         estado.delete()
         return redirect('index_estado')
     return render(request, 'enderecos/estado_delete.html', {'form':estado})
+

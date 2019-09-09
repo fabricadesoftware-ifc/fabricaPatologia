@@ -9,7 +9,7 @@ from laudosMedvet.forms import GrupoForm
 
 @login_required
 def index_grupo(request):
-    grupos = Group.objects.all()
+    grupos = Group.objects.all().order_by('name')
     return render(request, 'pessoas/grupos_list.html', {'grupos':grupos})
 
 @login_required

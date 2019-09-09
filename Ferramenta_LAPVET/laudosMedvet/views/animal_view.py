@@ -1,7 +1,7 @@
 # coding:utf-8
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from laudosMedvet.models import AnimalModel
+from laudosMedvet.models import AnimalModel, RacaModel, CidadeModel, BairroModel, RuaModel
 from laudosMedvet.forms import AnimalForm
 
 
@@ -45,3 +45,26 @@ def delete_animal(request, id):
         animal.delete()
         return redirect('index_animal')
     return render(request, 'animal/animal_delete.html', {'form':animal})
+
+
+def load_racas(request):
+    especie_id = request.GET.get('id_especie')
+    racas = RacaModel.objects.filter(id_especie_id=especie_id).order_by('nome_raca')
+    return render(request, 'hr/raca_dropdown_list_options.html', {'racas':racas})
+
+
+def load_cidade(request):
+    estados = request.GET.get('id_estado')
+    cidades = CidadeModel.objects.filter(id_estado_id=estados).order_by('nome_cidade')
+    return render(request, 'hr/cidade_dropdown_list_options.html', {'cidades':cidades})
+
+
+def load_bairro(request):
+    cidades = request.GET.get('id_cidade')
+    bairros = BairroModel.objects.filter(id_cidade_id=cidades).order_by('nome_bairro')
+    return render(request, 'hr/bairro_dropdown_list_options.html', {'bairros':bairros})
+
+def load_rua(request):
+    bairros = request.GET.get('id_bairro')
+    ruas = RuaModel.objects.filter(id_bairro_id=bairros).order_by('nome_rua')
+    return render(request, 'hr/rua_dropdown_list_options.html', {'ruas':ruas})

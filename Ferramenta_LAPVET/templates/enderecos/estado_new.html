@@ -7,10 +7,10 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar estado</h2>
 
-            <div class="ui button" onclick="history.go(-1);">
+            <a class="ui button" href="{% url 'new_estado' %}">
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
-            </div>
+            </a>
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">

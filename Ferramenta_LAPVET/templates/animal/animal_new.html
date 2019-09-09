@@ -6,10 +6,10 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar animal</h2>
 
-            <div class="ui button" onclick="history.go(-1);">
+            <a class="ui button" href="{% url 'index_animal' %}">
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
-            </div>
+            </a>
 
             <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -29,6 +29,15 @@
                     <label class="color-label-brown">Sexo</label>
                     {{ form.sexo }}
                 </div>
+                <div id="animalForm" data-racas-url="{% url 'ajax_load_racas' %}" novalidate>
+                <div class="field">
+                    <a href="{% url 'new_especie' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar espécie
+                    </a>
+                    <label class="color-label-brown">Especie</label>
+                    {{ form.id_especie }}
+                </div>
                 <div class="field">
                     <a href="{% url 'new_raca' %}" class="ui right floated button">
                         <i class="plus icon"></i>
@@ -37,13 +46,52 @@
                     <label class="color-label-brown">Raça</label>
                     {{ form.raca }}
                 </div>
+                </div>
+                <div id="cidadeForm" data-cidade-url="{% url 'ajax_load_cidade' %}" novalidate>
+                <div class="field">
+                    <a href="{% url 'new_estado' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar estado
+                    </a>
+                    <label class="color-label-brown">Estado</label>
+                    {{ form.id_estado }}
+                </div>
+                    <div id="bairroForm" data-bairro-url="{% url 'ajax_load_bairro' %}" novalidate>
+                <div class="field">
+                    <a href="{% url 'new_cidade' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar cidade
+                    </a>
+                    <label class="color-label-brown">Cidade</label>
+                    {{ form.cidade }}
+                </div>
+                </div>
+                    <div id="ruaForm" data-rua-url="{% url 'ajax_load_rua' %}" novalidate>
+                <div class="field">
+                    <a href="{% url 'new_bairro' %}" class="ui right floated button">
+                        <i class="plus icon"></i>
+                        Cadastrar bairro
+                    </a>
+                    <label class="color-label-brown">Bairro</label>
+                    {{ form.bairro }}
+                </div>
+                </div>
                 <div class="field">
                     <a href="{% url 'new_rua' %}" class="ui right floated button">
                         <i class="plus icon"></i>
                         Cadastrar rua
                     </a>
-                    <label class="color-label-brown">Endereço</label>
+                    <label class="color-label-brown">Rua</label>
                     {{ form.rua }}
+                </div>
+                    </div>
+                <div class="field">
+                    <label class="color-label-brown">Número</label>
+                    {{ form.numero }}
+                </div>
+                <div class="field">
+                    <label class="color-label-brown">Complemento</label>
+                    {{ form.complemento }}
                 </div>
                 <div class="field">
                     <a href="{% url 'new_proprietario' %}" class="ui right floated button">
@@ -66,5 +114,64 @@
             </form>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $("#id_id_especie").change(function () {
+      var url = $("#animalForm").attr("data-racas-url");  // get the url of the `load_cities` view
+      var especieId = $(this).val();  // get the selected country ID from the HTML input
+
+      $.ajax({                       // initialize an AJAX request
+        url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+        data: {
+          'id_especie': especieId       // add the country id to the GET parameters
+        },
+        success: function (data) {   // `data` is the return of the `load_cities` view function
+          $("#id_raca").html(data);  // replace the contents of the city input with the data that came from the server
+        }
+      })
+    });
+    $("#id_id_estado").change(function () {
+      var url = $("#cidadeForm").attr("data-cidade-url");  // get the url of the `load_cities` view
+      var estadoId = $(this).val();  // get the selected country ID from the HTML input
+
+      $.ajax({                       // initialize an AJAX request
+        url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+        data: {
+          'id_estado': estadoId       // add the country id to the GET parameters
+        },
+        success: function (data) {   // `data` is the return of the `load_cities` view function
+          $("#id_cidade").html(data);  // replace the contents of the city input with the data that came from the server
+        }
+      })
+    });
+    $("#id_cidade").change(function () {
+      var url = $("#bairroForm").attr("data-bairro-url");  // get the url of the `load_cities` view
+      var cidadeId = $(this).val();  // get the selected country ID from the HTML input
+
+      $.ajax({                       // initialize an AJAX request
+        url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+        data: {
+          'id_cidade': cidadeId       // add the country id to the GET parameters
+        },
+        success: function (data) {   // `data` is the return of the `load_cities` view function
+          $("#id_bairro").html(data);  // replace the contents of the city input with the data that came from the server
+        }
+      })
+    });
+    $("#id_bairro").change(function () {
+      var url = $("#ruaForm").attr("data-rua-url");  // get the url of the `load_cities` view
+      var bairroId = $(this).val();  // get the selected country ID from the HTML input
+
+      $.ajax({                       // initialize an AJAX request
+        url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+        data: {
+          'id_bairro': bairroId       // add the country id to the GET parameters
+        },
+        success: function (data) {   // `data` is the return of the `load_cities` view function
+          $("#id_rua").html(data);  // replace the contents of the city input with the data that came from the server
+        }
+      })
+    });
+  </script>
 
 {% endblock %}

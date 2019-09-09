@@ -1,0 +1,4 @@
+<option value="">---------</option>
+{% for bairro in bairros %}
+<option value="{{ bairro.pk }}">{{ bairro.nome_bairro }}</option>
+{% endfor %}

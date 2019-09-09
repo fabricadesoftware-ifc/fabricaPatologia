@@ -7,7 +7,7 @@ from laudosMedvet.models import ProprietarioModel
 
 @login_required
 def index_proprietario(request):
-    proprietarios = ProprietarioModel.objects.all()
+    proprietarios = ProprietarioModel.objects.all().order_by('nome_proprietario')
     return render(request, 'pessoas/proprietario_list.html', {'proprietarios':proprietarios})
 
 @login_required

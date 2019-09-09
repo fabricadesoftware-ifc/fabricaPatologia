@@ -6,7 +6,7 @@ from laudosMedvet.forms import RacaForm
 
 @login_required
 def index_raca(request):
-    racas = RacaModel.objects.all()
+    racas = RacaModel.objects.all().order_by('nome_raca')
     return render(request, 'animal/raca_list.html', {'racas':racas})
 
 @login_required

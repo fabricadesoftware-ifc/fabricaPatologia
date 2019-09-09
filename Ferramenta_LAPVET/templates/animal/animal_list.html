@@ -39,9 +39,12 @@
                     </div>
                 </div>
             </div>
-        <a class="ui button" onclick="history.go(-1);">
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
-            Voltar para a página anterior
+            Voltar para a página principal
+        </a>
+        <a class="ui button" href="{% url 'index_requisicao' %}">
+            Ver lista de requisições cadastradas
         </a>
         <a href="{% url 'new_animal' %}" class="ui right floated button">
             Cadastrar novo animal

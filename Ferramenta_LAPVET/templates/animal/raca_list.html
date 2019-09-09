@@ -6,10 +6,13 @@
     <div class="ui green fluid segment">
         <h2 class="ui center aligned header">Lista de raças</h2>
 
-        <div class="ui button" onclick="history.go(-1);">
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
             Voltar para a página anterior
-        </div>
+        </a>
+        <a class="ui button" href="{% url 'index_animal' %}">
+            Ver lista de animais cadastrados
+        </a>
 
         <a href="{% url 'new_raca' %}" class="ui right floated button">
             Cadastrar nova raça

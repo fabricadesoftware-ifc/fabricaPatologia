@@ -8,10 +8,13 @@
 
         <h2 class="ui center aligned header">Estados cadastrados</h2>
 
-        <div class="ui button" onclick="history.go(-1);">
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
-            Voltar para a página anterior
-        </div>
+            Voltar para a página principal
+        </a>
+    <a class="ui button" href="{% url 'index_cidade' %}">
+        Ver lista de cidades cadastradas
+    </a>
         <a href="{% url 'new_estado' %}" class="ui right floated button">
             Cadastrar novo estado
             <i class="angle double right icon"></i>

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Resultados</h2>
+
+            <div class="ui button" onclick="history.go(-1);">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
+            </div>
+            <div class="ui divided list">
+            {% for consulta in laudos %}
+            <div class="item">
+            <div class="content">
+                    <a href="{% url 'visualizar_laudo' consulta.id %}"><font style="vertical-align: inherit;">
+                        <i class="clipboard outline icon"></i>
+                        <font style="vertical-align: inherit;">
+                            {{ consulta.id_requisicao.cod_animail.nome }},
+                             {{ consulta.id_requisicao.tipo_de_laudo.tipo_laudo }},
+                            RGHV: {{ consulta.id_requisicao.rghv }},
+                            Etiologia: {{ consulta.etiologia }},
+                             Sistemas: {{ consulta.sistemas }},
+                             {{ consulta.id_requisicao.cod_animail.raca.id_especie.nome_especie }},
+                             {{ consulta.id_requisicao.cod_animail.raca.nome_raca }}
+                        </font>
+                    </font>
+                        </a>
+                </div>
+                </div>
+             {% endfor %}
+        </div>
+        </div>
+    </div>
+
+{% endblock %}

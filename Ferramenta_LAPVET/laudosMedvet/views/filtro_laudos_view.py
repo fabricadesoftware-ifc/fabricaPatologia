@@ -26,6 +26,7 @@ def lista_laudos(request):
     ]
     especies = EspecieModel.objects.all()
     lista_raca = RacaModel.objects.all()
+    lista_cidade = CidadeModel.objects.all()
     lista_sistemas = ['Cardiovascular',
                       'Pulmonar',
                       'Digestivo',
@@ -38,25 +39,29 @@ def lista_laudos(request):
                       'Excretor']
 
     por_raca = request.GET.get('por_raca', None)
+    por_cidade = request.GET.get('por_cidade', None)
     por_especie = request.GET.get('por_especie', None)
     por_sistema = request.GET.get('por_sistema', None)
 
-
     if por_raca is not None:
         laudos = LaudoModel.objects.filter(
-            id_requisicao__cod_animail__raca__nome_raca__icontains=por_raca
+            id_requisicao__cod_animail__raca__nome_raca__contains=por_raca
         )
     elif por_sistema is not None:
         laudos = LaudoModel.objects.filter(
-            sistemas__icontains=por_sistema
+            sistemas__contains=por_sistema
         )
     elif por_especie is not None:
         laudos = LaudoModel.objects.filter(
-            id_requisicao__cod_animail__raca__id_especie__nome_especie__icontains=por_especie
+            id_requisicao__cod_animail__raca__id_especie__nome_especie__contains=por_especie
         )
     elif por_estado is not None:
         laudos = LaudoModel.objects.filter(
-            id_requisicao__cod_animail__rua__id_bairro__id_cidade__id_estado__nome_estado__icontains=por_estado
+            id_requisicao__cod_animail__rua__id_bairro__id_cidade__id_estado__nome_estado__contains=por_estado
+        )
+    elif por_cidade is not None:
+        laudos = LaudoModel.objects.filter(
+            id_requisicao__cod_animail__rua__id_bairro__id_cidade__nome_cidade__contains=por_cidade
         )
     else:
         laudos = LaudoModel.objects.all()
@@ -64,6 +69,15 @@ def lista_laudos(request):
     paginator = Paginator(laudos, 20)
     page = request.GET.get('page')
     list_laudos = paginator.get_page(page)
+
     return render(request, 'pagina_filtro_laudos.html', {'laudos': list_laudos, 'lista_sistemas':lista_sistemas,
                                                         'especies':especies, 'lista_raca': lista_raca,
-                                                         'por_estado':por_estado})
+                                                         'por_estado':por_estado, 'lista_cidade':lista_cidade})
+
+
+def resultados(request):
+
+    return render(request, 'pagina_filtro_resultados.html')
+
+
+

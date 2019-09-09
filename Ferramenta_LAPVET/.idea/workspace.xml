@@ -2,73 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="add7e6dc-d159-45ca-a64f-0ba653010259" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ferramenta_LAPVET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ferramenta_LAPVET.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/animal_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/animal_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/cidade_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/cidade_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/estado_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/estado_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/regiao_federal_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/veterinario_responsavel_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/veterinario_responsavel_form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0002_auto_20190812_1549.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0002_auto_20190823_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0003_auto_20190823_1635.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0004_permissaomodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0005_auto_20190828_1651.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0006_auto_20190829_1321.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0007_auto_20190829_1327.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/models/animal_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/animal_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/cidade_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/cidade_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/models/estado_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/estado_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/regiao_estado_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/regiao_federal_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/sistema_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/veterinario_responsavel_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/veterinario_responsavel_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/proprietario_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/proprietario_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/animal_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/animal_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/bairro_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/bairro_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/cidade_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/cidade_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/especie_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/especie_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/estado_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/estado_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_requisicao_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_requisicao_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/regiao_estado_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/regiao_federal_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/grupo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/grupo_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/imagem_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/imagem_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/laudo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/laudo_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/proprietario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/proprietario_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/raca_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/raca_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/rua_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/rua_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/views/veterinario_responsavel_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/veterinario_responsavel_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/animal_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/animal_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/animal_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/animal_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/especie_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/especie_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animal/especie_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/especie_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/raca_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/raca_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/animal/raca_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animal/raca_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultas/laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/laudo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultas/modelo_pdf_laudo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultas/modelo_pdf_requisicao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultas/requisicao.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/requisicao.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/bairro_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/bairro_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/bairro_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/bairro_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/cidade_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/cidade_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/cidade_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/cidade_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/estado_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/estado_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/estado_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/estado_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_estado_delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_estado_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_estado_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_federal_delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_federal_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/enderecos/regiao_feredal_list.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/rua_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/rua_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/enderecos/rua_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enderecos/rua_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/imagem_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/imagem_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/imagem_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/imagem_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/laudo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/laudo_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/laudo/laudo_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/laudo_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/requisicao_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/requisicao_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/requisicao_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/requisicao_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/laudo/tipo_laudo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/tipo_laudo_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/laudo/tipo_laudo_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/tipo_laudo_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pagina_filtro_laudos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagina_filtro_laudos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pessoas/proprietario_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/proprietario_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pessoas/proprietario_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/proprietario_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pessoas/veterinario_resp_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/veterinario_resp_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pessoas/veterinario_resp_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/veterinario_resp_new.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,8 +110,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -146,20 +130,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/djangoadv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/laudosMedvet" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/laudosMedvet" />
       <recent name="$PROJECT_DIR$/templates/animal" />
       <recent name="$PROJECT_DIR$/cadastros" />
       <recent name="$PROJECT_DIR$/" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/laudosMedvet" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,6 +319,15 @@
       <workItem from="1566921708564" duration="9056000" />
       <workItem from="1567019008051" duration="2991000" />
       <workItem from="1567094962710" duration="1500000" />
+      <workItem from="1567180815474" duration="12289000" />
+      <workItem from="1567442103556" duration="6749000" />
+      <workItem from="1567507963473" duration="1027000" />
+      <workItem from="1567521964686" duration="1089000" />
+      <workItem from="1567612703590" duration="3478000" />
+      <workItem from="1567622093718" duration="3764000" />
+      <workItem from="1567699657044" duration="9512000" />
+      <workItem from="1567785711782" duration="9793000" />
+      <workItem from="1568044748245" duration="8257000" />
     </task>
     <servers />
   </component>

@@ -64,6 +64,10 @@ urlpatterns = [
     path('animal/save/', views.animal_view.new_animal, name='new_animal'),
     path('animal/update/<int:id>', views.animal_view.update_animal, name='update_animal'),
     path('animal/delete/<int:id>', views.animal_view.delete_animal, name='delete_animal'),
+    path('ajax/load-racas/', views.animal_view.load_racas, name='ajax_load_racas'),
+    path('ajax/load-cidade/', views.animal_view.load_cidade, name='ajax_load_cidade'),
+    path('ajax/load-bairro/', views.animal_view.load_bairro, name='ajax_load_bairro'),
+    path('ajax/load-rua/', views.animal_view.load_rua, name='ajax_load_rua'),
 
     #Especie
     path('especie/', views.especie_view.index_especie, name='index_especie'),
@@ -147,5 +151,6 @@ urlpatterns = [
 
     #pesquisa
     path('procura/', views.filtro_laudos_view.lista_laudos, name="procura_laudos"),
+    path('procura/resultados/', views.filtro_laudos_view.resultados, name='resultados'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

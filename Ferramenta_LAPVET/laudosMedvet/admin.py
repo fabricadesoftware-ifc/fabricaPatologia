@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from laudosMedvet.models import EspecieModel, LaudoModel, AnimalModel
+from laudosMedvet.models import EspecieModel, LaudoModel, AnimalModel, RequisicaoLaudoModel, RacaModel
 
 # Register your models here.
 
@@ -8,5 +8,6 @@ from laudosMedvet.models import EspecieModel, LaudoModel, AnimalModel
 admin.site.register(EspecieModel)
 
 admin.site.register(AnimalModel)
-
+admin.site.register(RacaModel)
 admin.site.register(LaudoModel)
+admin.site.register(RequisicaoLaudoModel)

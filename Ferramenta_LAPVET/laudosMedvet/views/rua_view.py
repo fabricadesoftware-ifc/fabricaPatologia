@@ -7,7 +7,7 @@ from laudosMedvet.forms import RuaForm
 
 @login_required
 def index_rua(request):
-    ruas = RuaModel.objects.all()
+    ruas = RuaModel.objects.all().order_by('nome_rua')
     return render(request, 'enderecos/rua_list.html', {'ruas':ruas})
 
 @login_required

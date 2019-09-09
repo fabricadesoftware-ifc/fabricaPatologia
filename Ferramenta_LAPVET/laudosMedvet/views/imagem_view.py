@@ -7,7 +7,7 @@ from laudosMedvet.forms import ImagemForm
 
 @login_required
 def index_imagem(request):
-    imagens = ImagensModel.objects.all()
+    imagens = ImagensModel.objects.all().order_by('nome_imagem')
     return render(request, 'laudo/imagem_list.html', {'imagens':imagens})
 
 @login_required

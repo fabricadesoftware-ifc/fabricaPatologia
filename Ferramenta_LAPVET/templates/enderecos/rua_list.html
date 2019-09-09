@@ -7,10 +7,16 @@
     <div class="ui green fluid segment">
 
         <h2 class="ui center aligned header">Ruas cadastradas</h2>
-        <div class="ui button" onclick="history.go(-1);">
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
-            Voltar para a página anterior
-        </div>
+            Voltar para a página principal
+        </a>
+        <a class="ui button" href="{% url 'index_animal' %}">
+            Ver lista de animais cadastrados
+        </a>
+        <a class="ui button" href="{% url 'index_proprietario' %}">
+            Ver lista de proprietários cadastrados
+        </a>
 
         <a href="{% url 'new_rua' %}" class="ui right floated button">
             Cadastrar nova rua
@@ -20,6 +26,9 @@
     <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Rua</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
@@ -27,6 +36,9 @@
                 {% for rua in ruas %}
                 <tr>
                     <td class="center aligned">{{ rua.nome_rua }}</td>
+                    <td class="center aligned">{{ rua.id_bairro.nome_bairro }}</td>
+                    <td class="center aligned">{{ rua.id_bairro.id_cidade.nome_cidade }}</td>
+                    <td class="center aligned">{{ rua.id_bairro.id_cidade.id_estado.nome_estado }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_rua' rua.id %}">
                         <i class="green edit icon"></i>

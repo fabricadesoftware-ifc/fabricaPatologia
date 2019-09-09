@@ -7,7 +7,7 @@ from laudosMedvet.forms import BairroForm
 
 @login_required
 def index_bairro(request):
-    bairros = BairroModel.objects.all()
+    bairros = BairroModel.objects.all().order_by('nome_bairro')
     return render(request, 'enderecos/bairro_list.html', {'bairros':bairros})
 
 @login_required

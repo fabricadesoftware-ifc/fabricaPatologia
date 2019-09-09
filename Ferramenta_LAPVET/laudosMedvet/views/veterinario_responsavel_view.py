@@ -7,7 +7,7 @@ from laudosMedvet.forms import VeterinarioResponsavelForm
 
 @login_required
 def index_vet_resp(request):
-    veterinarios = VeterinarioResponsavelModel.objects.all()
+    veterinarios = VeterinarioResponsavelModel.objects.all().order_by('nome_veterinario')
     return render(request, 'pessoas/veterinario_resp_list.html', {'veterinarios':veterinarios})
 
 @login_required

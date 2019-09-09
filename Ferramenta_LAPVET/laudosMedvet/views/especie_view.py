@@ -7,7 +7,7 @@ from laudosMedvet.forms import EspecieForm
 
 @login_required
 def index_especie(request):
-    especies = EspecieModel.objects.all()
+    especies = EspecieModel.objects.all().order_by('nome_especie')
     return render(request, 'animal/especie_list.html', {'especies':especies})
 
 @login_required

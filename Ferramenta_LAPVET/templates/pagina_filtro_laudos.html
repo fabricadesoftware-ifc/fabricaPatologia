@@ -4,103 +4,144 @@
     <div class="twelve wide column">
     <div class="two wide column"></div>
     <div class="ui green fluid segment">
+        <a class="ui button" href="pagina_filtro_laudos.html">
+            <i class="angle double left icon"></i>
+            Voltar para a página anterior
+        </a>
         <h3 class="ui center aligned header">Busca por laudos</h3>
-
-        <div class="ui placeholder segment">
-            <div class="ui three column stackable center aligned grid">
-                <div class="middle aligned row">
-                    <div class="column">
-                        <form class="ui form">
-                            <select name="por_sistema">
-                                <option>
-                                    --Selecione o sistema--
+        <div class="ui form">
+        <div class="ui stackable celled grid container">
+            <div class="two column row">
+                <div class="column">
+                <form>
+                    <div class="ui segment">
+                        <h4>
+                            Selecione uma espécie
+                        </h4>
+                        <select name="por_especie">
+                            <option></option>
+                            {% for especie in especies %}
+                                <option value="{{ especie.nome_especie }}">
+                                    {{ especie.nome_especie }}
                                 </option>
-                                {% for sistema in lista_sistemas %}
-                                    <option value="{{ sistema }}">
-                                        {{ sistema }}
-                                    </option>
-                                {% endfor %}
-                            </select>
-                            <button type="submit" class="ui green fluid icon button">
-                                <i class="search icon"></i>
-                                Buscar</button>
-                            <div class="results"></div>
-                        </form>
-
-                        <form class="ui form">
-                            <select name="por_especie">
-                                <option>
-                                    --Selecione a espécie--
-                                </option>
-                                {% for especie in especies %}
-                                    <option value="{{ especie.nome_especie }}">
-                                        {{ especie.nome_especie }}
-                                    </option>
-                                {% endfor %}
-                            </select>
-                            <button type="submit" class="ui green fluid icon button">
-                                <i class="search icon"></i>
-                            Buscar</button>
-                            <div class="results"></div>
-                        </form>
-                    <form class="ui form">
-                            <select name="por_raca">
-                                <option>
-                                    --Selecione a raça--
-                                </option>
-                                {% for raca in lista_raca %}
-                                    <option value="{{ raca.nome_raca }}">
-                                        {{ raca.nome_raca }}
-                                    </option>
-                                {% endfor %}
-                            </select>
-                            <button type="submit" class="ui green fluid icon button">
-                                <i class="search icon"></i>
-                            Buscar</button>
-                            <div class="results"></div>
-                        </form>
+                            {% endfor %}
+                        </select>
                     </div>
-                    <div class="column">
-                        <form class="ui form">
-                            <select name="por_estado">
-                                <option>
-                                    --Selecione o estado--
-                                </option>
+                    <button type="submit" class="ui green fluid icon button">
+                <i class="search icon"></i>
+                Buscar
+            </button>
+            <div class="results"></div>
+                </form>
+                </div>
+                <div class="column">
+                <form>
+                    <div class="ui segment" id="camposdebusca">
+                    <h4>
+                        Selecione um estado
+                    </h4>
+                        <select name="por_estado">
+                                <option></option>
                                 {% for estado in por_estado %}
                                     <option value="{{ estado }}">
                                         {{ estado }}
                                     </option>
                                 {% endfor %}
                             </select>
-                            <button type="submit" class="ui green fluid icon button">
-                                <i class="search icon"></i>
-                            Buscar</button>
-                            <div class="results"></div>
-                        </form>
+                    </div>
+                <button type="submit" class="ui green fluid icon button">
+                <i class="search icon"></i>
+                Buscar
+            </button>
+            <div class="results"></div>
 
+                 </form>
+                </div>
+            </div>
+            <div class="two column row">
+                <div class="column">
+                    <div class="ui segment">
+                        <h4>
+                            Selecione uma raça
+                        </h4>
+                        <select name="por_raca">
+                            <option></option>
+                            {% for raca in lista_raca %}
+                                <option value="{{ raca.nome_raca }}">
+                                    {{ raca.nome_raca }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="ui green fluid icon button">
+                <i class="search icon"></i>
+                Buscar
+            </button>
+            <div class="results"></div>
+                 </form>
+                </div>
+                <div class="column">
+                  <div class="ui segment">
+                      <h4>
+                          Selecione uma cidade
+                      </h4>
+                      <select name="por_cidade">
+                          <option></option>
+                          {% for cidade in lista_cidade %}
+                              <option value="{{ cidade.nome_cidade }}">
+                                  {{ cidade.nome_cidade }}
+                              </option>
+                          {% endfor %}
+                      </select>
+                  </div>
+                </div>
+            </div>
+        <div class="two column row">
+                <div class="column">
+                <form>
+                    <div class="ui segment">
+                        <h4>
+                            Selecione um ou mais sistemas
+                        </h4>
+                        <div class="ui list">
+                    {% for sistema in lista_sistemas %}
+                        <div class="item">
+                        <div class="left floated content">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="por_sistema" value="{{ sistema }}">
+                            <label>{{ sistema }}</label>
+                            </div>
+                        </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                    </div>
+                <button type="submit" class="ui green fluid icon button">
+                <i class="search icon"></i>
+                Buscar
+            </button>
+            <div class="results"></div>
+                </div>
 
-
+                <div class="column">
+                    <div class="ui segment">
+                    <h4>
+                        Filtrar por data
+                    </h4>
+                        <input class="prompt" name="data" id="data" type="text" placeholder="Número da requisição...">
 
                     </div>
-                <div class="column">
-
-                        coluna três
-
-
-                </div>
                 </div>
             </div>
         </div>
-        <div class="field">
-            <form>
-                <button type="submit" class="ui fluid icon button">
-                    <i class="search icon"></i>
-                        Mostrar todos
-                </button>
-                <div class="results"></div>
-            </form>
+            <button type="submit" class="ui fluid icon button">
+                <i class="search icon"></i>
+                Buscar
+            </button>
+            <div class="results"></div>
+        </form>
         </div>
-    </div>
+
     <div class="ui fluid segment">
         <h3 class="ui center aligned header">Resultados</h3>
     <h4 class="ui center aligned top attached header">
@@ -155,5 +196,4 @@
         </div>
     </div>
     </div>
-
 {% endblock %}
