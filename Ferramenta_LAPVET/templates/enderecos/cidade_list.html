@@ -7,20 +7,38 @@
     <div class="ui green fluid segment">
 
         <h2 class="ui center aligned header">Cidades Cadastradas</h2>
-        <a class="ui button" href="{% url 'principal' %}">
-            <i class="angle double left icon"></i>
-            Voltar para a página principal
-        </a>
 
-        <a href="{% url 'new_cidade' %}" class="ui right floated button">
+<div class="field">
+      <a href="{% url 'new_cidade' %}" class="ui right floated button">
             Cadastrar nova cidade
             <i class="angle double right icon"></i>
         </a>
+    <a class="ui left floated button" href="{% url 'principal' %}">
+            <i class="angle double left icon"></i>
+            Voltar para a página principal
+        </a>
+</div>
 
     <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Cidade</th>
-                    <th>Estado</th>
+                    <th>
+
+                        <form>
+             <select  class="ui selection dropdown" name="procura">
+             <option value="">Filtrar por estado</option>
+                 {% for estado in estados %}
+                     <option value="{{ estado }}">
+                         {{ estado }}
+                     </option>
+                 {% endfor %}
+             </select>
+          <button type="submit" class="circular ui icon button">
+              <i class="search icon"></i></button>
+             <div class="results"></div>
+         </form>
+
+                    </th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>

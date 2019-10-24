@@ -5,58 +5,69 @@
     <div class="twelve wide column">
     <div class="two wide column"></div>
         <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Cadastrar proprietário</h2>
+            <h2 class="ui center aligned header">Cadastro do proprietário</h2>
 
             <div class="ui button" onclick="history.go(-1);">
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </div>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
                 {% csrf_token %}
                 <div class="field">
+                    <div class="two fields">
+                        <div class="twelve wide field">
                     <label class="color-label-brown">Nome</label>
                     {{ form.nome_proprietario }}
-                </div>
-                <div class="field">
+                        </div>
+                <div class="four wide field">
                     <label class="color-label-brown">Data do nascimento</label>
                     <input type="date" placeholder="dd/mm/yyyy" value={{form.data_nasc}}
                 </div>
+                    </div>
                 <div class="field">
+                    <div class="two fields">
+                        <div class="four wide field">
                     <label class="color-label-brown">CPF</label>
                     {{ form.cpf }}
                 </div>
-                <div class="field">
+                        <div class="four wide field">
                     <label class="color-label-brown">RG</label>
                     {{ form.rg }}
                 </div>
-                <div class="field">
+                <div class="four wide field">
                     <label class="color-label-brown">Telefone fixo</label>
                     {{ form.telefone }}
                 </div>
-
-                <div class="field">
+                <div class="four wide field">
                     <label class="color-label-brown">Telefone celular</label>
                     {{ form.celular }}
+                </div>
+                    </div>
                 </div>
                 <div class="field">
                     <label class="color-label-brown">Email</label>
                     {{ form.email }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_rua' %}" class="ui right floated button">
-                        <i class="plus icon"></i>
-                        Cadastrar rua
-                    </a>
-                    <label class="color-label-brown">Rua</label>
+                    <div class="two fields">
+                        <div class="four wide field">
+                    <label class="color-label-brown">Rua
+                    <a href="{% url 'new_rua' %}">
+                            <i class="plus icon"></i>
+                        </a>
+                    </label>
                     {{ form.rua }}
                 </div>
-                <div class="field">
+
+                <div class="two wide field">
                     <label class="color-label-brown">Número</label>
                     {{ form.numero }}
                 </div>
-                <div class="field">
+                <div class="ten wide field">
                     <label class="color-label-brown">Complemento</label>
                     {{ form.complemento }}
+                </div>
+                    </div>
                 </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>

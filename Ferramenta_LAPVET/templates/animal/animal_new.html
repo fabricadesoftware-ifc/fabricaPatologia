@@ -4,110 +4,142 @@
     <div class="twelve wide column">
         <div class="two wide column"></div>
         <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Cadastrar animal</h2>
+            <h2 class="ui center aligned header">Cadastro do animal</h2>
 
             <a class="ui button" href="{% url 'index_animal' %}">
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </a>
 
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
                 {% csrf_token %}
+                <h4 class="ui horizontal divider"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Indentificação do animal
+                        </font></font></h4>
                 <div class="field">
                     <label class="color-label-brown">Nome do animal</label>
                     {{ form.nome }}
                 </div>
                 <div class="field">
+                     <div class="four fields">
+                         <div class="two wide field">
                     <label class="color-label-brown">Idade</label>
                     {{form.idade}}
                 </div>
-                <div class="field">
+                         <div class="ten wide field">
                     <label class="color-label-brown">Cor da pelagem</label>
                     {{ form.cor_pelagem }}
                 </div>
-                <div class="field">
+                <div class="four wide field">
                     <label class="color-label-brown">Sexo</label>
                     {{ form.sexo }}
                 </div>
+                </div>
                 <div id="animalForm" data-racas-url="{% url 'ajax_load_racas' %}" novalidate>
                 <div class="field">
-                    <a href="{% url 'new_especie' %}" class="ui right floated button">
+                    <div class="two fields">
+                        <div class="field">
+                    <label class="color-label-brown">Especie
+                    <a href="{% url 'new_especie' %}">
                         <i class="plus icon"></i>
-                        Cadastrar espécie
                     </a>
-                    <label class="color-label-brown">Especie</label>
+                    </label>
                     {{ form.id_especie }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_raca' %}" class="ui right floated button">
+                    <label class="color-label-brown">Raça
+                    <a href="{% url 'new_raca' %}">
                         <i class="plus icon"></i>
-                        Cadastrar raça
                     </a>
-                    <label class="color-label-brown">Raça</label>
+                    </label>
                     {{ form.raca }}
                 </div>
                 </div>
+                </div>
+                </div>
+                    <h4 class="ui horizontal divider"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Endereço do local onde o animal vive
+                        </font></font></h4>
                 <div id="cidadeForm" data-cidade-url="{% url 'ajax_load_cidade' %}" novalidate>
                 <div class="field">
-                    <a href="{% url 'new_estado' %}" class="ui right floated button">
+                    <div class="two fields">
+                        <div class="field">
+
+                    <label class="color-label-brown">Estado
+                        <a href="{% url 'new_estado' %}">
                         <i class="plus icon"></i>
-                        Cadastrar estado
-                    </a>
-                    <label class="color-label-brown">Estado</label>
+                        </a>
+                    </label>
                     {{ form.id_estado }}
                 </div>
-                    <div id="bairroForm" data-bairro-url="{% url 'ajax_load_bairro' %}" novalidate>
+                        <div id="bairroForm" data-bairro-url="{% url 'ajax_load_bairro' %}" novalidate></div>
                 <div class="field">
-                    <a href="{% url 'new_cidade' %}" class="ui right floated button">
+                    <label class="color-label-brown">Cidade
+                    <a href="{% url 'new_cidade' %}">
                         <i class="plus icon"></i>
-                        Cadastrar cidade
                     </a>
-                    <label class="color-label-brown">Cidade</label>
+                    </label>
                     {{ form.cidade }}
+                </div>
                 </div>
                 </div>
                     <div id="ruaForm" data-rua-url="{% url 'ajax_load_rua' %}" novalidate>
                 <div class="field">
-                    <a href="{% url 'new_bairro' %}" class="ui right floated button">
+                    <div class="two fields">
+                        <div class="field">
+                    <label class="color-label-brown">Bairro
+                    <a href="{% url 'new_bairro' %}">
                         <i class="plus icon"></i>
-                        Cadastrar bairro
+
                     </a>
-                    <label class="color-label-brown">Bairro</label>
+                    </label>
                     {{ form.bairro }}
                 </div>
-                </div>
+
                 <div class="field">
-                    <a href="{% url 'new_rua' %}" class="ui right floated button">
+                    <label class="color-label-brown">Rua
+                    <a href="{% url 'new_rua' %}">
                         <i class="plus icon"></i>
-                        Cadastrar rua
                     </a>
-                    <label class="color-label-brown">Rua</label>
+                    </label>
                     {{ form.rua }}
                 </div>
                     </div>
+                </div>
                 <div class="field">
+                    <div class="two wide fields">
+                        <div class="two wide field">
                     <label class="color-label-brown">Número</label>
                     {{ form.numero }}
                 </div>
-                <div class="field">
+                <div class="fourteen wide field">
                     <label class="color-label-brown">Complemento</label>
                     {{ form.complemento }}
                 </div>
+                    </div>
+                </div>
+                        <div class="ui divider"></div>
                 <div class="field">
-                    <a href="{% url 'new_proprietario' %}" class="ui right floated button">
+                    <div class="two fields">
+                        <div class="field">
+                    <label class="color-label-brown">Proprietário do animal
+                    <a href="{% url 'new_proprietario' %}">
                         <i class="plus icon"></i>
-                        Cadastrar proprietário
                     </a>
-                    <label class="color-label-brown">Proprietário do animal</label>
+                    </label>
                     {{ form.proprietario }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_vet_resp' %}" class="ui right floated button">
-                        <i class="plus icon"></i>
-                        Cadastrar veterirário
-                    </a>
-                    <label class="color-label-brown">Veterinario responsável</label>
+                    <label class="color-label-brown">Veterinario responsável
+                        <a href="{% url 'new_vet_resp' %}">
+                            <i class="plus icon"></i>
+                        </a>
+                    </label>
                     {{ form.veterinario_responsavel }}
+                </div>
+                    </div>
                 </div>
 
                 <button class="positive fluid ui button" type="submit">Salvar</button>

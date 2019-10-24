@@ -12,8 +12,7 @@ class AnimalForm(ModelForm):
         choices=DATA_SEXO,
         widget=forms.RadioSelect(attrs={
             'class': 'radio',
-            'id': 'sexo'
-        }),
+            'id': 'sexo'}),
     )
 
     class Meta():

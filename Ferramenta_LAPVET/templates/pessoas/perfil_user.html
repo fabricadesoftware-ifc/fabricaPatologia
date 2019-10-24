@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Perfil de usuário</h2>
+
+        <div class="ui button" onclick="history.go(-1);">
+            <i class="angle double left icon"></i>
+            Voltar para a página anterior
+        </div>
+
+        <a href="{% url 'new_perfil' %}" class="ui right floated button">
+            Cadastrar perfil
+            <i class="angle double right icon"></i>
+        </a>
+
+        <h3 class="ui center aligned header">
+            Perfil {{ users.first_name }} {{ users.last_name }}
+        </h3>
+        <div class="ui attached segment">
+            <div class="field">
+                <div class="two fields">
+                    <div class="four wide field">
+                        <b>Username: </b>{{ users.username }}
+                    </div>
+                    <div class="four wide field">
+                        <b>Username: </b>{{ users.username }}
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

@@ -12,6 +12,7 @@ import pdfkit
 def gera_laudo_pdf(request, id):
     laudo = get_object_or_404(LaudoModel, pk=id)
 
+
     options = {
         'margin-top': '0.75in',
         'margin-right': '0.75in',

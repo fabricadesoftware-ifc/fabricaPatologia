@@ -22,11 +22,12 @@ def index_laudo(request):
 
 @login_required
 def new_laudo(request):
+    model = LaudoModel.objects.all()
     form = LaudoForm(request.POST or None, request.FILES or None)
     if form.is_valid(): # TODO: fazer com que apareça apenas os ids das requisições que não tem laudo!!
         form.save()
         return redirect('index_laudo')
-    return render(request, 'laudo/laudo_new.html', {'form':form})
+    return render(request, 'laudo/laudo_new.html', {'form':form, 'model':model})
 
 @login_required
 def update_laudo(request, id):

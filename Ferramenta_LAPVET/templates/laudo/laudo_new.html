@@ -11,14 +11,15 @@
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </a>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
             {% csrf_token %}
             <div class="field">
-                <a href="{% url 'new_requisicao' %}" class="ui right floated button">
+                <label class="collor-label-green">Número da requisição
+                <a href="{% url 'new_requisicao' %}">
                         <i class="plus icon"></i>
-                        Cadastrar requisição
+
                     </a>
-                <label class="collor-label-green">Número da requisição</label>
+                </label>
                 {{ form.id_requisicao }}
             </div>
             <div class="field">
@@ -46,9 +47,13 @@
                 {{ form.comentarios }}
             </div>
                 <div class="field">
+                    <div class="two fields">
+                        <div class="four wide field">
                     <label class="color-label-brown">Data do laudo</label>
                     <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_laudo}}>
                 </div>
+                        </div>
+                    </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>
         </div>

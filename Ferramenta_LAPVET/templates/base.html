@@ -33,8 +33,9 @@
                         <div class="ui inverted menu">
                             <a class="green item" href="{% url 'index_proprietario' %}">Proprietário</a>
                             <a class="item" href="{% url 'index_vet_resp' %}">Veterinário Responsável</a>
-                            <a class="item" href="{% url 'index_grupo' %}">Grupos</a>
-                            <a class="item" href="{% url 'index_user' %}">Usuário</a>
+                            <a class="item" href="{% url 'index_grupo' %}">Grupo</a>
+                            <a class="item" href="{% url 'perfil_user' user.id %}">Usuário</a>
+                            <a class="item" href="#">Mudar senha</a>
                         </div>
                     </div>
                     <div class="item">

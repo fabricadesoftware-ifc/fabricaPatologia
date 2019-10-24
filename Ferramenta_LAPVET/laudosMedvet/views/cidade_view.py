@@ -1,14 +1,19 @@
 # coding:utf-8
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from laudosMedvet.models import CidadeModel
+from laudosMedvet.models import CidadeModel, EstadoModel
 from laudosMedvet.forms import CidadeForm
 
 
 @login_required
 def index_cidade(request):
-    cidades = CidadeModel.objects.all()
-    return render(request, 'enderecos/cidade_list.html', {'cidades':cidades})
+    estados = EstadoModel.objects.all()
+    procura = request.GET.get('procura', None)
+    if procura is not None:
+        cidades = CidadeModel.objects.filter(id_estado__nome_estado=procura)
+    else:
+        cidades = CidadeModel.objects.all()
+    return render(request, 'enderecos/cidade_list.html', {'cidades':cidades, 'estados':estados})
 
 @login_required
 def new_cidade(request):

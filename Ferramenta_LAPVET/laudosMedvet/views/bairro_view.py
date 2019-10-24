@@ -1,13 +1,18 @@
 # coding:utf-8
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from laudosMedvet.models import BairroModel
+from laudosMedvet.models import BairroModel, CidadeModel, EstadoModel
 from laudosMedvet.forms import BairroForm
+
 
 
 @login_required
 def index_bairro(request):
-    bairros = BairroModel.objects.all().order_by('nome_bairro')
+    procura = request.GET.get('procura', None)
+    if procura is not None:
+        bairros = BairroModel.objects.filter(nome_bairro__icontains=procura)
+    else:
+        bairros = BairroModel.objects.all().order_by('nome_bairro')
     return render(request, 'enderecos/bairro_list.html', {'bairros':bairros})
 
 @login_required

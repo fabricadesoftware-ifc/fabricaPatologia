@@ -11,18 +11,11 @@
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </div>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
             {% csrf_token %}
             <div class="field">
                 <label class="collor-label-green">Nome do grupo</label>
                 {{ form.nome_grupo }}
-            </div>
-            <div class="field">
-                <label class="collor-label-green">Selecione permissões para o grupo</label>
-                {% for permissao in form_permissions %}
-                    <input class="checkbox" type="checkbox" onclick={{ permissao.name }}>
-                    {{ permissao }}
-                {% endfor %}
             </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>

@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Cadastro de usuário</h2>
+
+        <form class="ui form segment" method="post" action="{% url 'new_usuario' %}" style="background-color: #c8c8c8">
+            {% csrf_token %}
+            <h4 class="ui dividing header">Informações pessoais</h4>
+
+        <div class="field">
+                <div class="two fields">
+                    <div class="three wide field">
+                        <label>
+                            Data de Nascimento
+                        </label>
+                        <input type="date" placeholder="dd/mm/yyyy" value={{ form.data_nasc }}
+                    </div>
+                    <div class="three wide field">
+                        <label>
+                            CPF
+                        </label>
+                        {{ form.cpf }}
+                    </div>
+                        <div class="three wide field">
+                        <label>
+                            RG
+                        </label>
+                        {{ form.rg }}
+                    </div>
+                </div>
+                    <div class="field">
+                <div class="two fields">
+                    <div class="three wide field">
+                        <label>
+                            Telefone
+                        </label>
+                        {{ form.telefone }}
+                    </div>
+                    <div class="three wide field">
+                        <label>
+                            Celular
+                        </label>
+                        {{ form.celular }}
+                    </div>
+                        <div class="six wide field">
+                        <label>
+                            email
+                        </label>
+                        {{ form.email }}
+                    </div>
+                </div>
+                    </div>
+                        <div class="field">
+                      <div class="two fields">
+                    <div class="twelve wide field">
+                        <label>
+                            Endereço
+                        </label>
+                        {{ form.endereco }}
+                    </div>
+                    <div class="two wide field">
+                        <label>
+                            Número
+                        </label>
+                        {{ form.numero }}
+                    </div>
+                        <div class="six wide field">
+                        <label>
+                            Bairro
+                        </label>
+                        {{ form.bairro }}
+                    </div>
+                </div>
+                        </div>
+                    <div class="field">
+                <div class="two fields">
+                    <div class="three wide field">
+                        <label>
+                            Cidade
+                        </label>
+                        {{ form.cidade }}
+                    </div>
+                    <div class="three wide field">
+                        <label>
+                            Estado
+                        </label>
+                        {{ form.estado }}
+                    </div>
+                    <div class="three wide field">
+                        <label>
+                            Username
+                        </label>
+                        {{ user.username }}
+                    </div>
+
+                </div>
+                    </div>
+        </div>
+            <div class="ui grid">
+                <div class="sixteen wide column">
+                    <button type="submit" class="ui fluid green button">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+
+{% endblock %}

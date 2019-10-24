@@ -5,42 +5,55 @@
     <div class="twelve wide column">
     <div class="two wide column"></div>
         <div class="ui green fluid segment">
-            <h2 class="ui center aligned header">Nova requisição</h2>
+            <h2 class="ui center aligned header">Cadastro de nova requisição</h2>
 
             <a class="ui button" href="{% url 'index_requisicao' %}">
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </a>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
                 {% csrf_token %}
+                <h4 class="ui horizontal divider"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Indentificação da requisição
+                        </font></font></h4>
                 <div class="field">
+                    <div class="two fields">
+                        <div class="field">
                     <label class="collor-label-green">Número RGHV</label>
                     {{ form.rghv }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_animal' %}" class="ui right floated button">
+                    <label class="collor-label-green">Código do animal
+                    <a href="{% url 'new_animal' %}">
                         <i class="plus icon"></i>
-                        Cadastrar animal
                     </a>
-                    <label class="collor-label-green">Código do animal</label>
+                    </label>
                     {{ form.cod_animail }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_tipo_laudo' %}" class="ui right floated button">
+                    <label class="collor-label-green">Tipo de requisição
+                        <a href="{% url 'new_tipo_laudo' %}">
                         <i class="plus icon"></i>
-                        Cadastrar tipo de requisição
                     </a>
-                    <label class="collor-label-green">Tipo de requisição</label>
+                    </label>
                     {{ form.tipo_de_laudo }}
                 </div>
+                    </div>
+                </div>
+                <h4 class="ui horizontal divider"><font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Material enviado para exame
+                        </font></font></h4>
                 <div class="field">
+                    <label class="collor-label-green">Descrição do material enviado para exame</label>
+                    {{ form.material_enviado }}
+                </div>
+                <div class="six wide field">
                     <label class="color-label-brown">Data da coleta</label>
                     <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_coleta}}
                 </div>
-                <div class="field">
-                    <label class="collor-label-green">Material enviado para exame</label>
-                    {{ form.material_enviado }}
-                </div>
+                   <div class="ui divider"></div>
                 <div class="field">
                     <label class="collor-label-green">Histórico clínico</label>
                     {{ form.historico_clinico }}
@@ -49,13 +62,19 @@
                     <label class="collor-label-green">Descrição macroscópica</label>
                     {{ form.descricao_macroscopica }}
                 </div>
+                    <div class="ui divider"></div>
                 <div class="field">
-                    <label class="collor-label-green">Figura da ficha clínica</label>
+                    <div class="two fields">
+                        <div class="field">
+                    <label class="collor-label-green">Scan da ficha clínica (Se houver)</label>
                     {{ form.scan_figura_ficha_clinica }}
                 </div>
                 <div class="field">
                     <label class="color-label-brown">Data do recebimento</label>
                     <input type="date" placeholder="dd/mm/yyyy" value={{form.dt_recebimento}}
+                </div>
+                </div>
+                    </div>
                 </div>
                 <button class="positive ui fluid button" type="submit">Salvar</button>
             </form>

@@ -1,4 +1,5 @@
 from laudosMedvet.models.usuario_model import UsuarioModel
+from laudosMedvet.models.usuario_model import UserModel
 from laudosMedvet.models.laudo_model import LaudoModel
 from laudosMedvet.models.tipo_laudo_model import TipoLaudoModel
 

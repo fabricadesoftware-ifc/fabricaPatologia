@@ -34,6 +34,10 @@
                             </div>
                             <button type='submit' class="ui submit green button fluid color-button" value='Entrar'>Entrar</button>
                         </form>
+                    {% if model.count <= 1 %}
+                    <a href="{% url 'cadastro_primeiro_acesso' %}" class="ui fluid button">
+                        Cadastro de usuário para primeiro acesso</a>
+                    {% endif %}
                 </div>
                 <div class="ui basic segment">
 

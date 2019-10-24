@@ -15,4 +15,4 @@ class RequisicaoLaudoModel(models.Model):
 
 
     def __str__(self):
-        return str(self.id)
+        return str(self.id) + ' , ' + str(self.tipo_de_laudo.tipo_laudo) +' , '+ str(self.cod_animail.nome)

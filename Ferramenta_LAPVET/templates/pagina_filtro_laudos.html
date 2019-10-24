@@ -3,22 +3,50 @@
     <div class="two wide column"></div>
     <div class="twelve wide column">
     <div class="two wide column"></div>
-    <div class="ui green fluid segment">
-        <a class="ui button" href="pagina_filtro_laudos.html">
+
+        <a class="ui button" href="{% url 'principal' %}">
             <i class="angle double left icon"></i>
             Voltar para a página anterior
         </a>
-        <h3 class="ui center aligned header">Busca por laudos</h3>
+        <h3 class="ui center aligned header">Opções de busca por laudos</h3>
         <div class="ui form">
-        <div class="ui stackable celled grid container">
-            <div class="two column row">
+
+            <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
+
+
+
+            <form class="ui three column grid">
+
+                <div class="left floated five wide column">
+                <div class="ui segment">
+
+                        <h4>
+                            Selecione um ou mais sistemas
+                        </h4>
+                        <div class="ui list">
+                    {% for sistema in lista_sistemas %}
+                        <div class="item">
+                        <div class="left floated content">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="procura" value="{{ sistema }}">
+                            <label>{{ sistema }}</label>
+                            </div>
+                        </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                </div>
+                </div>
+
+
                 <div class="column">
-                <form>
-                    <div class="ui segment">
+                <div class="ui segment">
+
+
                         <h4>
                             Selecione uma espécie
                         </h4>
-                        <select name="por_especie">
+                        <select name="procura">
                             <option></option>
                             {% for especie in especies %}
                                 <option value="{{ especie.nome_especie }}">
@@ -26,17 +54,34 @@
                                 </option>
                             {% endfor %}
                         </select>
+
+                        <h4>
+                            Selecione uma raça
+                        </h4>
+                        <select name="procura">
+                            <option></option>
+                            {% for raca in lista_raca %}
+                                <option value="{{ raca.nome_raca }}">
+                                    {{ raca.nome_raca }}
+                                </option>
+                            {% endfor %}
+                        </select>
                     </div>
-                    <button type="submit" class="ui green fluid icon button">
-                <i class="search icon"></i>
-                Buscar
-            </button>
-            <div class="results"></div>
-                </form>
+
+            <div class="ui segment">
+            <h4>
+                Selecione um período inicial
+            </h4>
+                <input type="date" name="data_min">
+                <h4>
+                Selecione um período final
+            </h4>
+                <input type="date" name="data_max" placeholder="{{ hoje }}">
+            </div>
                 </div>
                 <div class="column">
-                <form>
-                    <div class="ui segment" id="camposdebusca">
+                <div class="ui segment">
+
                     <h4>
                         Selecione um estado
                     </h4>
@@ -48,41 +93,7 @@
                                     </option>
                                 {% endfor %}
                             </select>
-                    </div>
-                <button type="submit" class="ui green fluid icon button">
-                <i class="search icon"></i>
-                Buscar
-            </button>
-            <div class="results"></div>
-
-                 </form>
-                </div>
-            </div>
-            <div class="two column row">
-                <div class="column">
-                    <div class="ui segment">
-                        <h4>
-                            Selecione uma raça
-                        </h4>
-                        <select name="por_raca">
-                            <option></option>
-                            {% for raca in lista_raca %}
-                                <option value="{{ raca.nome_raca }}">
-                                    {{ raca.nome_raca }}
-                                </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <button type="submit" class="ui green fluid icon button">
-                <i class="search icon"></i>
-                Buscar
-            </button>
-            <div class="results"></div>
-                 </form>
-                </div>
-                <div class="column">
-                  <div class="ui segment">
-                      <h4>
+                    <h4>
                           Selecione uma cidade
                       </h4>
                       <select name="por_cidade">
@@ -93,88 +104,45 @@
                               </option>
                           {% endfor %}
                       </select>
-                  </div>
-                </div>
-            </div>
-        <div class="two column row">
-                <div class="column">
-                <form>
-                    <div class="ui segment">
-                        <h4>
-                            Selecione um ou mais sistemas
-                        </h4>
-                        <div class="ui list">
-                    {% for sistema in lista_sistemas %}
-                        <div class="item">
-                        <div class="left floated content">
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="por_sistema" value="{{ sistema }}">
-                            <label>{{ sistema }}</label>
-                            </div>
-                        </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                    </div>
-                <button type="submit" class="ui green fluid icon button">
-                <i class="search icon"></i>
-                Buscar
-            </button>
-            <div class="results"></div>
-                </div>
-
-                <div class="column">
-                    <div class="ui segment">
                     <h4>
-                        Filtrar por data
+                          Selecione um bairro
                     </h4>
-                        <input class="prompt" name="data" id="data" type="text" placeholder="Número da requisição...">
-
-                    </div>
+                      <select name="por_bairro">
+                          <option></option>
+                          {% for bairro in por_bairro %}
+                              <option value="{{ bairro.nome_bairro }}">
+                                  {{ bairro.nome_bairro }}
+                              </option>
+                          {% endfor %}
+                      </select>
+                <h4>
+                          Selecione uma rua
+                    </h4>
+                      <select name="por_rua">
+                          <option></option>
+                          {% for rua in por_rua %}
+                              <option value="{{ rua.nome_rua }}">
+                                  {{ rua.nome_rua }}
+                              </option>
+                          {% endfor %}
+                      </select>
                 </div>
+                </div>
+                <button type="submit" class="ui green fluid icon button">
+                    <i class="search icon"></i>
+                    Buscar
+                </button>
+                <div class="results"></div>
+            </form>
             </div>
         </div>
-            <button type="submit" class="ui fluid icon button">
-                <i class="search icon"></i>
-                Buscar
-            </button>
-            <div class="results"></div>
-        </form>
-        </div>
-
-    <div class="ui fluid segment">
-        <h3 class="ui center aligned header">Resultados</h3>
-    <h4 class="ui center aligned top attached header">
-        <div class="ui center aligned pagination">
-            <span class="step-links">
-                {% if laudos.has_previous %}
-                    <a href="?page=1"><i class="angle double left icon"></i>primeira</a>
-                    <a href="?page={{ laudos.previous_page_number }}">
-                        <i class="angle left icon"></i>
-                        anterior
-                    </a>
-                {% endif %}
-                <span class="current">
-                    Página {{ laudos.number }} de {{ laudos.paginator.num_pages }}
-                </span>
-                {% if laudos.has_next %}
-                    <a href="?page={{ laudos.next_page_number }}">
-                        próximo
-                        <i class="angle right icon"></i>
-                    </a>
-                    <a href="?page={{ laudos.paginator.num_pages }}">
-                        última
-                        <i class="angle double right icon"></i>
-                    </a>
-                {% endif %}
-            </span>
-        </div>
-    </h4>
-        <div class="ui divided list">
+    <h2 class="ui center aligned header">Resultados</h2>
+    <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
+    <div class="ui divided list">
             {% for consulta in laudos %}
             <div class="item">
             <div class="content">
-                    <a href="{% url 'visualizar_laudo' consulta.id %}"><font style="vertical-align: inherit;">
+                    <a href="{% url 'visualizar_laudo' consulta.id %}"><h4 style="vertical-align: inherit;">
                         <i class="clipboard outline icon"></i>
                         <font style="vertical-align: inherit;">
                             {{ consulta.id_requisicao.cod_animail.nome }},
@@ -185,15 +153,14 @@
                              {{ consulta.id_requisicao.cod_animail.raca.id_especie.nome_especie }},
                              {{ consulta.id_requisicao.cod_animail.raca.nome_raca }}
                         </font>
-                    </font>
-                        </a>
+                    </h4>
+                    </a>
+
                 </div>
                 </div>
              {% endfor %}
         </div>
+    </div>
+    </div>
 
-            </div>
-        </div>
-    </div>
-    </div>
 {% endblock %}

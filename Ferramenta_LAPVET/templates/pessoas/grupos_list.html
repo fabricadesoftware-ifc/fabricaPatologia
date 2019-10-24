@@ -19,6 +19,7 @@
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
                     <th>Grupo</th>
+                    <th>Id</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
@@ -26,6 +27,7 @@
                 {% for grupo in grupos %}
                 <tr>
                     <td class="center aligned">{{ grupo.name }}</td>
+                    <td class="center aligned">{{ grupo.id }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_grupo' grupo.id %}">
                         <i class="green edit icon"></i>

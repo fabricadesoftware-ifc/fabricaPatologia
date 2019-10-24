@@ -48,8 +48,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.LoginView.as_view(), name='login'),
     path('logout', views.LogoutView.as_view(), name='logout'),
-    path('user/list', views.usuario_view.index_user, name='index_user'),
-    path('cadastro/usuario/', views.CadastroUsuarioView.as_view(), name='cadastro_usuario'),
+    path('cadastro/user/', views.CadastroPrimeiroAcesso.as_view(), name='cadastro_primeiro_acesso'),
+    path('user/mudar-senha/<int:id>', views.usuario_view.update_password, name='update_password'),
+
 
     path('grupo/', views.grupo_view.index_grupo, name='index_grupo'),
     path('grupo/new', views.grupo_view.new_grupo, name='new_grupo'),
@@ -81,11 +82,16 @@ urlpatterns = [
     path('raca/update/<int:id>', views.raca_view.update_raca, name='update_raca'),
     path('raca/delete/<int:id>', views.raca_view.delete_raca, name='delete_raca'),
 
+    #Perfil - Usuário
+    path('pessoa/perfil/<int:id>', views.usuario_view.index_user, name='perfil_user'),
+    path('pessoa/perfil/new/', views.usuario_view.new_perfil_user, name='new_perfil'),
+
     #Pessoas
     path('pessoa/proprietario/', views.proprietario_view.index_proprietario, name='index_proprietario'),
     path('pessoa/proprietario/new/', views.proprietario_view.new_proprietario, name='new_proprietario'),
     path('pessoa/proprietario/update/<int:id>', views.proprietario_view.update_proprietario, name='update_proprietario'),
     path('pessoa/proprietario/delete/<int:id>', views.proprietario_view.delete_proprietario, name='delete_proprietario'),
+
 
     path('pessoa/veterinario/', views.veterinario_responsavel_view.index_vet_resp, name='index_vet_resp'),
     path('pessoa/veterinario/new/', views.veterinario_responsavel_view.new_vet_resp, name='new_vet_resp'),
@@ -151,6 +157,6 @@ urlpatterns = [
 
     #pesquisa
     path('procura/', views.filtro_laudos_view.lista_laudos, name="procura_laudos"),
-    path('procura/resultados/', views.filtro_laudos_view.resultados, name='resultados'),
+    path('gera_pdf/<int:id>', views.filtro_laudos_view.gera_pdf, name='gera_pdf'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

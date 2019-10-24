@@ -11,18 +11,18 @@
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </a>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
                 {% csrf_token %}
                 <div class="field">
                     <label class="collor-label-green">Nome da rua</label>
                     {{ form.nome_rua }}
                 </div>
                 <div class="field">
-                    <a href="{% url 'new_bairro' %}" class="ui right floated button">
+                    <label class="collor-label-green">Bairro
+                    <a href="{% url 'new_bairro' %}">
                         <i class="plus icon"></i>
-                        Cadastrar bairro
                     </a>
-                    <label class="collor-label-green">Bairro</label>
+                    </label>
                     {{ form.id_bairro }}
                 </div>
                 <button class="positive ui floated button" type="submit">Salvar</button>

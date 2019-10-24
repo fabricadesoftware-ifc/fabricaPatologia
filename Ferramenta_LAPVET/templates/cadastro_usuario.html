@@ -7,7 +7,7 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastrar usuário</h2>
 
-        <form class="ui form segment" method="post" action="{% url 'cadastro_usuario' %}">
+        <form class="ui form segment" method="post" action="{% url 'cadastro_primeiro_acesso' %}">
             {% csrf_token %}
             <h4 class="ui dividing header">Informações pessoais</h4>
             <div class="field">
@@ -30,7 +30,6 @@
                             </div>
                         {% endif %}
                     </div>
-                </div>
             </div>
             <h4 class="ui dividing header">Credenciais para login</h4>
             <div class="fields">
