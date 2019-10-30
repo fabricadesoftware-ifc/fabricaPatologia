@@ -34,7 +34,7 @@
                             <a class="green item" href="{% url 'index_proprietario' %}">Proprietário</a>
                             <a class="item" href="{% url 'index_vet_resp' %}">Veterinário Responsável</a>
                             <a class="item" href="{% url 'index_grupo' %}">Grupo</a>
-                            <a class="item" href="{% url 'perfil_user' user.id %}">Usuário</a>
+                            <a class="item" href="#">Usuário</a>
                             <a class="item" href="#">Mudar senha</a>
                         </div>
                     </div>
@@ -52,6 +52,7 @@
                         Laudos
                         <div class="ui inverted menu">
                             <a class="item" href="{% url 'index_tipo_laudo' %}">Tipo</a>
+                            <a class="item" href="{% url 'index_vet_pat' %}">Veterinário Patologista</a>
                             <a class="item" href="{% url 'index_requisicao' %}">Requisição</a>
                             <a class="item" href="{% url 'index_laudo' %}">Laudo</a>
                             <a class="green item" href="{% url 'index_imagem' %}">Imagem</a>

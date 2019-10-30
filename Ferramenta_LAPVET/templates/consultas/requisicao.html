@@ -99,7 +99,7 @@
         </div>
         <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ requisicao.material_enviado }}<br>
                 <br>
                 <b>Data da coleta: </b>{{ requisicao.dt_coleta }}
@@ -107,13 +107,13 @@
         </div>
         <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ requisicao.historico_clinico }}
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ requisicao.descricao_macroscopica }}
             </p>
         </div>
@@ -122,7 +122,7 @@
             <p>
                 Número do registro: {{ requisicao.id }}<br>
                 Data do recebimento: {{ requisicao.dt_recebimento }}<br>
-                Responsável pelo recebimento:
+                Responsável pelo recebimento: {{ requisicao.responsavel_recebimento }}
             </p>
         </div>
     </div>

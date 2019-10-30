@@ -4,8 +4,27 @@
     <list default="true" id="add7e6dc-d159-45ca-a64f-0ba653010259" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/laudo_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/requisicao_laudo_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/requisicao_laudo_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/migrations/0002_auto_20191023_1457.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/animal_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/animal_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas/imagens_laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/imagens_laudo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas/laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/laudo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas/requisicao.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/requisicao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/laudo/imagem_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/imagem_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/laudo/laudo_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/laudo_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/laudo/requisicao_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/laudo/requisicao_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pagina_filtro_laudos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagina_filtro_laudos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pessoas/proprietario_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/proprietario_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pessoas/user_delete.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pessoas/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/perfil_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pessoas/user_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pessoas/perfil_user_edit.html" afterDir="false" />
@@ -86,7 +105,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/SEGUNDO_SEMESTRE/Dev_web2_1/projeto_django" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -311,7 +330,11 @@
       <workItem from="1571759197607" duration="10167000" />
       <workItem from="1571846868373" duration="12071000" />
       <workItem from="1571921828160" duration="694000" />
-      <workItem from="1571930683755" duration="1521000" />
+      <workItem from="1571930683755" duration="3769000" />
+      <workItem from="1572001718709" duration="248000" />
+      <workItem from="1572026682534" duration="2745000" />
+      <workItem from="1572364426797" duration="11682000" />
+      <workItem from="1572449221049" duration="14521000" />
     </task>
     <servers />
   </component>

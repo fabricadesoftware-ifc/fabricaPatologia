@@ -1,5 +1,6 @@
 from django.db import models
 from laudosMedvet.models.requisicao_laudo_model import RequisicaoLaudoModel
+from .veterinario_patologista import VeterinarioPatologistaModel
 from multiselectfield import MultiSelectField
 
 class LaudoModel(models.Model):
@@ -22,6 +23,7 @@ class LaudoModel(models.Model):
     etiologia = models.CharField(max_length=300, null=True)
     diagnostico_final = models.TextField(null=True, blank=True)
     comentarios = models.TextField()
+    veterinario_patologista = models.ForeignKey(VeterinarioPatologistaModel, on_delete=models.PROTECT)
     dt_laudo = models.DateField()
 
     def __str__(self):

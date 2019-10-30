@@ -21,7 +21,9 @@
 
         <table class="ui large striped table">
                 <thead><tr class="center aligned">
-                    <th>Imagem</th>
+                    <th>Nome da imagem</th>
+                    <th>Laudo</th>
+                    <th>Animal</th>
                     <th>Editar</th>
                     <th>Deletar</th>
                 </tr></thead>
@@ -29,6 +31,13 @@
                 {% for imagem in imagens %}
                 <tr>
                     <td class="center aligned">{{ imagem.nome_imagem }}</td>
+                    <td class="center aligned">
+                        {{ imagem.id_laudo.id }} - {{ imagem.id_laudo.id_requisicao.tipo_de_laudo }}
+                    </td>
+                    <td class="center aligned">
+                        {{ imagem.id_laudo.id_requisicao.cod_animail.nome }} -
+                        {{ imagem.id_laudo.id_requisicao.cod_animail.id_especie.nome_especie }}
+                    </td>
                     <td class="center aligned">
                         <a href="{% url 'update_imagem' imagem.id %}">
                         <i class="green edit icon"></i>

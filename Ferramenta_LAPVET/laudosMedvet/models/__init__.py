@@ -8,7 +8,7 @@ from laudosMedvet.models.proprietario_model import ProprietarioModel
 from laudosMedvet.models.veterinario_responsavel_model import VeterinarioResponsavelModel
 from laudosMedvet.models.animal_model import AnimalModel
 
-
+from laudosMedvet.models.veterinario_patologista import VeterinarioPatologistaModel
 from laudosMedvet.models.estado_model import EstadoModel
 
 from laudosMedvet.models.cidade_model import CidadeModel

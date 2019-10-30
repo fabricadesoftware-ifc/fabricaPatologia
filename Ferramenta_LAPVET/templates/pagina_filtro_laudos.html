@@ -8,7 +8,7 @@
             <i class="angle double left icon"></i>
             Voltar para a página anterior
         </a>
-        <h3 class="ui center aligned header">Opções de busca por laudos</h3>
+        <h2 class="ui center aligned header">Opções de busca por laudos</h2>
         <div class="ui form">
 
             <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
@@ -28,7 +28,7 @@
                         <div class="item">
                         <div class="left floated content">
                         <div class="ui checkbox">
-                            <input type="checkbox" name="procura" value="{{ sistema }}">
+                            <input type="checkbox" name="por_sistema" value="{{ sistema }}">
                             <label>{{ sistema }}</label>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                         <h4>
                             Selecione uma espécie
                         </h4>
-                        <select name="procura">
+                        <select name="por_especie">
                             <option></option>
                             {% for especie in especies %}
                                 <option value="{{ especie.nome_especie }}">
@@ -58,7 +58,7 @@
                         <h4>
                             Selecione uma raça
                         </h4>
-                        <select name="procura">
+                        <select name="por_raca">
                             <option></option>
                             {% for raca in lista_raca %}
                                 <option value="{{ raca.nome_raca }}">
@@ -87,7 +87,7 @@
                     </h4>
                         <select name="por_estado">
                                 <option></option>
-                                {% for estado in por_estado %}
+                                {% for estado in estados %}
                                     <option value="{{ estado }}">
                                         {{ estado }}
                                     </option>

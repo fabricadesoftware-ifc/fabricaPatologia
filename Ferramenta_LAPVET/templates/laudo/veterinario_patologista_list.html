@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+       <h2 class="ui center aligned header">Veterinários patologistas cadastrados</h2>
+
+        <div class="ui button" onclick="history.go(-1);">
+            <i class="angle double left icon"></i>
+            Voltar para a página anterior
+        </div>
+
+        <a href="{% url 'new_vet_pat' %}" class="ui right floated button">
+            Cadastrar novo veterinário
+            <i class="angle double right icon"></i>
+        </a>
+
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Nome</th>
+                    <th>CRMV</th>
+                    <th>Formação</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for veterinario in veterinarios %}
+                <tr>
+                    <td class="center aligned">{{ veterinario.nome }}</td>
+                    <td class="center aligned">{{ veterinario.crmv }}</td>
+                    <td class="center aligned">{{ veterinario.formacao }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_vet_pat' veterinario.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_vet_pat' veterinario.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}

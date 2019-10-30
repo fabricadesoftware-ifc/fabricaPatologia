@@ -29,6 +29,7 @@ import laudosMedvet.views.bairro_view
 import laudosMedvet.views.cidade_view
 import laudosMedvet.views.estado_view
 import laudosMedvet.views.animal_view
+import laudosMedvet.views.veterinario_patologista_view
 
 import laudosMedvet.views.tipo_laudo_view
 import laudosMedvet.views.imagem_view
@@ -97,6 +98,11 @@ urlpatterns = [
     path('pessoa/veterinario/new/', views.veterinario_responsavel_view.new_vet_resp, name='new_vet_resp'),
     path('pessoa/veterinario/update/<int:id>', views.veterinario_responsavel_view.update_vet_resp, name='update_vet_resp'),
     path('pessoa/veterinario/delete/<int:id>', views.veterinario_responsavel_view.delete_vet_resp, name='delete_vet_resp'),
+
+    path('laudo/veterinario/', views.veterinario_patologista_view.index_vet_pat, name='index_vet_pat'),
+    path('laudo/veterinario/new/', views.veterinario_patologista_view.new_vet_pat, name='new_vet_pat'),
+    path('laudo/veterinario/update/<int:id>', views.veterinario_patologista_view.update_vet_pat, name='update_vet_pat'),
+    path('laudo/veterinario/delete/<int:id>', views.veterinario_patologista_view.delete_vet_pat, name='delete_vet_pat'),
 
     #enderecos
     path('endereco/estado/', views.estado_view.index_estado, name='index_estado'),

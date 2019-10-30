@@ -19,12 +19,13 @@ class AnimalModel(models.Model):
     cor_pelagem = models.CharField(max_length=50, blank=True)
     dt_cadastro = models.DateField(auto_now_add=True)
     proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.PROTECT, blank=True)
-    veterinario_responsavel = models.ForeignKey(VeterinarioResponsavelModel, on_delete=models.PROTECT, null=True)
-    id_estado = models.ForeignKey(EstadoModel, on_delete=models.PROTECT, null=True)
-    cidade = models.ForeignKey(CidadeModel, on_delete=models.PROTECT, null=True)
-    bairro = models.ForeignKey(BairroModel, on_delete=models.PROTECT, null=True)
-    rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT, null=True)
-    numero = models.IntegerField(blank=True)
+    veterinario_responsavel = models.ForeignKey(VeterinarioResponsavelModel,
+                                                on_delete=models.PROTECT, blank=True, null=True)
+    id_estado = models.ForeignKey(EstadoModel, on_delete=models.PROTECT, blank=True, null=True)
+    cidade = models.ForeignKey(CidadeModel, on_delete=models.PROTECT, blank=True, null=True)
+    bairro = models.ForeignKey(BairroModel, on_delete=models.PROTECT, blank=True, null=True)
+    rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT, blank=True, null=True)
+    numero = models.PositiveIntegerField(default=0)
     complemento = models.CharField(max_length=300, blank=True)
 
     class Meta:

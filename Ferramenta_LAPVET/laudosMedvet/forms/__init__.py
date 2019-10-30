@@ -17,4 +17,5 @@ from laudosMedvet.forms.requisicao_laudo_form import RequisicaoLaudoForm
 from laudosMedvet.forms.laudo_form import LaudoForm
 from laudosMedvet.forms.raca_form import RacaForm
 from laudosMedvet.forms.mudar_senha_form import FormMudarSenha
+from laudosMedvet.forms.veterinario_patologista_form import VeterinarioPatologistaForm
 

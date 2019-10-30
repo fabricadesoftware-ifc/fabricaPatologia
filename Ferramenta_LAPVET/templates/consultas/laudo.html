@@ -48,7 +48,7 @@
         </div>
         <h3 class="ui center aligned top attached header">
             LAUDO DE {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo.upper }}<br>
-            {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo }}-{{ laudo.id }} {{ laudo.dt_laudo }}
+            {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo }} Nº{{ laudo.id }}
 
         </h3>
         <div class="ui attached segment">
@@ -104,7 +104,7 @@
             </p>
         <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ laudo.id_requisicao.material_enviado }}<br>
                 <br>
                 <b>Data da coleta: </b>{{ laudo.id_requisicao.dt_coleta }}
@@ -112,23 +112,23 @@
         </div>
         <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ laudo.id_requisicao.historico_clinico }}
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
                 {{ laudo.id_requisicao.descricao_macroscopica }}
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MICROSCÓPICA</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
             {{ laudo.descricao_microscopica }}
             </p>
         </div>
-    <h4 class="ui center aligned attached header"><u>SISTEMA</u></h4>
+    <h4 class="ui center aligned attached header"><u>SISTEMAS</u></h4>
         <div class="ui attached segment">
             <p>
             {{ laudo.sistemas }}
@@ -136,21 +136,21 @@
         </div>
         <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO MORFOLÓGICO</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
             {{ laudo.diagnostico_morfologico }}
             </p>
         </div>
         {% if laudo.id_requisicao.tipo_de_laudo.tipo_laudo == "Necropsia" %}
             <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO</u></h4>
             <div class="ui attached segment">
-                <p>
+                <p align="justify">
                     {{ laudo.diagnostico_final }}
                 </p>
             </div>
         {% endif %}
         <h4 class="ui center aligned attached header"><u>COMENTÁRIOS</u></h4>
         <div class="ui attached segment">
-            <p>
+            <p align="justify">
             {{ laudo.comentarios }}
             </p>
         </div>
@@ -160,25 +160,24 @@
         Araquari, {{ laudo.dt_laudo }}
         </div>
         <div class="ui right aligned grid">
-            <div class="left floated right aligned six wide column">
-                <div class="ui center aligned segment">
-                    <b>
-                        Nome + formação<br>
-                        Patologista Veterinário<br>
-                        CRMV-SC XXXXX
-                    </b>
-                </div>
-            </div>
-            <div class="right floated left aligned six wide column">
-                <div class="ui center aligned segment">
-                    <b>
-                        Nome do técnico
 
-                    </b>
-                </div>
-            </div>
             </p>
+
         </div>
+    <div class="ui centered grid">
+        <div class="centered floated center aligned six wide column">
+
+        <div class="ui attached segment">
+        <p>
+        <b>
+        {{ laudo.veterinario_patologista.nome }}<br>
+            {{ laudo.veterinario_patologista.formacao }}<br>
+            {{ laudo.veterinario_patologista.crmv }}
+            </b>
+        </p>
+        </div>
+        </div>
+
     </div>
     <a href="{% url 'consulta_laudo' %}" class="ui red left floated button">
         <i class="chevron left icon"></i>

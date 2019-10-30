@@ -21,6 +21,7 @@
                 <th>Nome</th>
                 <th>CPF</th>
                 <th>Telefone</th>
+                <th>Celular</th>
                 <th>Editar</th>
                 <th>Deletar</th>
             </tr></thead>
@@ -30,6 +31,7 @@
                     <td class="center aligned">{{ proprietario.nome_proprietario }}</td>
                     <td class="center aligned">{{ proprietario.cpf }}</td>
                     <td class="center aligned">{{ proprietario.telefone }}</td>
+                    <td class="center aligned">{{ proprietario.celular }}</td>
                     <td class="center aligned">
                         <a href="{% url 'update_proprietario' proprietario.id %}">
                         <i class="green edit icon"></i>

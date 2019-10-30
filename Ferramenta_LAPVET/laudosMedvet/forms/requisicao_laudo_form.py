@@ -6,4 +6,5 @@ class RequisicaoLaudoForm(ModelForm):
     class Meta():
         model = RequisicaoLaudoModel
         fields = ['rghv','cod_animail', 'tipo_de_laudo', 'dt_coleta', 'material_enviado', 'historico_clinico',
-                  'descricao_macroscopica', 'dt_recebimento', 'scan_figura_ficha_clinica']
+                  'descricao_macroscopica', 'dt_recebimento', 'scan_figura_ficha_clinica',
+                  'responsavel_recebimento']

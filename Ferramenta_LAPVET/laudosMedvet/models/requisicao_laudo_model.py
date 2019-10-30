@@ -11,6 +11,7 @@ class RequisicaoLaudoModel(models.Model):
     historico_clinico = models.TextField()
     descricao_macroscopica = models.TextField()
     scan_figura_ficha_clinica = models.ImageField(upload_to='imagem_ficha_clinica', blank=True)
+    responsavel_recebimento = models.CharField(max_length=100, blank=True)
     dt_recebimento = models.DateField()
 
 
