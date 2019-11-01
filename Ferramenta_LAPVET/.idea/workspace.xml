@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="add7e6dc-d159-45ca-a64f-0ba653010259" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ferramenta_LAPVET/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/forms/__init__.py" afterDir="false" />
@@ -15,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/laudo_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/models/requisicao_laudo_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/filtro_laudos_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/gera_pdf_laudo_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/laudosMedvet/views/usuario_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/consultas/imagens_laudo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas/imagens_laudo.html" afterDir="false" />
@@ -105,7 +107,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/SEGUNDO_SEMESTRE/DJANGO_VUE/django-vue/backend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -335,6 +337,9 @@
       <workItem from="1572026682534" duration="2745000" />
       <workItem from="1572364426797" duration="11682000" />
       <workItem from="1572449221049" duration="14521000" />
+      <workItem from="1572538169665" duration="11256000" />
+      <workItem from="1572613081338" duration="522000" />
+      <workItem from="1572618950158" duration="6920000" />
     </task>
     <servers />
   </component>

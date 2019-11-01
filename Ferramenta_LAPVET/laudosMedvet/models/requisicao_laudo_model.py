@@ -2,14 +2,16 @@ from django.db import models
 from laudosMedvet.models.tipo_laudo_model import TipoLaudoModel
 from laudosMedvet.models.animal_model import AnimalModel
 
+from ckeditor.fields import RichTextField
+
 class RequisicaoLaudoModel(models.Model):
     rghv = models.IntegerField(blank=True, null=True)  #Fixme: models.Charfield() composto por tipolaudo[:2] + numero
     cod_animail = models.ForeignKey(AnimalModel, on_delete=models.PROTECT)
     tipo_de_laudo = models.ForeignKey(TipoLaudoModel, on_delete=models.PROTECT)
     dt_coleta = models.DateField()
-    material_enviado = models.TextField()
-    historico_clinico = models.TextField()
-    descricao_macroscopica = models.TextField()
+    material_enviado = RichTextField()
+    historico_clinico = RichTextField()
+    descricao_macroscopica = RichTextField()
     scan_figura_ficha_clinica = models.ImageField(upload_to='imagem_ficha_clinica', blank=True)
     responsavel_recebimento = models.CharField(max_length=100, blank=True)
     dt_recebimento = models.DateField()

@@ -105,7 +105,8 @@
         <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-                {{ laudo.id_requisicao.material_enviado }}<br>
+                <! - Modify here - >
+            <div>{{ laudo.id_requisicao.material_enviado|safe }}</div>
                 <br>
                 <b>Data da coleta: </b>{{ laudo.id_requisicao.dt_coleta }}
             </p>
@@ -113,19 +114,20 @@
         <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-                {{ laudo.id_requisicao.historico_clinico }}
+                <! - Modify here - >
+            <div>{{ laudo.id_requisicao.historico_clinico|safe }}</div>
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-                {{ laudo.id_requisicao.descricao_macroscopica }}
+                <div>{{ laudo.id_requisicao.descricao_macroscopica|safe }}</div>
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MICROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-            {{ laudo.descricao_microscopica }}
+            <div>{{ laudo.descricao_microscopica|safe }}</div>
             </p>
         </div>
     <h4 class="ui center aligned attached header"><u>SISTEMAS</u></h4>
@@ -137,21 +139,21 @@
         <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO MORFOLÓGICO</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-            {{ laudo.diagnostico_morfologico }}
+            <div>{{ laudo.diagnostico_morfologico|safe }}</div>
             </p>
         </div>
         {% if laudo.id_requisicao.tipo_de_laudo.tipo_laudo == "Necropsia" %}
             <h4 class="ui center aligned attached header"><u>DIAGNÓSTICO</u></h4>
             <div class="ui attached segment">
                 <p align="justify">
-                    {{ laudo.diagnostico_final }}
+                <div>{{ laudo.diagnostico_final|safe }}</div>
                 </p>
             </div>
         {% endif %}
         <h4 class="ui center aligned attached header"><u>COMENTÁRIOS</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-            {{ laudo.comentarios }}
+            <div>{{ laudo.comentarios|safe }}</div>
             </p>
         </div>
         <p>
@@ -177,7 +179,6 @@
         </p>
         </div>
         </div>
-
     </div>
     <a href="{% url 'consulta_laudo' %}" class="ui red left floated button">
         <i class="chevron left icon"></i>
@@ -188,6 +189,7 @@
             Gerar documento pdf
         <i class="chevron right icon"></i>
         </a>
+    </div>
     </div>
 
 {% endblock %}

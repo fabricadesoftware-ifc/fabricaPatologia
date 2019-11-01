@@ -100,6 +100,8 @@
         <h4 class="ui center aligned attached header"><u>MATERIAL ENVIADO PARA EXAME</u></h4>
         <div class="ui attached segment">
             <p align="justify">
+                <! - Modify here - >
+            <div>{{ requisicao.material_enviado|safe }}</div>
                 {{ requisicao.material_enviado }}<br>
                 <br>
                 <b>Data da coleta: </b>{{ requisicao.dt_coleta }}
@@ -108,13 +110,16 @@
         <h4 class="ui center aligned attached header"><u>HISTÓRICO CLÍNICO</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-                {{ requisicao.historico_clinico }}
+                <! - Modify here - >
+            <div>{{ requisicao.historico_clinico|safe }}</div>
             </p>
         </div>
         <h4 class="ui center aligned attached header"><u>DESCRIÇÃO MACROSCÓPICA</u></h4>
         <div class="ui attached segment">
             <p align="justify">
-                {{ requisicao.descricao_macroscopica }}
+                <! - Modify here - >
+            <div>{{ requisicao.descricao_macroscopica|safe }}</div>
+
             </p>
         </div>
         <div class="ui message">

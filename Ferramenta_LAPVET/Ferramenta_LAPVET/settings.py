@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'laudosMedvet',
     'multiselectfield',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,21 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+CKEDITOR_CONFIGS = {
+    # django-ckeditor defaults
+    'default': {
+        # Toolbar Style
+        'toolbar': 'Custom',
+        # Toolbar buttons
+        'toolbar_Custom': [
+            # Font Style
+            ['Bold', 'Italic', 'Underline', 'RemoveFormat'],
+            # Paragraph
+            ['JustifyLeft', 'JustifyCenter','JustifyRight', 'JustifyBlock'],
+            # Font color
+            ['TextColor'],
+        ],
+        # Add Code Block Plug-ins
+        'extraPlugins': ','.join(['codesnippet']),
+    }
+}
