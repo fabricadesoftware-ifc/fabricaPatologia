@@ -1,0 +1,102 @@
+{% load static %}
+<html>
+<head>
+  <title>
+      {{ laudo.id_requisicao.tipo_de_laudo.tipo_laudo }} -
+      {{ laudo.id_requisicao.cod_animail.nome }}
+
+  </title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <style>
+      @page {
+          margin: 2cm 2cm;
+          size: A4;
+          @bottom-right {
+              content: "Página " counter(page) " de " counter(pages);
+              font-size: 8px;
+          }
+}
+      body {
+      background-color: #f7f7f7;
+    }
+      p{
+          font-size: 12px;
+      }
+      img{
+          width: 100%;
+          height: 100%;
+      }
+
+  </style>
+</head>
+<body>
+<div style='float: left; width: 10%'>
+    <img src="{% static "image/logo_ifc.png" %}"height="50" width="50">
+</div>
+
+<div style='float: right; width: 10%'>
+    <img src="{% static "image/logo.lapvet_pequeno.png" %}"height="50" width="50">
+</div>
+
+<div>
+    <p style='text-align: center;'>INSTITUTO FEDERAL CATARINENSE</p>
+    <p style='text-align: center;'>CAMPUS ARAQUARI</p>
+    <p style='text-align: center;'>LABORATÓRIO DE ANATOMIA E PATOLOGIA VETERINÁRIA</p>
+</div>
+
+<hr><h4 style='text-align: center;'><div style='text-transform: uppercase;'>
+    REQUISIÇÃO DE {{ requisicao.tipo_de_laudo.tipo_laudo }} </div></h4><hr>
+<p>
+<div style="font-size: 12px">
+    <div style='float: left; width: 40%'><b>Nome: </b>{{ requisicao.cod_animail.nome }}
+</div><b>Espécie: </b>{{ requisicao.cod_animail.raca.id_especie.nome_especie }}
+<div style='float: right; width: 30%'><b>Raça: </b>{{ requisicao.cod_animail.raca.nome_raca }}</div><br>
+<div style='float: left; width: 40%'><b>Idade: </b>{{ requisicao.cod_animail.idade }}</div>
+<b>Sexo: </b>{{ requisicao.cod_animail.sexo }}<div style='float: right; width: 30%'>
+    <b>Pelagem: </b>{{ requisicao.cod_animail.cor_pelagem }}</div>
+<div style='float: left; width: 60%'><b>Proprietário: </b>{{ requisicao.cod_animail.proprietario.nome_proprietario }}
+</div><div style='float: right; width: 30%'><b>Telefone: </b>{{ requisicao.cod_animail.proprietario.telefone }}
+</div><div style='float: left; width: 60%'><b>Endereço: </b>Rua {{ requisicao.cod_animail.rua.nome_rua }}</div>
+    <div style='float: right; width: 30%'><b>Bairro: </b>{{ requisicao.cod_animail.bairro.nome_bairro }}</div>
+    <div style='float: left; width: 40%'><b>Cidade: </b>
+        {{ requisicao.cod_animail.cidade.nome_cidade }}
+    </div>
+    <div style='float: right; width: 30%'><b>Estado: </b>{{ requisicao.cod_animail.id_estado.nome_estado }}</div>
+    <div style='float: left; width: 60%'><b>Veterinário Responsável: </b>
+        {{ requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
+</div><div style='float: right; width: 30%'><b>Telefone: </b>
+    {{ requisicao.cod_animail.veterinario_responsavel.telefone }}
+</div>
+</div>
+</p>
+<h5 style='text-align: center;'><u><b>MATERIAL ENVIADO PARA EXAME</b></u></h5>
+<p style='text-align: justify;'>
+    {{ requisicao.material_enviado|safe }}<br>
+    <div style="font-size: 12px"><b> Data da coleta: </b>{{ requisicao.dt_coleta }}</div>
+</p>
+<h5 style='text-align: center;'><u><b>HISTÓRICO CLÍNICO</b></u></h5>
+<p style='text-align: justify;'>{{ requisicao.historico_clinico|safe }}</p>
+<h5 style='text-align: center;'><u><b>DESCRIÇÃO MACROSCÓPICA</b></u></h5>
+<p style='text-align: justify;'>{{ requisicao.descricao_macroscopica|safe }}</p>
+
+<br>
+
+<p style='text-align: center;'>{{ laudo.veterinario_patologista.nome }}
+    <br>{{ laudo.veterinario_patologista.formacao }}
+    <br>{{ laudo.veterinario_patologista.crmv }}</p>
+
+<div>
+        <h5 class="ui center aligned header"><u>PARA USO DO LAPVET</u></h5>
+            <p>
+                Número do registro: {{ requisicao.id }}<br>
+                Data do recebimento: {{ requisicao.dt_recebimento }}<br>
+                Responsável pelo recebimento: {{ requisicao.responsavel_recebimento }}
+            </p>
+        </div>
+
+{% if requisicao.scan_figura_ficha_clinica %}
+    <img src="{{ MEDIA_URL }}{{ requisicao.scan_figura_ficha_clinica.url }}">
+{% endif %}
+
+</body>
+</html>

@@ -22,7 +22,7 @@ class LaudoModel(models.Model):
     descricao_microscopica = RichTextField()
     diagnostico_morfologico = RichTextField()
     sistemas = MultiSelectField(null=True, blank=True, choices=DATA_CHOICE)
-    etiologia = models.CharField(max_length=300, null=True)
+    etiologia = models.CharField(max_length=300, null=True, blank=True)
     diagnostico_final = RichTextField(null=True, blank=True)
     comentarios = RichTextField()
     veterinario_patologista = models.ForeignKey(VeterinarioPatologistaModel, on_delete=models.PROTECT)

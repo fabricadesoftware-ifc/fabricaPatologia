@@ -8,16 +8,16 @@
             <i class="angle double left icon"></i>
             Voltar para a página anterior
         </a>
-        <h2 class="ui center aligned header">Opções de busca por laudos</h2>
+        <h2 class="ui center aligned header">Relatório</h2>
         <div class="ui form">
 
             <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
 
 
-
             <form class="ui three column grid">
 
                 <div class="left floated five wide column">
+                <div class="column">
                 <div class="ui segment">
 
                         <h4>
@@ -34,6 +34,26 @@
                         </div>
                         </div>
                     {% endfor %}
+                </div>
+                </div>
+                <div class="ui segment">
+                    <h4>
+                        Tipo de laudo
+                    </h4>
+                        <select name="por_tipo_laudo">
+                                <option></option>
+                                {% for tipo in tipo_laudo %}
+                                    <option value="{{ tipo.tipo_laudo }}">
+                                        {{ tipo.tipo_laudo }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                    <h4>
+                        Etiologia
+                    </h4>
+
+                    <input class="prompt" name="etiologia" type="text" placeholder="Etiologia...">
+
                 </div>
                 </div>
                 </div>
@@ -78,6 +98,12 @@
             </h4>
                 <input type="date" name="data_max" placeholder="{{ hoje }}">
             </div>
+                <div class="ui segment">
+                    <h4>
+                Busca por diagnóstico morfológico
+            </h4>
+                    <input class="prompt" name="morfologico" type="text" placeholder="Digite um termo para a busca...">
+                </div>
                 </div>
                 <div class="column">
                 <div class="ui segment">
@@ -137,8 +163,80 @@
             </div>
         </div>
     <h2 class="ui center aligned header">Resultados</h2>
-    <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
-    <div class="ui divided list">
+    <table class="ui celled table">
+  <thead>
+    <tr><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Filtro
+    </font></font></th>
+    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Cidades
+    </font></font></th>
+    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Estados
+    </font></font></th>
+    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Quantidade
+    </font></font></th>
+    <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Total Cadastrado
+    </font></font></th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          {% for f in rel %}
+        {{ f }}<br>
+    {% endfor %}
+      </font></font></td>
+      <td data-label="Age"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          {% for cidade in cidades_nome %}
+        {{ cidade.id_requisicao.cod_animail.cidade.nome_cidade }}
+              <br>
+    {% endfor %}
+      </font></font></td>
+    <td data-label="Age"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          {% for estado in estados_lista %}
+        {{ estado }}<br>
+    {% endfor %}
+      </font></font></td>
+      <td data-label="Job"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          {{ relatorio }}
+      </font></font></td>
+    <td data-label="Job"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          {{ total_laudos }}
+      </font></font></td>
+    </tr>
+    <tr>
+      <td data-label="Name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></td>
+      <th data-label="Age"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          <a href="{% url 'mapa' %}">
+              Visualizar no mapa
+          </a>
+      </font></font></th>
+      <td data-label="Job"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></td>
+    </tr>
+  </tbody>
+</table>
+
+    Opções relacionadas: {% for f in rel %}
+        {{ f }},
+    {% endfor %}<br>
+    Número de casos: {{ relatorio }}<br>
+    Total de laudos no banco de dados: {{ total_laudos }}<br>
+    estados: {{ estados_ocorrencia }} <br>
+    cidades: {{ cidades_ocorrencia }}<br>
+    nome cidades:
+    {% for cidade in cidades_nome %}
+        {{ cidade.id_requisicao.cod_animail.cidade.nome_cidade }}
+    {% endfor %}<br>
+    bairros: {{ bairros_ocorrencia }}<br>
+    ruas: {{ ruas_ocorrencia }}<br>
+    <a href="{% url 'mapa' %}">
+        mapa
+    </a>
+
+        <div class="ui stackable celled grid container" style="border: dashed 1px grey;">
+            <div class="ui divided list">
             {% for consulta in laudos %}
             <div class="item">
             <div class="content">

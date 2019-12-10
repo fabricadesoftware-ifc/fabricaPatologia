@@ -11,7 +11,7 @@
                 <i class="angle double left icon"></i>
                 Voltar para a página anterior
             </div>
-            <form class="ui form segment" method="POST" enctype="multipart/form-data" style="background-color: #c8c8c8">
+            <form class="ui form segment" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
                     <div class="two fields">
@@ -35,11 +35,11 @@
                     {{ form.rg }}
                 </div>
                 <div class="four wide field">
-                    <label class="color-label-brown">Telefone fixo</label>
+                    <label class="color-label-brown">Telefone</label>
                     {{ form.telefone }}
                 </div>
                 <div class="four wide field">
-                    <label class="color-label-brown">Telefone celular</label>
+                    <label class="color-label-brown">Celular</label>
                     {{ form.celular }}
                 </div>
                     </div>

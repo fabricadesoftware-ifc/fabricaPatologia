@@ -1,5 +1,6 @@
 from laudosMedvet.forms.especie_form import EspecieForm
 from laudosMedvet.forms.animal_form import AnimalForm
+from laudosMedvet.forms.animal_update_form import AnimalUpdateForm
 
 from laudosMedvet.forms.proprietario_form import ProprietarioForm
 from laudosMedvet.forms.veterinario_responsavel_form import VeterinarioResponsavelForm

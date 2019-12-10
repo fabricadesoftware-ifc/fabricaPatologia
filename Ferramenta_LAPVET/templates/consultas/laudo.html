@@ -58,13 +58,13 @@
                 <b>Nome do animal: </b>{{ laudo.id_requisicao.cod_animail.nome }}
             </div>
             <div class="four wide column">
-                <b>Espécie: </b>{{ laudo.id_requisicao.cod_animail.especie.nome_especie }}
+                <b>Espécie: </b>{{ laudo.id_requisicao.cod_animail.raca.id_especie.nome_especie }}
             </div>
             <div class="four wide column">
                 <b>Raça: </b>{{ laudo.id_requisicao.cod_animail.raca }}
             </div>
             <div class="eight wide column">
-                <b>Data de nascimento: </b>{{ laudo.id_requisicao.cod_animail.data_nasc }}
+                <b>Idade: </b>{{ laudo.id_requisicao.cod_animail.idade }}
             </div>
             <div class="four wide column">
                 <b>Pelagem: </b>{{ laudo.id_requisicao.cod_animail.cor_pelagem }}
@@ -81,14 +81,21 @@
             <div class="four wide column">
                 <b>Celular: </b>{{ laudo.id_requisicao.cod_animail.proprietario.celular }}
             </div>
-            <div class="twelve wide column">
-                <b>Endereço: </b>Rua {{ laudo.id_requisicao.cod_animail.proprietario.rua }} Bairro
-                {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.nome_bairro }}, Cidade
-                {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.nome_cidade }}
+            <div class="eight wide column">
+                <b>Endereço: </b>{{ laudo.id_requisicao.cod_animail.rua }}
+            </div>
+            <div class="four wide column">
+                <b>Número: </b>{{ laudo.id_requisicao.cod_animail.numero }}
+            </div>
+             <div class="four wide column">
+                <b>Bairro: </b>{{ laudo.id_requisicao.cod_animail.bairro.nome_bairro }}
+            </div>
+            <div class="eight wide column">
+                <b>Cidade: </b>{{ laudo.id_requisicao.cod_animail.cidade.nome_cidade }}
             </div>
             <div class="four wide column">
                 <b>Estado</b>
-                {{ laudo.id_requisicao.cod_animail.proprietario.rua.id_bairro.id_cidade.id_estado.nome_estado }}
+                {{ laudo.id_requisicao.cod_animail.id_estado.nome_estado }}
             </div>
             <div class="eight wide column">
                 <b>Veterinário Responsável: </b>{{ laudo.id_requisicao.cod_animail.veterinario_responsavel.nome_veterinario }}
@@ -180,6 +187,7 @@
         </div>
         </div>
     </div>
+    </div>
     <a href="{% url 'consulta_laudo' %}" class="ui red left floated button">
         <i class="chevron left icon"></i>
             Voltar para consulta por requisições
@@ -189,7 +197,6 @@
             Gerar documento pdf
         <i class="chevron right icon"></i>
         </a>
-    </div>
     </div>
 
 {% endblock %}

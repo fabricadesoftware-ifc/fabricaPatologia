@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'Ferramenta_LAPVET.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'LAPVET',
+        'NAME': 'LAP-VET',
         'USER': 'postgres',
         'PASSWORD': 'ana123',
         'HOST': '127.0.0.1',
@@ -135,20 +135,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 CKEDITOR_CONFIGS = {
-    # django-ckeditor defaults
+
     'default': {
-        # Toolbar Style
         'toolbar': 'Custom',
-        # Toolbar buttons
         'toolbar_Custom': [
-            # Font Style
             ['Bold', 'Italic', 'Underline', 'RemoveFormat'],
-            # Paragraph
             ['JustifyLeft', 'JustifyCenter','JustifyRight', 'JustifyBlock'],
-            # Font color
             ['TextColor'],
         ],
-        # Add Code Block Plug-ins
         'extraPlugins': ','.join(['codesnippet']),
     }
 }

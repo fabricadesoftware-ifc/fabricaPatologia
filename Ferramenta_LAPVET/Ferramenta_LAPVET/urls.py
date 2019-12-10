@@ -158,11 +158,14 @@ urlpatterns = [
     path('consulta/laudo/imag/<int:id>', views.consulta_view.visualizar_imagens_por_laudo, name='visualizar_imagens_por_laudo'),
 
     #pdf
-    path('gera-pdf-requisicao/<int:id>', views.gera_pdf_requisicao_view.gera_requisicao_pdf, name='gera_requisicao_pdf'),
-    path('gera-pdf-laudo/<int:id>', views.gera_pdf_laudo_view.gera_laudo_pdf, name='gera_laudo_pdf'),
+    path('pdf-view/<int:id>', views.gera_pdf_laudo_view.html_to_pdf_view, name='seleciona_pdf'),
+    path('gera_pdf/<int:id>', views.gera_pdf_laudo_view.gera_pdf, name='gera_pdf'),
+    path('requisicao_pdf/<int:id>', views.gera_pdf_requisicao_view.gera_requisicao_pdf, name='requisicao_pdf'),
 
     #pesquisa
     path('procura/', views.filtro_laudos_view.lista_laudos, name="procura_laudos"),
-    path('gera_pdf/<int:id>', views.filtro_laudos_view.gera_pdf, name='gera_pdf'),
+
+    #mapa
+    path('mapa/', views.filtro_laudos_view.mapa, name="mapa"),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

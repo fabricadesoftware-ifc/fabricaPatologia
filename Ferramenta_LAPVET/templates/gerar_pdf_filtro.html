@@ -12,10 +12,8 @@
                 Voltar para a página anterior
             </a>
             <h3 class="ui center aligned header">Laudo</h3>
-        <div class="ui checkbox">
-            <input type="checkbox" name="por_sistema">
-                            <label>
-                                <div class="content">
+            <label>
+                <div class="content">
                     <h4 style="vertical-align: inherit;">
                         <i class="clipboard outline icon"></i>
                         <font style="vertical-align: inherit;">
@@ -28,31 +26,36 @@
                              {{ laudo.id_requisicao.cod_animail.raca.nome_raca }}
                         </font>
                     </h4>
-
-                            </div>
-                                </label>
-                        </div>
-
+                </div>
+            </label>
+        <div class="ui checkbox">
+                    <input type="checkbox" name="com_imagem">
+                    <label>
+                        selecionar com imagem
+                    </label>
+                </div>
             <h3 class="ui center aligned header">Selecione uma ou mais imagens</h3>
-
-
-                            {% for im in imagens %}
-                                <div class="ui checkbox">
-                            <input type="checkbox" name="pdf">
-                                     <label>
-                    <img class="ui small image" src="{{ MEDIA_URL }}{{ im.imagem.url }}">
-                                          </label>
-                                </div>
+        <form>
+            {% for im in imagens %}
+                <div class="ui checkbox">
+                    <input type="checkbox" name="lista_imagens" value={{ im.id }}>
+                    <label>
+                        <img class="ui small image" src="{{ MEDIA_URL }}{{ im.imagem.url }}">
+                    </label>
+                </div>
             {% endfor %}
-<a href="{% url 'gera_laudo_pdf' laudo.id %}" class="ui green right floated button">
-        <i class="file pdf icon"></i>
-            Gerar documento pdf
-        <i class="chevron right icon"></i>
-        </a>
-                        </div>
-
-                        </div>
-        </div>
+    <a href="{% url 'seleciona_pdf' laudo.id %}" class="ui green fluid button" type="submit">
+                <i class="file pdf icon"></i>
+                Gerar documento pdf
+                <i class="chevron right icon"></i>
+            </a>
+         <button type="submit" class="ui green fluid icon button">
+                    <i class="search icon"></i>
+                    Buscar
+                </button>
+         <div class="results"></div>
+      </form>
+         </div>
     </div>
 
 

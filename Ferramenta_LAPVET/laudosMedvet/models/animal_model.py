@@ -11,14 +11,14 @@ from laudosMedvet.models.estado_model import EstadoModel
 
 
 class AnimalModel(models.Model):
-    nome = models.CharField(max_length=100, blank=True)
-    idade = models.CharField(max_length=50, blank=True)
-    sexo = models.CharField(max_length=5, blank=True)
+    nome = models.CharField(max_length=100, blank=True, null=True)
+    idade = models.CharField(max_length=50, blank=True, null=True)
+    sexo = models.CharField(max_length=5, blank=True, null=True)
     id_especie = models.ForeignKey(EspecieModel, on_delete=models.PROTECT, null=True)
-    raca = models.ForeignKey(RacaModel, on_delete=models.PROTECT, null=True)  # Chave estrangeira para raça_model --> especie
+    raca = models.ForeignKey(RacaModel, on_delete=models.PROTECT, blank=True, null=True)
     cor_pelagem = models.CharField(max_length=50, blank=True)
     dt_cadastro = models.DateField(auto_now_add=True)
-    proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.PROTECT, blank=True)
+    proprietario = models.ForeignKey(ProprietarioModel, on_delete=models.PROTECT, blank=True, null=True)
     veterinario_responsavel = models.ForeignKey(VeterinarioResponsavelModel,
                                                 on_delete=models.PROTECT, blank=True, null=True)
     id_estado = models.ForeignKey(EstadoModel, on_delete=models.PROTECT, blank=True, null=True)
@@ -26,7 +26,7 @@ class AnimalModel(models.Model):
     bairro = models.ForeignKey(BairroModel, on_delete=models.PROTECT, blank=True, null=True)
     rua = models.ForeignKey(RuaModel, on_delete=models.PROTECT, blank=True, null=True)
     numero = models.PositiveIntegerField(default=0)
-    complemento = models.CharField(max_length=300, blank=True)
+    complemento = models.CharField(max_length=300, blank=True, null=True)
 
     class Meta:
         verbose_name = "Animal"

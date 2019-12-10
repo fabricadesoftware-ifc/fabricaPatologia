@@ -38,14 +38,6 @@
         <h3 class="ui center aligned header">
             REQUISIÇÃO DE {{ requisicao.tipo_de_laudo.tipo_laudo.upper }}
         </h3>
-        <div class="ui top attached tabular menu">
-            <a class="item active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                Requisição
-            </a>
-            <a class="item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                Figura
-            </a>
-        </div>
         <h4 class="ui center aligned top attached header"><u>IDENTIFICAÇÃO</u></h4>
         <div class="ui attached segment">
             <p>
@@ -54,13 +46,13 @@
                 <b>Nome do animal: </b>{{ requisicao.cod_animail.nome }}
             </div>
             <div class="four wide column">
-                <b>Espécie: </b>{{ requisicao.cod_animail.especie.nome_especie }}
+                <b>Espécie: </b>{{ requisicao.cod_animail.raca.id_especie.nome_especie }}
             </div>
             <div class="four wide column">
                 <b>Raça: </b>{{ requisicao.cod_animail.raca }}
             </div>
             <div class="eight wide column">
-                <b>Data de nascimento: </b>{{ requisicao.cod_animail.data_nasc }}
+                <b>Idade: </b>{{ requisicao.cod_animail.idade }}
             </div>
             <div class="four wide column">
                 <b>Pelagem: </b>{{ requisicao.cod_animail.cor_pelagem }}
@@ -102,7 +94,7 @@
             <p align="justify">
                 <! - Modify here - >
             <div>{{ requisicao.material_enviado|safe }}</div>
-                {{ requisicao.material_enviado }}<br>
+
                 <br>
                 <b>Data da coleta: </b>{{ requisicao.dt_coleta }}
             </p>
@@ -135,7 +127,7 @@
         <i class="chevron left icon"></i>
             Voltar para consulta por requisições
         </a>
-        <a href="{% url 'gera_requisicao_pdf' requisicao.id %}" class="ui green right floated button">
+        <a href="{% url 'requisicao_pdf' requisicao.id %}" class="ui green right floated button">
         <i class="file pdf icon"></i>
             Gerar documento pdf
         <i class="chevron right icon"></i>

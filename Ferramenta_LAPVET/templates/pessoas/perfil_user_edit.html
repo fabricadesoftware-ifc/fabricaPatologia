@@ -7,7 +7,7 @@
         <div class="ui green fluid segment">
             <h2 class="ui center aligned header">Cadastro de usuário</h2>
 
-        <form class="ui form segment" method="post" action="{% url 'new_usuario' %}" style="background-color: #c8c8c8">
+        <form class="ui form segment" method="post" action="{% url 'new_usuario' %}">
             {% csrf_token %}
             <h4 class="ui dividing header">Informações pessoais</h4>
 

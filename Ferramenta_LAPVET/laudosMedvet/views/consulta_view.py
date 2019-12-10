@@ -4,8 +4,6 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from laudosMedvet.models import RequisicaoLaudoModel, LaudoModel, ImagensModel, EspecieModel, RacaModel
 
-# Consulta por requisições, laudos e imagens
-
 
 @login_required
 def consulta_requisicao(request):

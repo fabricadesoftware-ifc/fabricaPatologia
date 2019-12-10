@@ -1,9 +1,6 @@
-
-
 from django.forms import ModelForm
 from django import forms
 from laudosMedvet.models import AnimalModel, RacaModel, CidadeModel, BairroModel, RuaModel
-from laudosMedvet.models import ProprietarioModel
 
 
 class AnimalForm(ModelForm):
@@ -29,7 +26,7 @@ class AnimalForm(ModelForm):
                 especie_id = int(self.data.get('id_especie'))
                 self.fields['raca'].queryset = RacaModel.objects.filter(id_especie_id=especie_id).order_by('nome_raca')
             except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty City queryset
+                pass
         elif self.instance.pk:
             self.fields['raca'].queryset = self.instance.id_especie.raca_set.order_by('nome_raca')
 
@@ -41,7 +38,7 @@ class AnimalForm(ModelForm):
                 estado = int(self.data.get('estado'))
                 self.fields['cidade'].queryset = CidadeModel.objects.filter(id_estado_id=estado).order_by('nome_cidade')
             except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty City queryset
+                pass
         elif self.instance.pk:
             self.fields['cidade'].queryset = self.instance.id_estado.cidade_set.order_by('nome_cidade')
 
@@ -53,7 +50,7 @@ class AnimalForm(ModelForm):
                 cidade = int(self.data.get('cidade'))
                 self.fields['bairro'].queryset = BairroModel.objects.filter(id_cidade_id=cidade).order_by('nome_bairro')
             except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty City queryset
+                pass
         elif self.instance.pk:
             self.fields['bairro'].queryset = self.instance.id_cidade.bairro_set.order_by('nome_bairro')
 
@@ -65,6 +62,6 @@ class AnimalForm(ModelForm):
                 bairro = int(self.data.get('bairro'))
                 self.fields['rua'].queryset = RuaModel.objects.filter(id_bairro_id=bairro).order_by('nome_rua')
             except (ValueError, TypeError):
-                pass  # invalid input from the client; ignore and fallback to empty City queryset
+                pass
         elif self.instance.pk:
             self.fields['rua'].queryset = self.instance.id_bairro.rua_set.order_by('nome_rua')
