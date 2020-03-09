@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Lista de tipos de laudo</h2>
+
+        <a class="ui button" href="{% url 'principal' %}">
+            <i class="angle double left icon"></i>
+            Voltar para a página principal
+        </a>
+        <a class="ui button" href="{% url 'index_requisicao' %}">
+            Ver lista de requisições cadastradas
+        </a>
+        <a href="{% url 'new_tipo_laudo' %}" class="ui right floated button">
+            Cadastrar novo tipo de laudo
+            <i class="angle double right icon"></i>
+        </a>
+
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Tipo de laudo</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for tipo in tipos %}
+                <tr>
+                    <td class="center aligned">{{ tipo.nome_tipo_laudo }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_tipo_laudo' tipo.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_tipo_laudo' tipo.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}

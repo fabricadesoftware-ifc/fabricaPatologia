@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+        <div class="ui green fluid segment">
+            <h2 class="ui center aligned header">Gerar pdf</h2>
+
+            <a class="ui button" href="{% url 'procura_laudos' %}">
+                <i class="angle double left icon"></i>
+                Voltar para a página anterior
+            </a>
+            <h3 class="ui center aligned header">Laudo</h3>
+            <label>
+                <div class="content">
+                    <h4 style="vertical-align: inherit;">
+                        <i class="clipboard outline icon"></i>
+                        <font style="vertical-align: inherit;">
+                            {{ laudo.id_requisicao.id_animal.nome_animal }},
+                             {{ laudo.id_requisicao.tipo_de_laudo.nome_tipo_laudo }},
+                            RGHV: {{ laudo.id_requisicao.rghv }},
+                            Etiologia: {{ laudo.etiologia }},
+                             Sistemas: {{ laudo.sistemas }},
+                             {{ laudo.id_requisicao.cod_animail.raca.id_especie.nome_especie }},
+                             {{ laudo.id_requisicao.cod_animail.raca.nome_raca }}
+                        </font>
+                    </h4>
+                </div>
+            </label>
+            <h3 class="ui center aligned header">Selecione uma ou mais imagens</h3>
+        <form>
+            {% for im in imagens %}
+                <div class="ui checkbox">
+                    <input type="checkbox" name="lista_imagens" value={{ im.id }}>
+                    <label>
+                        <img class="ui small image" src="{{ MEDIA_URL }}{{ im.imagem.url }}">
+                    </label>
+                </div>
+            {% endfor %}
+            
+    <a href="{% url 'seleciona_pdf' laudo.id %}" class="ui green fluid button" type="submit">
+                <i class="file pdf icon"></i>
+                Gerar documento pdf
+                <i class="chevron right icon"></i>
+            </a>
+
+      </form>
+         </div>
+    </div>
+
+
+
+{% endblock %}
+

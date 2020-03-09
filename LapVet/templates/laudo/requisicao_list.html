@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Requisições de laudos</h2>
+        <div class="ui form">
+            <div class="three fields">
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="tipo" id="tipo" type="text" placeholder="Tipo de requisicão...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="animal" id="animal" type="text" placeholder="Nome do animal...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
+                <div class="field">
+                    <form class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" name="nome" id="nome" type="text" placeholder="Nome do proprietário...">
+                            <button type="submit" class="circular ui icon button">
+                                <i class="search icon"></i></button>
+                        </div>
+                        <div class="results"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a class="ui button" href="{% url 'principal' %}">
+            <i class="angle double left icon"></i>
+            Voltar para a página principal
+        </a>
+        <a class="ui button" href="{% url 'index_laudo' %}">
+            Ver lista de laudos cadastrados
+        </a>
+            <a href="{% url 'new_requisicao' %}" class="ui right floated button">
+                Cadastrar nova requisiçao
+                <i class="angle double right icon"></i>
+            </a>
+
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Cod. requisição</th>
+                    <th>Cod. animal</th>
+                    <th>Tipo de requisição</th>
+                    <th>Data do registro</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr></thead>
+                <tbody>
+                {% for requisicao in requisicoes %}
+                <tr>
+                    <td class="center aligned">{{ requisicao.id }}</td>
+                    <td class="center aligned">{{ requisicao.id_animal }}</td>
+                    <td class="center aligned">{{ requisicao.tipo_de_laudo }}</td>
+                    <td class="center aligned">{{ requisicao.dt_recebimento }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'update_requisicao' requisicao.id %}">
+                        <i class="green edit icon"></i>
+                    </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'delete_requisicao' requisicao.id %}">
+                            <i class="red trash alternate icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}

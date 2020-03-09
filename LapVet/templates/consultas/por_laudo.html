@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+    <div class="two wide column"></div>
+    <div class="ui green fluid segment">
+        <h2 class="ui center aligned header">Consulta por laudos</h2>
+          <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="por_animal" id="por_animal"
+                                       type="text" placeholder="Nome do animal...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="por_proprietario" id="por_proprietario" type="text"
+                                       placeholder="Nome do proprietario...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                    <div class="field">
+                        <form class="ui category search">
+                            <div class="ui icon input">
+                                <input class="prompt" name="por_tipo" id="por_tipo" type="text" placeholder="Tipo...">
+                                <button type="submit" class="circular ui icon button">
+                                    <i class="search icon"></i></button>
+                            </div>
+                            <div class="results"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <table class="ui large striped table">
+                <thead><tr class="center aligned">
+                    <th>Nome do proprietário</th>
+                    <th>Nome do animal</th>
+                    <th>Código de requisição</th>
+                    <th>Tipo de laudo</th>
+                    <th>Data do laudo</th>
+                    <th>Visualizar laudo</th>
+                    <th>Visualizar imagens</th>
+                    <th>Gerar PDF</th>
+
+                </tr></thead>
+                <tbody>
+                {% for consulta in laudos %}
+                <tr>
+                    <td class="center aligned">{{ consulta.id_requisicao.id_animal.proprietario.nome_proprietario }}</td>
+                    <td class="center aligned">{{ consulta.id_requisicao.id_animal.nome_animal }}</td>
+                    <td class="center aligned">{{ consulta.id_requisicao.id }}</td>
+                    <td class="center aligned">{{ consulta.id_requisicao.tipo_de_laudo }}</td>
+                    <td class="center aligned">{{ consulta.dt_laudo }}</td>
+                    <td class="center aligned">
+                        <a href="{% url 'visualizar_laudo' consulta.id %}">
+                            <i class="large green file alternate icon"></i>
+                        </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'visualizar_imagens_por_laudo' consulta.id %}">
+                            <i class="large green file image icon"></i>
+                        </a>
+                    </td>
+                    <td class="center aligned">
+                        <a href="{% url 'gera_pdf' consulta.id %}">
+                            <i class="large green file pdf icon"></i>
+                        </a>
+                    </td>
+                </tr>
+                    </tbody>
+                {% endfor %}
+        </table>
+    </div>
+    </div>
+
+{% endblock %}
