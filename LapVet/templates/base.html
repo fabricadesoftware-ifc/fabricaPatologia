@@ -39,7 +39,10 @@
                             <a class="item" href="#">Grupo</a>
                             <a class="item" href="{% url 'cadastro' %}">Usuário</a>
                             {% endif %}
-                            <a class="item" href="{% url 'update_usuario' user.id %}">Alterar minha senha</a>
+                            {% url 'update_usuario' user.id as url_alterar_senha %}
+                            {% if url_alterar_senha %}
+                            <a class="item" href="">Alterar minha senha</a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="item">
