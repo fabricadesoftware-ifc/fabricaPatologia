@@ -10,6 +10,7 @@ cssselect2==0.2.2
 defusedxml==0.6.0
 Django==2.2.9
 django-ckeditor==5.8.0
+django-environ==0.4.5
 django-js-asset==1.2.2
 django-multiselectfield==0.1.11
 folium==0.10.1
